@@ -2,9 +2,65 @@
 
 namespace App\Models;
 
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Course extends Model
 {
-    //
+    use HasFactory;
+
+    protected $fillable = [
+        "course_name",
+        "description",
+        "course_code",
+        "start_at",
+        "end_at",
+        "instructure_id",
+        "assignment_percent",
+        "quiz_percent",
+        "mid_percent",
+        "final_percent",
+    ];
+
+    public function lectures(): HasMany
+    {
+        return $this->hasMany(Lecture::class);
+    }
+
+    public function announcements(): HasMany
+    {
+        return $this->hasMany(Announcement::class);
+    }
+
+    public function discussions(): HasMany
+    {
+        return $this->hasMany(Discussion::class);
+    }
+
+    public function enrollments(): HasMany
+    {
+        return $this->hasMany(Enrollment::class);
+    }   
+
+    public function examinations(): HasMany
+    {
+        return $this->hasMany(Examination::class);
+    } 
+
+    public function assignments(): HasMany
+    {
+        return $this->hasMany(Assignment::class);
+    } 
+
+    public function students(): BelongsToMany
+    {
+        return $this->BelongsToMany(
+            User::class,
+            Enrollment::class,
+            "course_id",
+            "student_id"
+        );
+    }
 }

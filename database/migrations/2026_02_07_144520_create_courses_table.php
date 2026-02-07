@@ -15,13 +15,14 @@ return new class extends Migration
             $table->id();
             $table->string("course_name");
             $table->text("description");
-            $table->uuid("course_code");
+            $table->uuid("course_code")->unique();
             $table->dateTime("start_at");
             $table->dateTime("end_at");
             $table->foreignId('instructure_id')
                 ->constrained(table: 'users', indexName: 'id')
                 ->cascadeOnDelete()
                 ->cascadeOnUpdate();
+            $table->smallInteger("assignment_percent");
             $table->smallInteger("quiz_percent");
             $table->smallInteger("mid_percent");
             $table->smallInteger("final_percent");
