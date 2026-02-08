@@ -19,6 +19,7 @@ return new class extends Migration
                 ->constrained(table: 'courses', indexName: 'id')
                 ->cascadeOnDelete()
                 ->cascadeOnUpdate();
+            $table->date("due_date");
             $table->timestamps();
         });
     }

@@ -14,7 +14,8 @@ class Assignment extends Model
     protected $fillable = [
         "subject",
         "content",
-        "course_id"
+        "course_id",
+        due_date
     ];
 
     public function course() : BelongsTo
