@@ -4,10 +4,10 @@ namespace App\Exceptions;
 
 use App\Traits\ApiResponses;
 use Illuminate\Auth\AuthenticationException;
-use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
 use Illuminate\Validation\ValidationException;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
+use Illuminate\Auth\Access\AuthorizationException;
 use Throwable;
 
 class Handler extends ExceptionHandler
@@ -18,6 +18,7 @@ class Handler extends ExceptionHandler
         ValidationException::class => 'handleValidation',
         NotFoundHttpException::class => 'handleNotFound',
         AuthenticationException::class => 'handleAuthentication',
+        AuthorizationException::class => 'handleAuthorization',
     ];
 
     private function handleNotFound()
@@ -27,7 +28,7 @@ class Handler extends ExceptionHandler
                 "status" => 404,
                 "message" => "The Resource Could Not Be Found :("
             ]
-            ];
+        ];
     }
 
     private function handleValidation(ValidationException $exception)
@@ -43,6 +44,19 @@ class Handler extends ExceptionHandler
                 ];
             }
         }
+        return $errors;
+    }
+
+    private function handleAuthorization(AuthorizationException $exception)
+    {
+
+        return [
+            [
+                "status" => 403,
+                "message" => $exception->getMessage(),
+                "source" => $exception->getFile()
+            ]
+        ];
     }
 
     private function handleAuthentication()
