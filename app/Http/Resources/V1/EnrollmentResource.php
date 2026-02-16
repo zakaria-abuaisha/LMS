@@ -19,8 +19,8 @@ class EnrollmentResource extends JsonResource
             "id" => $this->id,
             "data" => [
                 "enrollDate" => $this->enroll_date,
-                "courseId" => $this->course_id,,
-                "studentId" => $this->student_id,,
+                "courseId" => $this->course_id,
+                "studentId" => $this->student_id,
             ],
             "included" => [
                 "student" => new UserResource($this->whenLoaded("student")),

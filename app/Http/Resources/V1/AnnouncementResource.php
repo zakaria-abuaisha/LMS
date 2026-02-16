@@ -20,7 +20,7 @@ class AnnouncementResource extends JsonResource
             "data" => [
                 "title" => $this->title,
                 "description" => $this->description,
-                "courseId" => $this->course_id,,
+                "courseId" => $this->course_id,
                 "createdAt" => $this->created_at
             ],
             "included" => [

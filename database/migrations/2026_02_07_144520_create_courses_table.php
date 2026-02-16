@@ -26,6 +26,7 @@ return new class extends Migration
             $table->smallInteger("quiz_percent");
             $table->smallInteger("mid_percent");
             $table->smallInteger("final_percent");
+            $table->timestamps();
         });
     }
 
