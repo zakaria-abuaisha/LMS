@@ -20,7 +20,7 @@ class Course extends Model
         "course_code",
         "start_at",
         "end_at",
-        "instructure_id",
+        "instructor_id",
         "assignment_percent",
         "quiz_percent",
         "mid_percent",

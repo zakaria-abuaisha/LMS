@@ -27,7 +27,7 @@ class ApiController extends Controller
 
     public function include(string $relationship) : bool {
         $param = request()->get('include');
-
+        
         if (!isset($param)) {
             return false;
         }
@@ -41,7 +41,7 @@ class ApiController extends Controller
     {
         foreach ($toBeIncluded as $key => $value)
         {
-            if($this->include($key))
+            if($this->include($value))
                 $model->load($value);
         }
         return $model;

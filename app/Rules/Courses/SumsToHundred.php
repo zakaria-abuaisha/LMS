@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Rules;
+namespace App\Rules\Courses;
 
 use Closure;
 use Illuminate\Contracts\Validation\DataAwareRule;

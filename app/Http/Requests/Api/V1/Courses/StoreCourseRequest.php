@@ -2,8 +2,7 @@
 
 namespace App\Http\Requests\Api\V1\Courses;
 
-use App\Rules\SumsToHundred;
-use Illuminate\Foundation\Http\FormRequest;
+use App\Rules\Courses\SumsToHundred;
 use Illuminate\Validation\Rule;
 
 class StoreCourseRequest extends BaseCourseRequest

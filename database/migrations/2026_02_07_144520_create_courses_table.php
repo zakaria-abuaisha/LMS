@@ -18,7 +18,7 @@ return new class extends Migration
             $table->uuid("course_code")->unique();
             $table->dateTime("start_at");
             $table->dateTime("end_at");
-            $table->foreignId('instructure_id')
+            $table->foreignId('instructor_id')
                 ->constrained(table: 'users', indexName: 'id')
                 ->cascadeOnDelete()
                 ->cascadeOnUpdate();

@@ -2,8 +2,9 @@
 
 namespace App\Http\Controllers\Api\V1;
 
-use App\Filters\V1\CoursFilter;
+use App\Http\Filters\V1\CoursFilter;
 use App\Http\Requests\Api\V1\Courses\StoreCourseRequest;
+use App\Http\Requests\Api\V1\Courses\UpdateCourseRequest;
 use App\Http\Resources\V1\CourseResource;
 use App\Models\Course;
 use App\Policies\CoursePolicy;
@@ -15,12 +16,12 @@ class CoursesController extends ApiController
 {
     protected $policyClass = CoursePolicy::class;
 
-    public function index(CoursFilter $filter, Request $request)
+    public function index(CoursFilter $filter)
     {
-        $user = $request->user();
+        $userId = Auth::user()->id;
 
         return CourseResource::collection(
-            Course::where("instructure_id", $user->id)
+            Course::where("instructor_id", $userId)
             ->filter($filter)
             ->paginate()
         );
@@ -29,7 +30,7 @@ class CoursesController extends ApiController
     public function store(StoreCourseRequest $request)
     {
         $additionalAttrs = [
-            "instructure_id" => $request->user()->id,
+            "instructor_id" => $request->user()->id,
             "course_code" => Str::random(9)
         ];
 
@@ -39,7 +40,7 @@ class CoursesController extends ApiController
 
     public function show(Course $course)
     {
-        if ($this->isAble("viewCourse", $course))
+        if ($this->isAble("isBelongsToUser", $course))
         {
             $toBeIncluded = [
                 'instructor',
@@ -51,28 +52,36 @@ class CoursesController extends ApiController
                 'assignments',
                 'students'
             ];
-
+            
             $course = $this->loadRelationships($course, $toBeIncluded);
 
-            return $course;
+            return new CourseResource($course);
         }
 
         return $this->notAuthorized("NOT Authorized");
     }
 
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(Request $request, Course $course)
+    public function update(UpdateCourseRequest $request, Course $course)
     {
-        //
+        if ($this->isAble("isBelongsToUser", $course))
+        {
+            $course->update($request->mappedAttributes());
+
+            return new CourseResource($course);
+        }
+
+        return $this->notAuthorized("NOT Authorized");
     }
 
-    /**
-     * Remove the specified resource from storage.
-     */
     public function destroy(Course $course)
     {
-        //
+        if($this->isAble("isBelongsToUser", $course))
+        {
+            $course->delete();
+
+            return $this->ok('Course deleted successfully');
+        }
+
+        return $this->notAuthorized("NOT Authorized");
     }
 }

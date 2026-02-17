@@ -24,7 +24,7 @@ class CourseResource extends JsonResource
                 "courseCode" => $this->course_code ,
                 "startAt" => $this->start_at ,
                 "endAt" => $this->end_at ,
-                "instructureId" => $this->instructure_id ,
+                "instructorId" => $this->instructure_id ,
                 "assignmentPercent" => $this->assignment_percent ,
                 "quizPercent" => $this->quiz_percent ,
                 "midPercent" => $this->mid_percent ,
@@ -32,13 +32,14 @@ class CourseResource extends JsonResource
                 "createdAt" => $this->created_at,
             ],
             "included" => [
+                "instructor" => new UserResource($this->whenLoaded("instructor")),
                 "lectures" => LectureResource::collection($this->whenLoaded("lectures")),
                 "announcements" => AnnouncementResource::collection($this->whenLoaded("announcements")),
                 "discussions" => DiscussionResource::collection($this->whenLoaded("discussions")),
                 "enrollments" => EnrollmentResource::collection($this->whenLoaded("enrollments")),
                 "examinations" => ExaminationResource::collection($this->whenLoaded("examinations")),
                 "assignments" => AssignmentResource::collection($this->whenLoaded("assignments")),
-                "students" => new UserResource($this->whenLoaded("students")),
+                "students" => UserResource::collection($this->whenLoaded("students")),
             ],
             "links" => [
                 // TODO

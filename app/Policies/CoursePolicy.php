@@ -7,8 +7,8 @@ use App\Models\User;
 
 class CoursePolicy
 {
-    public function viewCourse(User $user, Course $course): bool
+    public function isBelongsToUser(User $user, Course $course): bool
     {
-        return $user->id === $course->instructure_id;
+        return $user->id === $course->instructor_id;
     }
 }

@@ -14,9 +14,13 @@ Route::middleware("auth:sanctum")->group(function () {
     // Version 1
     Route::prefix("V1")->group(function () {
 
+        // Courses
         Route::prefix("courses")->group(function () {
+            Route::get("", [CoursesController::class,"index"]);
             Route::post("/register", [CoursesController::class, "store"]);
             Route::get("/{course}", [CoursesController::class, "show"]);
+            Route::patch("/{course}", [CoursesController::class,"update"]);
+            Route::delete("/{course}", [CoursesController::class,"destroy"]);
         });
     });
 });
