@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Requests\Api\V1\Courses;
+namespace App\Http\Requests\Api\V1\Enrollments;
 
 use Illuminate\Foundation\Http\FormRequest;
 

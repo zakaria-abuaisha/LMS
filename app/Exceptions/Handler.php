@@ -82,7 +82,7 @@ class Handler extends ExceptionHandler
         $index = strrpos($className, '\\');
 
         return $this->error([
-            "type" => substr($className, $index + 1),
+            "type" => substr($className, $index),
             "status" => 0,
             "message" => $exception->getMessage(),
             "source" => "Line: " . $exception->getLine() . ": ". $exception->getFile(),

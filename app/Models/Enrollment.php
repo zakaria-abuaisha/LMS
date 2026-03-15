@@ -12,6 +12,8 @@ class Enrollment extends Model
 {
     use HasFactory;
 
+    public $timestamps = false;
+
     protected $fillable = [
         "enroll_date",
         "course_id",
@@ -19,7 +21,7 @@ class Enrollment extends Model
     ];
 
     protected $casts = [
-        "enroll_date" => 'datetime:Y-m-d',
+        "enroll_date" => 'date:Y-m-d',
     ];
 
     public function student(): BelongsTo

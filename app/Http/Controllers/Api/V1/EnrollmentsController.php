@@ -2,11 +2,12 @@
 
 namespace App\Http\Controllers\Api\V1;
 
-use App\Http\Requests\StoreEnrollmentRequest;
+use App\Http\Requests\Api\V1\Enrollments\StoreEnrollmentRequest as StoreEnrollmentRequest;
 use App\Http\Resources\V1\EnrollmentResource;
+use App\Models\Course;
 use App\Models\Enrollment;
-use Auth;
-use Illuminate\Http\Request;
+use App\Policies\EnrollmentPolicy;
+use Illuminate\Support\Facades\Auth as Auth;
 
 class EnrollmentsController extends ApiController
 {
@@ -14,11 +15,13 @@ class EnrollmentsController extends ApiController
 
     public function store(StoreEnrollmentRequest $request)
     {
+        $courseCode = $request->mappedAttributes();
         $additionalAttrs = [
             "student_id" => Auth::user()->id,
+            "course_id" => Course::select("id")->where("course_code", $courseCode)->first()->id
         ];
 
-        return new EnrollmentResource(Enrollment::create(array_merge($request->mappedAttributes(), $additionalAttrs)));
+        return new EnrollmentResource(Enrollment::create($additionalAttrs));
     }
 
     /**
@@ -33,7 +36,7 @@ class EnrollmentsController extends ApiController
                 "course"
             ];
 
-            $enrollment = $this->loadRelationships($toBeIncluded, $enrollment);
+            $enrollment = $this->loadRelationships($enrollment, $toBeIncluded);
 
             return new EnrollmentResource($enrollment);
         }
@@ -42,26 +45,17 @@ class EnrollmentsController extends ApiController
     }
 
     /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(Enrollment $enrollment)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(Request $request, Enrollment $enrollment)
-    {
-        //
-    }
-
-    /**
      * Remove the specified resource from storage.
      */
     public function destroy(Enrollment $enrollment)
     {
-        //
+        if ($this->isAble("isTheInstructor", $enrollment) || $this->isAble("isBelongsToStudent ", $enrollment)) 
+        {
+            $enrollment->delete();
+
+            return $this->ok("Enrollment Deleted Successfully");
+        }
+
+        return $this->notAuthorized("NOT Authorized");
     }
 }

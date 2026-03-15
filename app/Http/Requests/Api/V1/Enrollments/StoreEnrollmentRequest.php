@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Http\Requests;
+namespace App\Http\Requests\Api\V1\Enrollments;
 
-use App\Http\Requests\Api\V1\Courses\BaseEnrollmentRequest;
-use App\Rules\Enrollments\CheckIfInstructor;
+use App\Http\Requests\Api\V1\Enrollments\BaseEnrollmentRequest;
+use App\Rules\Enrollments\EnrollmentRules;
 
 class StoreEnrollmentRequest extends BaseEnrollmentRequest
 {
@@ -23,7 +23,7 @@ class StoreEnrollmentRequest extends BaseEnrollmentRequest
     public function rules(): array
     {
         return [
-            "data.attributes.courseCode" => ["required", "exists:courses,course_code", new CheckIfInstructor] 
+            "data.attributes.courseCode" => ["required", "exists:courses,course_code", new EnrollmentRules] 
         ];
     }
 }
