@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Api\V1;
 use App\Http\Controllers\Api\V1\ApiController;
 use App\Http\Filters\V1\AnnouncementFilter;
 use App\Http\Requests\Api\V1\Announcements\StoreAnnouncementRequest;
+use App\Http\Requests\Api\V1\Announcements\UpdateAnnouncementRequest;
 use App\Http\Resources\V1\AnnouncementResource;
 use App\Jobs\PropagateAnnouncement;
 use App\Mail\AnnouncementPosted;
@@ -32,9 +33,6 @@ class AnnouncementsController extends ApiController
         return $this->notAuthorized("NOT Authorized");
     }
 
-    /**
-     * Store a newly created resource in storage.
-     */
     public function store(StoreAnnouncementRequest $request, Course $course)
     {
         if ($this->isAble("IsForInstructor", $course)) 
@@ -55,27 +53,43 @@ class AnnouncementsController extends ApiController
         return $this->notAuthorized("NOT Authorized");
     }
 
-    /**
-     * Display the specified resource.
-     */
-    public function show(string $id)
+    public function show(Announcement $announcement)
     {
-        //
+        if ($this->isAble("IsForInstructor", $announcement->course) || $this->isAble("IsStudentEnrolled", $announcement->course))
+        {
+            $toBeIncluded = [
+                "course"
+            ];
+
+            $announcement = $this->loadRelationships($announcement, $toBeIncluded);
+            return new AnnouncementResource($announcement);
+        }
+
+        return $this->notAuthorized("NOT Authorized");
     }
 
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(Request $request, string $id)
+    public function update(UpdateAnnouncementRequest $request, Announcement $announcement)
     {
-        //
+        if ($this->isAble("IsForInstructor", $announcement->course) || $this->isAble("IsStudentEnrolled", $announcement->course))
+        {
+            $announcement->update($request->mappedAttributes($request->all()));
+            $announcement->refresh();
+
+            return new AnnouncementResource($announcement);
+        }
+
+        return $this->notAuthorized("NOT Authorized");
     }
 
-    /**
-     * Remove the specified resource from storage.
-     */
-    public function destroy(string $id)
+    public function destroy(Announcement $announcement)
     {
-        //
+        if ($this->isAble("IsForInstructor", $announcement->course))
+        {
+            $announcement->delete();
+
+            return $this->ok('Announcement deleted successfully');
+        }
+        
+        return $this->notAuthorized("NOT Authorized");
     }
 }

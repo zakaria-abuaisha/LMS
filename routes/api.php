@@ -23,6 +23,10 @@ Route::middleware("auth:sanctum")->group(function () {
             Route::get("/{course}", [CoursesController::class, "show"]);
             Route::patch("/{course}", [CoursesController::class,"update"]);
             Route::delete("/{course}", [CoursesController::class,"destroy"]);
+
+            // Announcements
+            Route::get("/{course}/announcements", [AnnouncementsController::class,"index"]);
+            Route::post("/{course}/announcements/register", [AnnouncementsController::class, "store"]);
         });
 
         // Enrollments
@@ -33,9 +37,9 @@ Route::middleware("auth:sanctum")->group(function () {
         });
 
         // Course Announcements
-        Route::prefix("courseAnnouncement")->group(function () {
-            Route::get("/{course}", [AnnouncementsController::class,"index"]);
-            Route::post("/{course}/register", [AnnouncementsController::class, "store"]);
+        Route::prefix("announcements")->group(function () {
+            Route::get("/{announcement}", [AnnouncementsController::class, "show"]);
+            Route::patch("/{announcement}", [AnnouncementsController::class,"update"]);
             Route::delete("/{announcement}", [AnnouncementsController::class,"destroy"]);
         });
 
