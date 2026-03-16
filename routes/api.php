@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Api\AuthController;
+use App\Http\Controllers\Api\V1\AnnouncementsController;
 use App\Http\Controllers\Api\V1\CoursesController;
 use App\Http\Controllers\Api\V1\EnrollmentsController;
 use Illuminate\Support\Facades\Route;
@@ -30,5 +31,13 @@ Route::middleware("auth:sanctum")->group(function () {
             Route::get("/{enrollment}", [EnrollmentsController::class,"show"]);
             Route::delete("/{enrollment}", [EnrollmentsController::class,"destroy"]);
         });
+
+        // Course Announcements
+        Route::prefix("courseAnnouncement")->group(function () {
+            Route::get("/{course}", [AnnouncementsController::class,"index"]);
+            Route::post("/{course}/register", [AnnouncementsController::class, "store"]);
+            Route::delete("/{announcement}", [AnnouncementsController::class,"destroy"]);
+        });
+
     });
 });

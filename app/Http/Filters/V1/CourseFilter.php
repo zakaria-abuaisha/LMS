@@ -4,7 +4,7 @@ namespace App\Http\Filters\V1;
 
 use App\Http\Filters\V1\QueryFilter;
 
-class CoursFilter extends QueryFilter
+class CourseFilter extends QueryFilter
 {
     protected $sortable = [
         "course_name" => "self",

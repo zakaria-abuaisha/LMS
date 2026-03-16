@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers\Api\V1;
 
-use App\Http\Filters\V1\CoursFilter;
+use App\Http\Filters\V1\CourseFilter;
 use App\Http\Requests\Api\V1\Courses\StoreCourseRequest;
 use App\Http\Requests\Api\V1\Courses\UpdateCourseRequest;
 use App\Http\Resources\V1\CourseResource;
@@ -16,7 +16,7 @@ class CoursesController extends ApiController
 {
     protected $policyClass = CoursePolicy::class;
 
-    public function index(CoursFilter $filter)
+    public function index(CourseFilter $filter)
     {
         $userId = Auth::user()->id;
 
