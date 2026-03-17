@@ -27,8 +27,11 @@ class LecturesController extends ApiController
     {
         if ($this->authorize("IsForInstructor", $course))
         {
+            $fileName = $request->file("lectureFile")->getClientOriginalName();
+            
             $additionalAttributes = [
                 "course_id" => $course->id,
+                "name" => $fileName
             ];
 
             return new LectureResource(Lecture::create($request->mappedAttributes($additionalAttributes)));

@@ -10,9 +10,6 @@ use Illuminate\Support\Facades\Route;
 Route::post('/login', [AuthController::class, 'login']);
 Route::post('/register', [AuthController::class, 'register']);
 
-Route::get("/download/{lecture}", [LecturesController::class, "downloadLectureFile"]);
-
-
 Route::middleware("auth:sanctum")->group(function () {
     // Logout
     Route::post("/logout", [AuthController::class,"logout"]);

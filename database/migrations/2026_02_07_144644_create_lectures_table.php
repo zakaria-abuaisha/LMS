@@ -13,6 +13,7 @@ return new class extends Migration
     {
         Schema::create('lectures', function (Blueprint $table) {
             $table->id();
+            $table->string("name");
             $table->string("path");
             $table->foreignId('course_id')
                 ->constrained(table: 'courses', indexName: 'id')

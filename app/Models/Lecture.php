@@ -13,6 +13,7 @@ class Lecture extends Model
     use HasFactory;
 
     protected $fillable = [
+        "name",
         "path",
         "course_id"
     ];

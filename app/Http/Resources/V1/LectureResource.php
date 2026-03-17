@@ -18,6 +18,7 @@ class LectureResource extends JsonResource
             "type" => "lecture",
             "id" => $this->id,
             "data" => [
+                "name" => $this->name,
                 "path" => $this->path,
                 "courseId" => $this->course_id,
                 "createdAt" => $this->created_at,
