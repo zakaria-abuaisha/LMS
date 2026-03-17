@@ -8,17 +8,13 @@ use App\Http\Requests\Api\V1\Announcements\StoreAnnouncementRequest;
 use App\Http\Requests\Api\V1\Announcements\UpdateAnnouncementRequest;
 use App\Http\Resources\V1\AnnouncementResource;
 use App\Jobs\PropagateAnnouncement;
-use App\Mail\AnnouncementPosted;
 use App\Models\Announcement;
 use App\Models\Course;
-use App\Policies\CourseAnnouncementPolicy;
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Mail;
+use App\Policies\CoursePolicy;
 
 class AnnouncementsController extends ApiController
 {
-    protected $policyClass = CourseAnnouncementPolicy::class;
+    protected $policyClass = CoursePolicy::class;
 
     public function index(Course $course, AnnouncementFilter $filter)
     {
@@ -57,6 +53,7 @@ class AnnouncementsController extends ApiController
     {
         if ($this->isAble("IsForInstructor", $announcement->course) || $this->isAble("IsStudentEnrolled", $announcement->course))
         {
+            $announcement->unsetRelation("course");
             $toBeIncluded = [
                 "course"
             ];

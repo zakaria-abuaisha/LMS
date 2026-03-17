@@ -4,10 +4,14 @@ use App\Http\Controllers\Api\AuthController;
 use App\Http\Controllers\Api\V1\AnnouncementsController;
 use App\Http\Controllers\Api\V1\CoursesController;
 use App\Http\Controllers\Api\V1\EnrollmentsController;
+use App\Http\Controllers\Api\V1\LecturesController;
 use Illuminate\Support\Facades\Route;
 
 Route::post('/login', [AuthController::class, 'login']);
 Route::post('/register', [AuthController::class, 'register']);
+
+Route::get("/download/{lecture}", [LecturesController::class, "downloadLectureFile"]);
+
 
 Route::middleware("auth:sanctum")->group(function () {
     // Logout
@@ -27,6 +31,11 @@ Route::middleware("auth:sanctum")->group(function () {
             // Announcements
             Route::get("/{course}/announcements", [AnnouncementsController::class,"index"]);
             Route::post("/{course}/announcements/register", [AnnouncementsController::class, "store"]);
+
+            // Lectures
+            Route::get("/{course}/lectures", [LecturesController::class,"index"]);
+            Route::post("/{course}/lectures/register", [LecturesController::class,"store"]);
+
         });
 
         // Enrollments
@@ -41,6 +50,13 @@ Route::middleware("auth:sanctum")->group(function () {
             Route::get("/{announcement}", [AnnouncementsController::class, "show"]);
             Route::patch("/{announcement}", [AnnouncementsController::class,"update"]);
             Route::delete("/{announcement}", [AnnouncementsController::class,"destroy"]);
+        });
+
+        // Course Lectures
+        Route::prefix("lectures")->group(function () {
+            Route::get("/{lecture}", [LecturesController::class, "show"]);
+            Route::get("/download/{lecture}", [LecturesController::class, "downloadLectureFile"]);
+            Route::delete("/{lecture}", [LecturesController::class,"destroy"]);
         });
 
     });

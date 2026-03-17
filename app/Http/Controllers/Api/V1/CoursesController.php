@@ -40,7 +40,7 @@ class CoursesController extends ApiController
 
     public function show(Course $course)
     {
-        if ($this->isAble("isBelongsToUser", $course))
+        if ($this->isAble("IsForInstructor", $course) || $this->isAble("IsStudentEnrolled", $course))
         {
             $toBeIncluded = [
                 'instructor',
@@ -63,7 +63,7 @@ class CoursesController extends ApiController
 
     public function update(UpdateCourseRequest $request, Course $course)
     {
-        if ($this->isAble("isBelongsToUser", $course))
+        if ($this->isAble("IsForInstructor", $course))
         {
             $course->update($request->mappedAttributes());
 
@@ -75,7 +75,7 @@ class CoursesController extends ApiController
 
     public function destroy(Course $course)
     {
-        if($this->isAble("isBelongsToUser", $course))
+        if($this->isAble("IsForInstructor", $course))
         {
             $course->delete();
 

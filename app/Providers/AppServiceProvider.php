@@ -4,6 +4,7 @@ namespace App\Providers;
 
 use App\Models\Course;
 use App\Policies\CourseAnnouncementPolicy;
+use App\Policies\CourseLecturePolicy;
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\ServiceProvider;
 
@@ -22,7 +23,5 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        // Must Be registed
-        Gate::policy(Course::class, CourseAnnouncementPolicy::class);
     }
 }
