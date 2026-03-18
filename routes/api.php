@@ -3,6 +3,7 @@
 use App\Http\Controllers\Api\AuthController;
 use App\Http\Controllers\Api\V1\AnnouncementsController;
 use App\Http\Controllers\Api\V1\CoursesController;
+use App\Http\Controllers\Api\V1\DiscussionsController;
 use App\Http\Controllers\Api\V1\EnrollmentsController;
 use App\Http\Controllers\Api\V1\LecturesController;
 use Illuminate\Support\Facades\Route;
@@ -33,6 +34,10 @@ Route::middleware("auth:sanctum")->group(function () {
             Route::get("/{course}/lectures", [LecturesController::class,"index"]);
             Route::post("/{course}/lectures/register", [LecturesController::class,"store"]);
 
+            // Discussions
+            Route::get("/{course}/discussions", [DiscussionsController::class,"index"]);
+            Route::post("/{course}/discussions/register", [DiscussionsController::class,"store"]);
+
         });
 
         // Enrollments
@@ -54,6 +59,13 @@ Route::middleware("auth:sanctum")->group(function () {
             Route::get("/{lecture}", [LecturesController::class, "show"]);
             Route::get("/download/{lecture}", [LecturesController::class, "downloadLectureFile"]);
             Route::delete("/{lecture}", [LecturesController::class,"destroy"]);
+        });
+
+        // Course Discussions
+        Route::prefix("discussions")->group(function () {
+            Route::get("/{discussion}", [DiscussionsController::class, "show"]);
+            Route::patch("/{discussion}", [DiscussionsController::class, "update"]);
+            Route::delete("/{discussion}", [DiscussionsController::class,"destroy"]);
         });
 
     });

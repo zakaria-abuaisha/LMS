@@ -26,11 +26,6 @@ class BaseCourseRequest extends FormRequest
         foreach ($attributeMap as $key => $attribute) {
             if ($this->has($key)) {
                 $value = $this->input($key);
-
-                if($attribute === 'password')
-                {
-                    $value = bcrypt($value);
-                }
                 $attributesToUpdate[$attribute] = $value;
             }
         }

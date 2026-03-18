@@ -1,11 +1,8 @@
 <?php
 
-namespace App\Http\Requests\Api\V1\Lectures;
+namespace App\Http\Requests\Api\V1\Discussions;
 
-use App\Http\Requests\Api\V1\Lectures\BaseLectureRequest;
-use Illuminate\Foundation\Http\FormRequest;
-
-class StoreLectureRequest extends BaseLectureRequest
+class UpdateDiscussionsRequest extends BaseDiscussionsRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -23,7 +20,7 @@ class StoreLectureRequest extends BaseLectureRequest
     public function rules(): array
     {
         return [
-            "lectureFile" => ["required","file", "mimes:pdf,docx,zip","max:20000"], // 20 MB
+            'data.attributes.content' => ["sometimes", "string", "max:5000"],
         ];
     }
 }

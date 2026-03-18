@@ -3,8 +3,10 @@
 namespace App\Providers;
 
 use App\Models\Course;
+use App\Models\Discussion;
 use App\Policies\CourseAnnouncementPolicy;
 use App\Policies\CourseLecturePolicy;
+use App\Policies\UserPolicy;
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\ServiceProvider;
 
@@ -23,5 +25,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
+        Gate::policy(Course::class, UserPolicy::class);
+        Gate::policy(Discussion::class, UserPolicy::class);
     }
 }
