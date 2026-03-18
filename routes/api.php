@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Api\AuthController;
 use App\Http\Controllers\Api\V1\AnnouncementsController;
+use App\Http\Controllers\Api\V1\CommentController;
 use App\Http\Controllers\Api\V1\CoursesController;
 use App\Http\Controllers\Api\V1\DiscussionsController;
 use App\Http\Controllers\Api\V1\EnrollmentsController;
@@ -66,7 +67,17 @@ Route::middleware("auth:sanctum")->group(function () {
             Route::get("/{discussion}", [DiscussionsController::class, "show"]);
             Route::patch("/{discussion}", [DiscussionsController::class, "update"]);
             Route::delete("/{discussion}", [DiscussionsController::class,"destroy"]);
+
+            // Comments
+            Route::get("/{discussion}/comments", [CommentController::class,"index"]);
+            Route::post("/{discussion}/comments/register", [CommentController::class,"store"]);
         });
 
+        // Discussion Comments
+        Route::prefix("comments")->group(function () {
+            Route::get("/{comment}", [CommentController::class, "show"]);
+            Route::patch("/{comment}", [CommentController::class, "update"]);
+            Route::delete("/{comment}", [CommentController::class,"destroy"]);
+        });
     });
 });

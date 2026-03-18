@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use App\Models\Comment;
 use App\Models\Course;
 use App\Models\Discussion;
 use App\Policies\CourseAnnouncementPolicy;
@@ -27,5 +28,6 @@ class AppServiceProvider extends ServiceProvider
     {
         Gate::policy(Course::class, UserPolicy::class);
         Gate::policy(Discussion::class, UserPolicy::class);
+        Gate::policy(Comment::class, UserPolicy::class);
     }
 }

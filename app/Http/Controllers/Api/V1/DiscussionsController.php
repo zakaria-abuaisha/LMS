@@ -80,7 +80,7 @@ class DiscussionsController extends ApiController
 
     public function destroy(Discussion $discussion)
     {
-        if( $this->isAble("DiscussionBelongToUser", $discussion) )
+        if($this->isAble("IsForInstructor", $discussion->course) || $this->isAble("DiscussionBelongToUser", $discussion))
         {
             $discussion->delete();
 
