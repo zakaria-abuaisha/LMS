@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Api\AuthController;
 use App\Http\Controllers\Api\V1\AnnouncementsController;
+use App\Http\Controllers\Api\V1\AssignmentController;
 use App\Http\Controllers\Api\V1\CommentController;
 use App\Http\Controllers\Api\V1\CoursesController;
 use App\Http\Controllers\Api\V1\DiscussionsController;
@@ -39,6 +40,9 @@ Route::middleware("auth:sanctum")->group(function () {
             Route::get("/{course}/discussions", [DiscussionsController::class,"index"]);
             Route::post("/{course}/discussions/register", [DiscussionsController::class,"store"]);
 
+            // Assignemtns 
+            Route::get("/{course}/assignments", [AssignmentController::class,"index"]);
+            Route::post("/{course}/assignments/register", [AssignmentController::class,"store"]);
         });
 
         // Enrollments
@@ -71,6 +75,13 @@ Route::middleware("auth:sanctum")->group(function () {
             // Comments
             Route::get("/{discussion}/comments", [CommentController::class,"index"]);
             Route::post("/{discussion}/comments/register", [CommentController::class,"store"]);
+        });
+
+        // Course Assignments
+        Route::prefix("assignments")->group(function () {
+            Route::get("/{assignment}", [AssignmentController::class,"show"]);
+            Route::patch("/{assignment}", [AssignmentController::class,"update"]);
+            Route::delete("/{assignment}", [AssignmentController::class,"destroy"]);
         });
 
         // Discussion Comments

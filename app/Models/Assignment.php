@@ -17,7 +17,7 @@ class Assignment extends Model
         "subject",
         "content",
         "course_id",
-        due_date
+        "due_date"
     ];
 
     public function course() : BelongsTo
