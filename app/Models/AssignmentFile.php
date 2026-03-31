@@ -15,6 +15,8 @@ class AssignmentFile extends Model
         "assignment_id"
     ];
 
+    public $timestamps = false;
+
     public function assignment(): BelongsTo
     {
         return $this->belongsTo(Assignment::class);

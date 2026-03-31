@@ -3,6 +3,7 @@
 use App\Http\Controllers\Api\AuthController;
 use App\Http\Controllers\Api\V1\AnnouncementsController;
 use App\Http\Controllers\Api\V1\AssignmentController;
+use App\Http\Controllers\Api\V1\AssignmentFileController;
 use App\Http\Controllers\Api\V1\CommentController;
 use App\Http\Controllers\Api\V1\CoursesController;
 use App\Http\Controllers\Api\V1\DiscussionsController;
@@ -82,6 +83,17 @@ Route::middleware("auth:sanctum")->group(function () {
             Route::get("/{assignment}", [AssignmentController::class,"show"]);
             Route::patch("/{assignment}", [AssignmentController::class,"update"]);
             Route::delete("/{assignment}", [AssignmentController::class,"destroy"]);
+
+            // Files
+            Route::get("/{assignment}/assignmentFiles", [AssignmentFileController::class, "index"]);
+            Route::post("/{assignment}/assignmentFiles/register", [AssignmentFileController::class, "store"]);
+        });
+
+        // Assignment Files
+        Route::prefix("assignmentFiles")->group(function () {
+            Route::get("/{assignmentFile}", [AssignmentFileController::class, "show"]);
+            Route::get("/download/{assignmentFile}", [AssignmentFileController::class, "downloadAssignmentFile"]);
+            Route::delete("/{assignmentFile}", [AssignmentFileController::class,"destroy"]);
         });
 
         // Discussion Comments

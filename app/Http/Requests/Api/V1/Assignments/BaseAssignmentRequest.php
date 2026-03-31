@@ -9,7 +9,7 @@ class BaseAssignmentRequest extends FormRequest
     public function mappedAttributes(array $otherAttributes = []): array
     {
         $attributeMap = [
-                'data.attributes.subject' => 'title',
+                'data.attributes.subject' => 'subject',
                 'data.attributes.content' => 'content',
                 'data.attributes.dueDate' => 'due_date',
             ];
