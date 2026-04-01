@@ -6,6 +6,7 @@ use App\Http\Filters\V1\AssignmentFilter;
 use App\Http\Requests\Api\V1\Assignments\StoreAssignmentRequest;
 use App\Http\Requests\Api\V1\Assignments\UpdateAssignmentRequest;
 use App\Http\Resources\V1\AssignmentResource;
+use App\Jobs\PropagateAssignment;
 use App\Models\Assignment;
 use App\Models\Course;
 use App\Policies\UserPolicy;
@@ -56,13 +57,17 @@ class AssignmentController extends ApiController
                 "course_id" => $course->id,
             ];
 
+            $assignment = Assignment::create($request->mappedAttributes($additionalAttributes));
+
+            PropagateAssignment::dispatch($course, $assignment);
+
             return new AssignmentResource(
-                Assignment::create($request->mappedAttributes($additionalAttributes))
+                $assignment
             );
         }
         return $this->notAuthorized("NOT Authorized");
     }
-
+    
     public function update(UpdateAssignmentRequest $request, Assignment $assignment)
     {
         if ($this->isAble("IsForInstructor", $assignment->course))

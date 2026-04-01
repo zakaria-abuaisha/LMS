@@ -8,10 +8,6 @@ class BaseAssignmentFileRequest extends FormRequest
 {
     public function mappedAttributes(): array
     {
-        $attributeMap = [
-                'lectureFile' => 'path',
-            ];
-
         $attributesToStore = [];
         if ($this->hasFile("assignmentFile"))
         {
