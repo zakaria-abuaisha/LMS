@@ -6,6 +6,7 @@ use App\Http\Filters\V1\AssignmentFilter;
 use App\Http\Requests\Api\V1\Assignments\StoreAssignmentRequest;
 use App\Http\Requests\Api\V1\Assignments\UpdateAssignmentRequest;
 use App\Http\Resources\V1\AssignmentResource;
+use App\Jobs\DeleteAssignmentFiles;
 use App\Jobs\PropagateAssignment;
 use App\Models\Assignment;
 use App\Models\Course;
@@ -84,6 +85,8 @@ class AssignmentController extends ApiController
     {
         if ($this->isAble("IsForInstructor", $assignment->course))
         {
+            $filesPaths = $assignment->files->pluck("path")->toArray();
+            DeleteAssignmentFiles::dispatch($filesPaths);
             $assignment->delete();
 
             return $this->ok('Assignment deleted successfully');
