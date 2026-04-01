@@ -9,6 +9,7 @@ use App\Http\Controllers\Api\V1\CoursesController;
 use App\Http\Controllers\Api\V1\DiscussionsController;
 use App\Http\Controllers\Api\V1\EnrollmentsController;
 use App\Http\Controllers\Api\V1\LecturesController;
+use App\Http\Controllers\Api\V1\SubmissionsController;
 use Illuminate\Support\Facades\Route;
 
 Route::post('/login', [AuthController::class, 'login']);
@@ -87,6 +88,15 @@ Route::middleware("auth:sanctum")->group(function () {
             // Files
             Route::get("/{assignment}/assignmentFiles", [AssignmentFileController::class, "index"]);
             Route::post("/{assignment}/assignmentFiles/register", [AssignmentFileController::class, "store"]);
+
+            // Submissions
+            Route::get("/{assignment}/submissions", [SubmissionsController::class, "index"]);
+        });
+
+        // Assignment Submission
+        Route::prefix("submissions")->group(function () {
+            Route::get("/{submission}", [SubmissionsController::class, "show"]);
+            Route::patch("/grade/{submission}", [SubmissionsController::class, "grade"]);
         });
 
         // Assignment Files
