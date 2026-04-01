@@ -9,6 +9,7 @@ use App\Http\Controllers\Api\V1\CoursesController;
 use App\Http\Controllers\Api\V1\DiscussionsController;
 use App\Http\Controllers\Api\V1\EnrollmentsController;
 use App\Http\Controllers\Api\V1\LecturesController;
+use App\Http\Controllers\Api\V1\StudentSubmissionController;
 use App\Http\Controllers\Api\V1\SubmissionsController;
 use Illuminate\Support\Facades\Route;
 
@@ -91,12 +92,18 @@ Route::middleware("auth:sanctum")->group(function () {
 
             // Submissions
             Route::get("/{assignment}/submissions", [SubmissionsController::class, "index"]);
+            Route::post("/studentSubmission/{assignment}", [StudentSubmissionController::class, "store"]);
+
         });
 
         // Assignment Submission
         Route::prefix("submissions")->group(function () {
             Route::get("/{submission}", [SubmissionsController::class, "show"]);
             Route::patch("/grade/{submission}", [SubmissionsController::class, "grade"]);
+
+            // Assignment Submissions For Student
+            Route::get("/studentSubmission/{submission}", [StudentSubmissionController::class, "show"]);
+            Route::delete("/studentSubmission/{submission}", [StudentSubmissionController::class, "destroy"]);
         });
 
         // Assignment Files

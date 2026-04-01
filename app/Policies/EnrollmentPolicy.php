@@ -13,9 +13,8 @@ class EnrollmentPolicy
         return $user->id === $enrollment->student_id;
     }
 
-    public function isTheInstructor(User $user, Enrollment $enrollment): bool
+    public function isTheInstructor(User $user, Course $course): bool
     {
-        $courseInstructorId = Course::find($enrollment->course_id)->first()->instructor_id;
-        return $courseInstructorId === $user->id;
+        return $course->instructor_id === $user->id;
     }
 }

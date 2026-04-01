@@ -49,7 +49,7 @@ class EnrollmentsController extends ApiController
      */
     public function destroy(Enrollment $enrollment)
     {
-        if ($this->isAble("isTheInstructor", $enrollment) || $this->isAble("isBelongsToStudent ", $enrollment)) 
+        if ($this->isAble("isTheInstructor", $enrollment->course) || $this->isAble("isBelongsToStudent ", $enrollment)) 
         {
             $enrollment->delete();
 
