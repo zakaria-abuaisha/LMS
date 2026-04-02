@@ -63,8 +63,6 @@ class AssignmentFileController extends ApiController
 
             $filePath = storage_path("app/public/" . $assignmentFile->path);
 
-            $filename = basename($assignmentFile->path);
-
             return response()->download($filePath);
         }
         

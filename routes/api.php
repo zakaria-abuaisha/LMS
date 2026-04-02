@@ -10,6 +10,7 @@ use App\Http\Controllers\Api\V1\DiscussionsController;
 use App\Http\Controllers\Api\V1\EnrollmentsController;
 use App\Http\Controllers\Api\V1\LecturesController;
 use App\Http\Controllers\Api\V1\StudentSubmissionController;
+use App\Http\Controllers\Api\V1\SubmissionFilesController;
 use App\Http\Controllers\Api\V1\SubmissionsController;
 use Illuminate\Support\Facades\Route;
 
@@ -92,7 +93,7 @@ Route::middleware("auth:sanctum")->group(function () {
 
             // Submissions
             Route::get("/{assignment}/submissions", [SubmissionsController::class, "index"]);
-            Route::post("/studentSubmission/{assignment}", [StudentSubmissionController::class, "store"]);
+            Route::post("/{assignment}/studentSubmission/register", [StudentSubmissionController::class, "store"]);
 
         });
 
@@ -102,8 +103,20 @@ Route::middleware("auth:sanctum")->group(function () {
             Route::patch("/grade/{submission}", [SubmissionsController::class, "grade"]);
 
             // Assignment Submissions For Student
-            Route::get("/studentSubmission/{submission}", [StudentSubmissionController::class, "show"]);
-            Route::delete("/studentSubmission/{submission}", [StudentSubmissionController::class, "destroy"]);
+            Route::get("/{submission}/studentSubmission", [StudentSubmissionController::class, "show"]);
+            Route::delete("/{submission}/studentSubmission", [StudentSubmissionController::class, "destroy"]);
+
+            // Submission Files 
+            Route::get("/{submission}/submissionFile", [SubmissionFilesController::class, "index"]);
+            Route::post("/{submission}/submissionFile/register", [SubmissionFilesController::class, "store"]);
+        });
+
+        // Submission Files
+        Route::prefix("submissionFile")->group(function () {
+            Route::get("/{submissionFile}", [SubmissionFilesController::class, "show"]);
+            Route::get("/download/{submissionFile}", [SubmissionFilesController::class,"downloadSubmissionFile"]);
+            Route::delete("/{submissionFile}", [SubmissionFilesController::class, "destroy"]);
+
         });
 
         // Assignment Files
