@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Enums\ExaminationType;
 use App\Http\Filters\V1\QueryFilter;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
@@ -17,6 +18,10 @@ class Examination extends Model
         "grade",
         "course_id",
         "student_id"
+    ];
+
+    protected $casts = [
+        "type" => ExaminationType::class
     ];
 
     public function course(): BelongsTo

@@ -8,6 +8,7 @@ use App\Http\Controllers\Api\V1\CommentController;
 use App\Http\Controllers\Api\V1\CoursesController;
 use App\Http\Controllers\Api\V1\DiscussionsController;
 use App\Http\Controllers\Api\V1\EnrollmentsController;
+use App\Http\Controllers\Api\V1\ExaminationsController;
 use App\Http\Controllers\Api\V1\LecturesController;
 use App\Http\Controllers\Api\V1\StudentSubmissionController;
 use App\Http\Controllers\Api\V1\SubmissionFilesController;
@@ -47,6 +48,17 @@ Route::middleware("auth:sanctum")->group(function () {
             // Assignemtns 
             Route::get("/{course}/assignments", [AssignmentController::class,"index"]);
             Route::post("/{course}/assignments/register", [AssignmentController::class,"store"]);
+
+            // Examinations
+            Route::get("/{course}/examinations", [ExaminationsController::class,"index"]);
+            Route::post("/{course}/examinations/student/{user}", [ExaminationsController::class,"store"]);
+        });
+
+        // Examinations
+        Route::prefix("examinations")->group(function () {
+            Route::get("/{examinations}", [ExaminationsController::class,"show"]);
+            Route::patch("/{examinations}", [ExaminationsController::class,"update"]);
+            Route::delete("/{examinations}", [ExaminationsController::class,"destroy"]);
         });
 
         // Enrollments
@@ -116,7 +128,6 @@ Route::middleware("auth:sanctum")->group(function () {
             Route::get("/{submissionFile}", [SubmissionFilesController::class, "show"]);
             Route::get("/download/{submissionFile}", [SubmissionFilesController::class,"downloadSubmissionFile"]);
             Route::delete("/{submissionFile}", [SubmissionFilesController::class, "destroy"]);
-
         });
 
         // Assignment Files
