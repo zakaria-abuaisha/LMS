@@ -10,6 +10,7 @@ use App\Http\Controllers\Api\V1\DiscussionsController;
 use App\Http\Controllers\Api\V1\EnrollmentsController;
 use App\Http\Controllers\Api\V1\ExaminationsController;
 use App\Http\Controllers\Api\V1\LecturesController;
+use App\Http\Controllers\Api\V1\StudentExaminationsController;
 use App\Http\Controllers\Api\V1\StudentSubmissionController;
 use App\Http\Controllers\Api\V1\SubmissionFilesController;
 use App\Http\Controllers\Api\V1\SubmissionsController;
@@ -52,7 +53,17 @@ Route::middleware("auth:sanctum")->group(function () {
             // Examinations
             Route::get("/{course}/examinations", [ExaminationsController::class,"index"]);
             Route::post("/{course}/examinations/student/{user}", [ExaminationsController::class,"store"]);
+
+            // Student Examination
+            Route::get("/{course}/studentExaminations", [StudentExaminationsController::class,"index"]);
+            
         });
+
+        // Student Examination
+        Route::prefix("studentExaminations")->group(function () {
+            Route::get("/{examinations}", [StudentExaminationsController::class,"show"]);
+         });
+
 
         // Examinations
         Route::prefix("examinations")->group(function () {
