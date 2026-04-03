@@ -1,8 +1,10 @@
 <?php
-
 namespace App\Models;
 
 use App\Http\Filters\V1\QueryFilter;
+use App\Models\Assignment;
+use App\Models\SubmissionFile;
+use App\Models\User;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
@@ -27,7 +29,7 @@ class Submission extends Model
 
     public function student(): BelongsTo
     {
-        return $this->belongsTo(user::class);
+        return $this->belongsTo(User::class);
     }
 
     public function files(): HasMany

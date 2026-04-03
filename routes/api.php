@@ -11,6 +11,7 @@ use App\Http\Controllers\Api\V1\EnrollmentsController;
 use App\Http\Controllers\Api\V1\ExaminationsController;
 use App\Http\Controllers\Api\V1\LecturesController;
 use App\Http\Controllers\Api\V1\StudentExaminationsController;
+use App\Http\Controllers\Api\V1\StudentStatisticsController;
 use App\Http\Controllers\Api\V1\StudentSubmissionController;
 use App\Http\Controllers\Api\V1\SubmissionFilesController;
 use App\Http\Controllers\Api\V1\SubmissionsController;
@@ -33,6 +34,9 @@ Route::middleware("auth:sanctum")->group(function () {
             Route::get("/{course}", [CoursesController::class, "show"]);
             Route::patch("/{course}", [CoursesController::class,"update"]);
             Route::delete("/{course}", [CoursesController::class,"destroy"]);
+
+            // Student Statistics
+            Route::get("/{course}/stats", [StudentStatisticsController::class,"index"]);
 
             // Announcements
             Route::get("/{course}/announcements", [AnnouncementsController::class,"index"]);
