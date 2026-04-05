@@ -7,14 +7,24 @@ use App\Http\Requests\Api\V1\Users\LoginUserRequest;
 use App\Http\Requests\Api\V1\Users\RegisterUserRequest;
 use App\Models\User;    
 use App\Traits\ApiResponses;
-use Auth;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 
 class AuthController extends Controller
 {
     use ApiResponses;
 
+    /**
+     * Login
+     * 
+     * Authenticates the user and returns the user's API token.
+     * 
+     * @unauthenticated
+     * @group Authentication
+     * @response 200 {"data": { "token": "{YOUR_AUTH_KEY}"}, "message": "Authenticated", "status": 200 }
+     * @response 401 {"message": "Invalid Email or Password.", "status": 401 }
+     */
     public function login(LoginUserRequest $request)
     {
         $request->validated($request->all());
@@ -35,12 +45,29 @@ class AuthController extends Controller
             ]);
     }
 
+    /**
+     * Logout
+     * 
+     * Signs out the user and destroys the API token.
+     * 
+     * @group Authentication
+     * @response 200 {"message": "Logged Out Successfully", "status": 200 }
+     */
     public function logout(Request $request)
     {
         $request->user()->currentAccessToken()->delete();
         return $this->ok('Logged Out Successfully');
     }
 
+    /**
+     * Register
+     * 
+     * Signs up a new user and directly returns the user's API token.
+     * 
+     * @unauthenticated
+     * @group Authentication
+     * @response 200 {"data": { "token": "{YOUR_AUTH_KEY}"}, "message": "Authenticated", "status": 200 }
+     */
     public function register(RegisterUserRequest $request)
     {
         $attributes = $request->validated();

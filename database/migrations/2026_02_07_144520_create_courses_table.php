@@ -19,7 +19,7 @@ return new class extends Migration
             $table->dateTime("start_at");
             $table->dateTime("end_at");
             $table->foreignId('instructor_id')
-                ->constrained(table: 'users', indexName: 'id')
+                ->constrained('users')
                 ->cascadeOnDelete()
                 ->cascadeOnUpdate();
             $table->smallInteger("assignment_percent");

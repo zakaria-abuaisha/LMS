@@ -17,7 +17,7 @@ use App\Http\Controllers\Api\V1\SubmissionFilesController;
 use App\Http\Controllers\Api\V1\SubmissionsController;
 use Illuminate\Support\Facades\Route;
 
-Route::post('/login', [AuthController::class, 'login']);
+Route::post('/login', [AuthController::class, 'login'])->name('login');;
 Route::post('/register', [AuthController::class, 'register']);
 
 Route::middleware("auth:sanctum")->group(function () {

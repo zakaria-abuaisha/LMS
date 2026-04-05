@@ -15,11 +15,11 @@ return new class extends Migration
             $table->id();
             $table->string("content");
             $table->foreignId('discussion_id')
-                ->constrained(table: 'discussions', indexName: 'id')
+                ->constrained("discussions")
                 ->cascadeOnDelete()
                 ->cascadeOnUpdate();
             $table->foreignId('user_id')
-                ->constrained(table: 'users', indexName: 'id')
+                ->constrained("users")
                 ->cascadeOnDelete()
                 ->cascadeOnUpdate();
             $table->timestamps();

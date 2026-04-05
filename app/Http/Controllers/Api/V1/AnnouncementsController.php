@@ -10,11 +10,11 @@ use App\Http\Resources\V1\AnnouncementResource;
 use App\Jobs\PropagateAnnouncement;
 use App\Models\Announcement;
 use App\Models\Course;
-use App\Policies\CoursePolicy;
+use App\Policies\UserPolicy;
 
 class AnnouncementsController extends ApiController
 {
-    protected $policyClass = CoursePolicy::class;
+    protected $policyClass = UserPolicy::class;
 
     public function index(Course $course, AnnouncementFilter $filter)
     {

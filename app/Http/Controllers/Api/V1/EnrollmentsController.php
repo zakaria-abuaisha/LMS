@@ -6,12 +6,12 @@ use App\Http\Requests\Api\V1\Enrollments\StoreEnrollmentRequest as StoreEnrollme
 use App\Http\Resources\V1\EnrollmentResource;
 use App\Models\Course;
 use App\Models\Enrollment;
-use App\Policies\EnrollmentPolicy;
+use App\Policies\UserPolicy;
 use Illuminate\Support\Facades\Auth as Auth;
 
 class EnrollmentsController extends ApiController
 {
-    protected $policyClass = EnrollmentPolicy::class;
+    protected $policyClass = UserPolicy::class;
 
     public function store(StoreEnrollmentRequest $request)
     {
@@ -29,7 +29,7 @@ class EnrollmentsController extends ApiController
      */
     public function show(Enrollment $enrollment)
     {
-        if ($this->isAble("isBelongsToStudent", $enrollment)) 
+        if ($this->isAble("IsEnrollmentBelongsToStudent", $enrollment)) 
         {
             $toBeIncluded = [
                 "student",
@@ -49,7 +49,7 @@ class EnrollmentsController extends ApiController
      */
     public function destroy(Enrollment $enrollment)
     {
-        if ($this->isAble("isTheInstructor", $enrollment->course) || $this->isAble("isBelongsToStudent ", $enrollment)) 
+        if ($this->isAble("IsForInstructor", $enrollment->course) || $this->isAble("IsEnrollmentBelongsToStudent ", $enrollment)) 
         {
             $enrollment->delete();
 

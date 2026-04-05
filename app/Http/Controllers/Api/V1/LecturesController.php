@@ -6,16 +6,16 @@ use App\Http\Requests\Api\V1\Lectures\StoreLectureRequest;
 use App\Http\Resources\V1\LectureResource;
 use App\Models\Course;
 use App\Models\Lecture;
-use App\Policies\CoursePolicy;
+use App\Policies\UserPolicy;
 use Illuminate\Support\Facades\Storage;
 
 class LecturesController extends ApiController
 {
-    protected $policyClass = CoursePolicy::class;
+    protected $policyClass = UserPolicy::class;
 
     public function index(Course $course)
     {
-        if ($this->authorize("IsForInstructor", $course) || $this->authorize("IsStudentEnrolled", $course)) 
+        if ($this->isAble("IsForInstructor", $course) || $this->isAble("IsStudentEnrolled", $course)) 
         {
                return LectureResource::collection(Lecture::where("course_id", $course->id)->paginate());
         }
@@ -25,7 +25,7 @@ class LecturesController extends ApiController
 
     public function store(StoreLectureRequest $request, Course $course)
     {
-        if ($this->authorize("IsForInstructor", $course))
+        if ($this->isAble("IsForInstructor", $course))
         {
             $fileName = $request->file("lectureFile")->getClientOriginalName();
             
@@ -42,7 +42,7 @@ class LecturesController extends ApiController
 
     public function show(Lecture $lecture)
     {
-        if ($this->authorize("IsForInstructor", $lecture->course) || $this->isAble("IsStudentEnrolled", $lecture->course))
+        if ($this->isAble("IsForInstructor", $lecture->course) || $this->isAble("IsStudentEnrolled", $lecture->course))
         {
             $lecture->unsetRelation("course");
             $toIncluded = [
@@ -59,7 +59,7 @@ class LecturesController extends ApiController
 
     public function downloadLectureFile(Lecture $lecture)
     {
-        if ($this->authorize("IsForInstructor", $lecture->course) || $this->isAble("IsStudentEnrolled", $lecture->course))
+        if ($this->isAble("IsForInstructor", $lecture->course) || $this->isAble("IsStudentEnrolled", $lecture->course))
         {
             $lecture->unsetRelation("course");
             return Storage::disk('public')->download($lecture->path);
@@ -70,7 +70,7 @@ class LecturesController extends ApiController
 
     public function destroy(Lecture $lecture)
     {
-        if ($this->authorize("IsForInstructor", $lecture->course) || $this->isAble("IsStudentEnrolled", $lecture->course))
+        if ($this->isAble("IsForInstructor", $lecture->course) || $this->isAble("IsStudentEnrolled", $lecture->course))
         {
             if (Storage::disk("public")->exists($lecture->path))
                 Storage::disk("public")->delete($lecture->path);

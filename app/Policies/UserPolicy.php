@@ -5,11 +5,17 @@ namespace App\Policies;
 use App\Models\Assignment;
 use App\Models\Comment;
 use App\Models\Discussion;
+use App\Models\Enrollment;
 use App\Models\Submission;
 use App\Models\User;
 
 class UserPolicy extends CoursePolicy
 {
+    public function IsEnrollmentBelongsToStudent(User $user, Enrollment $enrollment): bool
+    {
+        return $user->id === $enrollment->student_id;
+    }
+    
     public function DiscussionBelongToUser(User $user, Discussion $discussion)
     {
         return $user->id === $discussion->user_id;

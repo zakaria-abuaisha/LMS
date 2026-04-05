@@ -15,11 +15,11 @@ return new class extends Migration
             $table->id();
             $table->string("content");
             $table->foreignId('course_id')
-                ->constrained(table: 'courses', indexName: 'id')
+                ->constrained('courses')
                 ->cascadeOnDelete()
                 ->cascadeOnUpdate();
             $table->foreignId('user_id')
-                ->constrained(table: 'users', indexName: 'id')
+                ->constrained('users')
                 ->cascadeOnDelete()
                 ->cascadeOnUpdate();
             $table->timestamps();

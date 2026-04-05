@@ -15,11 +15,11 @@ return new class extends Migration
             $table->id();
             $table->timestamp("enroll_date")->useCurrent();
             $table->foreignId('course_id')
-                ->constrained(table: 'courses', indexName: 'id')
+                ->constrained('courses')
                 ->cascadeOnDelete()
                 ->cascadeOnUpdate();
             $table->foreignId('student_id')
-                ->constrained(table: 'users', indexName: 'id')
+                ->constrained('users')
                 ->cascadeOnDelete()
                 ->cascadeOnUpdate();
 

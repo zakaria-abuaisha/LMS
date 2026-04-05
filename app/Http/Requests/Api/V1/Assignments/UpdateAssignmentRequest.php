@@ -31,7 +31,7 @@ class UpdateAssignmentRequest extends BaseAssignmentRequest
             "data.attributes.dueDate" => [
                 "sometimes",
                 "date",
-                Rule::date()->afterOrEqual($assignment->dueDate),
+                $assignment ? Rule::date()->afterOrEqual($assignment->dueDate) : null,
             ],
         ];
     }

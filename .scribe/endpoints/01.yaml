@@ -1,0 +1,513 @@
+name: 'Manage Courses'
+description: ''
+endpoints:
+  -
+    custom: []
+    httpMethods:
+      - GET
+    uri: api/V1/courses
+    metadata:
+      custom: []
+      groupName: 'Manage Courses'
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Get courses'
+      description: 'Get all courses for a User(instructor)'
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters:
+      sort:
+        custom: []
+        name: sort
+        description: 'data field(s) to sort by. Seprate multiple fields with commas. Denote descending sort with a minus sign.'
+        required: false
+        example: 'sort=course_name,-start_at,end_at'
+        type: string
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        deprecated: false
+      'filter[courseName]':
+        custom: []
+        name: 'filter[courseName]'
+        description: 'Filter a course by courseName.'
+        required: false
+        example: '*Machine Learning*'
+        type: string
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        deprecated: false
+    cleanQueryParameters:
+      sort: 'sort=course_name,-start_at,end_at'
+      'filter[courseName]': '*Machine Learning*'
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 200
+        content: '{"data":[],"links":{"first":"http:\/\/localhost\/api\/V1\/courses?page=1","last":"http:\/\/localhost\/api\/V1\/courses?page=1","prev":null,"next":null},"meta":{"current_page":1,"from":null,"last_page":1,"links":[{"url":null,"label":"&laquo; Previous","page":null,"active":false},{"url":"http:\/\/localhost\/api\/V1\/courses?page=1","label":"1","page":1,"active":true},{"url":null,"label":"Next &raquo;","page":null,"active":false}],"path":"http:\/\/localhost\/api\/V1\/courses","per_page":15,"to":null,"total":0}}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          access-control-allow-origin: '*'
+        description: null
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 1|zB52F71QxeNcC223q5uBoGZnXm2sid2mtLT9zK1pc5f192d6'
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - POST
+    uri: api/V1/courses/register
+    metadata:
+      custom: []
+      groupName: 'Manage Courses'
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Create a course'
+      description: 'Create a new course by a user(instructor)'
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      data:
+        custom: []
+        name: data
+        description: ''
+        required: true
+        example: []
+        type: object
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      data.attributes:
+        custom: []
+        name: data.attributes
+        description: ''
+        required: true
+        example: []
+        type: object
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      data.attributes.courseName:
+        custom: []
+        name: data.attributes.courseName
+        description: 'The course name.'
+        required: true
+        example: 'Machine Learning(ML).'
+        type: string
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        deprecated: false
+      data.attributes.description:
+        custom: []
+        name: data.attributes.description
+        description: 'The course description.'
+        required: true
+        example: 'Teach the machines.'
+        type: string
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        deprecated: false
+      data.attributes.startAt:
+        custom: []
+        name: data.attributes.startAt
+        description: 'The course starting date.'
+        required: true
+        example: '2026-4-5'
+        type: string
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        deprecated: false
+      data.attributes.endAt:
+        custom: []
+        name: data.attributes.endAt
+        description: 'The course ending date.'
+        required: true
+        example: '2026-7-30'
+        type: string
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        deprecated: false
+      data.attributes.assignmentPercent:
+        custom: []
+        name: data.attributes.assignmentPercent
+        description: 'The percentage of the assignments in the course.'
+        required: true
+        example: '30'
+        type: string
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        deprecated: false
+      data.attributes.quizPercent:
+        custom: []
+        name: data.attributes.quizPercent
+        description: 'The percentage of the quizzes in the course.'
+        required: true
+        example: '10'
+        type: string
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        deprecated: false
+      data.attributes.midPercent:
+        custom: []
+        name: data.attributes.midPercent
+        description: 'The percentage of the mid exam in the course.'
+        required: true
+        example: '20'
+        type: string
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        deprecated: false
+      data.attributes.finalPercent:
+        custom: []
+        name: data.attributes.finalPercent
+        description: 'The percentage of the final exam in the course.'
+        required: true
+        example: '40'
+        type: string
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        deprecated: false
+    cleanBodyParameters:
+      data:
+        attributes:
+          courseName: 'Machine Learning(ML).'
+          description: 'Teach the machines.'
+          startAt: '2026-4-5'
+          endAt: '2026-7-30'
+          assignmentPercent: '30'
+          quizPercent: '10'
+          midPercent: '20'
+          finalPercent: '40'
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 1|zB52F71QxeNcC223q5uBoGZnXm2sid2mtLT9zK1pc5f192d6'
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - GET
+    uri: 'api/V1/courses/{course_id}'
+    metadata:
+      custom: []
+      groupName: 'Manage Courses'
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Show a specific course'
+      description: |-
+        Display an individual course.
+
+        **Note:** The user must be either:
+        - The course instructor.
+        - Enrolled in the course.
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      course_id:
+        custom: []
+        name: course_id
+        description: 'The ID of the course.'
+        required: true
+        example: 16
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+    cleanUrlParameters:
+      course_id: 16
+    queryParameters:
+      include:
+        custom: []
+        name: include
+        description: 'data field(s) to include other relationshps. Seprate multiple fields with commas, Available relations: instructor, lectures, announcements, instructor, discussions, lectures.'
+        required: false
+        example: 'include=instructor,lectures'
+        type: string
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        deprecated: false
+    cleanQueryParameters:
+      include: 'include=instructor,lectures'
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 200
+        content: '{"errors":[{"status":404,"message":"The Resource Could Not Be Found :("}]}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          access-control-allow-origin: '*'
+        description: null
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 1|zB52F71QxeNcC223q5uBoGZnXm2sid2mtLT9zK1pc5f192d6'
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - PATCH
+    uri: 'api/V1/courses/{course_id}'
+    metadata:
+      custom: []
+      groupName: 'Manage Courses'
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Update a specific course'
+      description: 'Update the specified course.'
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      course_id:
+        custom: []
+        name: course_id
+        description: 'The ID of the course.'
+        required: true
+        example: 16
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+    cleanUrlParameters:
+      course_id: 16
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      data.attributes:
+        custom: []
+        name: data.attributes
+        description: ''
+        required: false
+        example: []
+        type: object
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      data:
+        custom: []
+        name: data
+        description: ''
+        required: false
+        example: []
+        type: object
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      data.attributes.courseName:
+        custom: []
+        name: data.attributes.courseName
+        description: 'Must not be greater than 255 characters.'
+        required: false
+        example: b
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      data.attributes.description:
+        custom: []
+        name: data.attributes.description
+        description: 'Must not be greater than 2000 characters.'
+        required: false
+        example: 'Et animi quos velit et fugiat.'
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      data.attributes.startAt:
+        custom: []
+        name: data.attributes.startAt
+        description: 'This field is required when <code>data.attributes.endAt</code> is present. Must be a valid date. Must be a valid date. Must be a date after or equal to <code>2026-04-05</code>.'
+        required: false
+        example: '2052-04-28'
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      data.attributes.endAt:
+        custom: []
+        name: data.attributes.endAt
+        description: 'This field is required when <code>data.attributes.startAt</code> is present. Must be a valid date. Must be a date after <code>data.attributes.startAt</code>.'
+        required: false
+        example: '2052-04-27'
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      data.attributes.assignmentPercent:
+        custom: []
+        name: data.attributes.assignmentPercent
+        description: 'This field is required when <code>data.attributes.quizPercent</code>, <code>data.attributes.midPercent</code>, or <code>data.attributes.finalPercent</code> is present. Must be between 0 and 100.'
+        required: false
+        example: 1
+        type: number
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      data.attributes.quizPercent:
+        custom: []
+        name: data.attributes.quizPercent
+        description: 'This field is required when <code>data.attributes.assignmentPercent</code>, <code>data.attributes.midPercent</code>, or <code>data.attributes.finalPercent</code> is present. Must be between 0 and 100.'
+        required: false
+        example: 0
+        type: number
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      data.attributes.midPercent:
+        custom: []
+        name: data.attributes.midPercent
+        description: 'This field is required when <code>data.attributes.assignmentPercent</code>, <code>data.attributes.quizPercent</code>, or <code>data.attributes.finalPercent</code> is present. Must be between 0 and 100.'
+        required: false
+        example: 1
+        type: number
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      data.attributes.finalPercent:
+        custom: []
+        name: data.attributes.finalPercent
+        description: 'This field is required when <code>data.attributes.assignmentPercent</code>, <code>data.attributes.quizPercent</code>, or <code>data.attributes.midPercent</code> is present. Must be between 0 and 100.'
+        required: false
+        example: 0
+        type: number
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+    cleanBodyParameters:
+      data:
+        attributes:
+          courseName: b
+          description: 'Et animi quos velit et fugiat.'
+          startAt: '2052-04-28'
+          endAt: '2052-04-27'
+          assignmentPercent: 1
+          quizPercent: 0
+          midPercent: 1
+          finalPercent: 0
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 1|zB52F71QxeNcC223q5uBoGZnXm2sid2mtLT9zK1pc5f192d6'
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - DELETE
+    uri: 'api/V1/courses/{course_id}'
+    metadata:
+      custom: []
+      groupName: 'Manage Courses'
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Delete a specific course'
+      description: 'Delete the specified course.'
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      course_id:
+        custom: []
+        name: course_id
+        description: 'The ID of the course.'
+        required: true
+        example: 16
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+    cleanUrlParameters:
+      course_id: 16
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 1|zB52F71QxeNcC223q5uBoGZnXm2sid2mtLT9zK1pc5f192d6'
+    controller: null
+    method: null
+    route: null
