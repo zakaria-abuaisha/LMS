@@ -33,7 +33,7 @@ class EnrollmentRules implements ValidationRule, DataAwareRule
     
         // Check if the applyer is not the course creator.
         if ($userId === $course->instructor_id) {
-            $fail("The Instructor can not be a student!");
+            $fail("You are the Instructor, you can not be a student for this course!");
         }
         // Check if the user has alread been enrolled
         else if ($enrollment) {

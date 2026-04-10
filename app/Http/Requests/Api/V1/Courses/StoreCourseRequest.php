@@ -10,10 +10,10 @@ use Illuminate\Validation\Rule;
  * @bodyParam data.attributes.description string required The course description. Example: Teach the machines.
  * @bodyParam data.attributes.startAt string required The course starting date. Example: 2026-4-5
  * @bodyParam data.attributes.endAt string required The course ending date. Example: 2026-7-30
- * @bodyParam data.attributes.assignmentPercent string required The percentage of the assignments in the course. Example: 30
- * @bodyParam data.attributes.quizPercent string required The percentage of the quizzes in the course. Example: 10
- * @bodyParam data.attributes.midPercent string required The percentage of the mid exam in the course. Example: 20
- * @bodyParam data.attributes.finalPercent string required The percentage of the final exam in the course. Example: 40
+ * @bodyParam data.attributes.assignmentPercent integer required The percentage of the assignments in the course. Example: 30
+ * @bodyParam data.attributes.quizPercent integer required The percentage of the quizzes in the course. Example: 10
+ * @bodyParam data.attributes.midPercent integer required The percentage of the mid exam in the course. Example: 20
+ * @bodyParam data.attributes.finalPercent integer required The percentage of the final exam in the course. Example: 40
  */
 class StoreCourseRequest extends BaseCourseRequest
 {

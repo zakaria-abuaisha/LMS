@@ -46,4 +46,60 @@ class UpdateCourseRequest extends BaseCourseRequest
                 new SumsToHundred],
         ];
     }
+    public function bodyParameters(): array
+    {
+        return [
+            'data.attributes.courseName' => [
+                'type' => 'string',
+                'description' => 'The course name',
+                'required' => false, 
+                'example' => 'Machine Learning (ML)',
+            ],
+            'data.attributes.description' => [
+                'type' => 'string',
+                'description' => 'The course description',
+                'required' => false,
+                'example' => 'Learn the foundations of AI.',
+            ],
+            'data.attributes.startAt' => [
+                'type' => 'date',
+                'description' => 'Course start date. Must be at least tomorrow.',
+                'required' => 'Required if endAt is present.',
+                'example' => '2026-05-01',
+            ],
+            'data.attributes.endAt' => [
+                'type' => 'date',
+                'description' => 'Course end date. Must be after the start date.',
+                'required' => 'Required if startAt is present.',
+                'example' => '2026-08-01',
+            ],
+            'data.attributes.assignmentPercent' => [
+                'type' => 'numeric',
+                'description' => 'Percentage weight of assignments.',
+                'required' => 'Required if any other percentage field is provided.',
+                'example' => 30,
+            ],
+            'data.attributes.quizPercent' => [
+                'type' => 'numeric',
+                'description' => 'Percentage weight of quizzes.',
+                'required' => 'Required if any other percentage field is provided.',
+                'example' => 10,
+            ],
+            'data.attributes.midPercent' => [
+                'type' => 'numeric',
+                'description' => 'Percentage weight of the midterm.',
+                'required' => 'Required if any other percentage field is provided.',
+                'example' => 20,
+            ],
+            'data.attributes.finalPercent' => [
+                'type' => 'numeric',
+                'description' => 'Percentage weight of the final exam.',
+                'required' => 'Required if any other percentage field is provided.',
+                'example' => 40,
+                'notes' => [
+                    'Custom Rule: The sum of all percentage fields must equal exactly 100.'
+                ],
+            ],
+        ];
+    }
 }

@@ -23,6 +23,8 @@ class CoursesController extends ApiController
      * @group Manage Courses
      * @queryParam sort string data field(s) to sort by. Seprate multiple fields with commas. Denote descending sort with a minus sign. Example: sort=course_name,-start_at,end_at
      * @queryParam filter[courseName] Filter a course by courseName. Example: *Machine Learning*
+     * @queryParam filter[startAt] Filter courses by startAt date, you cam also send a comma seprated values that represent (from,to). Example: 2026-4-1,2026-4-7
+     * @queryParam filter[endAt] Filter courses by endAt,  you cam also send a comma seprated values that represent (from,to). Example: 2026-4-1,2026-4-7
      */ 
     public function index(CourseFilter $filter)
     {
@@ -39,8 +41,32 @@ class CoursesController extends ApiController
      * Create a course
      * 
      * Create a new course by a user(instructor) 
-     * 
      * @group Manage Courses
+     * @apiResource App\Http\Resources\V1\CourseResource
+     * @apiResourceModel App\Models\Course
+     * @Response 404 
+     * {
+     *      "errors": [{
+     *          "status": 404,
+     *          "message": "The Resource Could Not Be Found :("
+     *      }]
+     * }
+     * @Response 200 scenario="Total Percentage doesn't equal to 100." 
+     * {
+     *      "errors": [{
+     *          "status": 422,
+     *          "message": "The total percentage must equal 100%. (Current: 140%)",
+     *          "source": "data.attributes.finalPercent"
+     *      }]
+     * }
+     * @Response 200 scenario="When endAt date is not after startAt date"
+     * {
+     *      "errors": [{
+     *          "status": 422,
+     *          "message": "The data.attributes.end at field must be a date after data.attributes.start at.",
+     *          "source": "data.attributes.endAt"
+     *      }]
+     * }
      */ 
     public function store(StoreCourseRequest $request)
     {
@@ -64,6 +90,13 @@ class CoursesController extends ApiController
      * 
      * @group Manage Courses
      * @queryParam include string data field(s) to include other relationshps. Seprate multiple fields with commas, Available relations: instructor, lectures, announcements, instructor, discussions, lectures. Example: include=instructor,lectures    
+     * @Response 404 
+     * {
+     *      "errors": [{
+     *          "status": 404,
+     *          "message": "The Resource Could Not Be Found :("
+     *      }]
+     * }
      */ 
     public function show(Course $course)
     {
@@ -94,6 +127,23 @@ class CoursesController extends ApiController
      * Update the specified course.
      * 
      * @group Manage Courses
+     * @apiResource App\Http\Resources\V1\CourseResource
+     * @apiResourceModel App\Models\Course
+     * @Response 404 
+     * {
+     *      "errors": [{
+     *          "status": 404,
+     *          "message": "The Resource Could Not Be Found :("
+     *      }]
+     * }
+     * @Response 200 scenario="Total Percentage doesn't equal to 100." 
+     * {
+     *      "errors": [{
+     *          "status": 422,
+     *          "message": "The total percentage must equal 100%. (Current: 140%)",
+     *          "source": "data.attributes.finalPercent"
+     *      }]
+     * }
      */ 
     public function update(UpdateCourseRequest $request, Course $course)
     {
@@ -113,6 +163,19 @@ class CoursesController extends ApiController
      * Delete the specified course.
      * 
      * @group Manage Courses
+     * @Response 200 scenario="Successful deletion" 
+     * {
+     *      "data": [],
+     *      "message": "Course deleted successfully",
+     *      "code": 200
+     * }
+     * @Response 404 
+     * {
+     *      "errors": [{
+     *          "status": 404,
+     *          "message": "The Resource Could Not Be Found :("
+     *      }]
+     * }
      */ 
     public function destroy(Course $course)
     {

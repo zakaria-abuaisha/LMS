@@ -23,7 +23,21 @@ class StoreEnrollmentRequest extends BaseEnrollmentRequest
     public function rules(): array
     {
         return [
-            "data.attributes.courseCode" => ["required", "exists:courses,course_code", new EnrollmentRules] 
+            'data' => ["required", "array"],
+            'data.attributes' => ["required", "array"],
+            "data.attributes.courseCode" => ["bail", "required", "exists:courses,course_code", new EnrollmentRules] 
+        ];
+    }
+
+    public function bodyParameters(): array
+    {
+        return [
+            'data.attributes.courseCode' => [
+                'type' => 'string',
+                'description' => 'The unique code of the course. Must exist in the courses table.',
+                'required' => true, 
+                'example' => 'cxb8Q4hze',
+            ],
         ];
     }
 }

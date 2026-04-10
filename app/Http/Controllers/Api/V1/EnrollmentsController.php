@@ -13,6 +13,38 @@ class EnrollmentsController extends ApiController
 {
     protected $policyClass = UserPolicy::class;
 
+    /**
+     * Enroll a student(User)
+     * 
+     * Enroll a student into a course via course code.
+     * @group Manage Enrollments
+     * @apiResource App\Http\Resources\V1\EnrollmentResource
+     * @apiResourceModel App\Models\Enrollment
+     * @Response 200 scenario="When There's NO course with the submitted course code."
+     * {
+     *      "errors": [{
+     *          "status": 422,
+     *          "message": "The selected data.attributes.course code is invalid.",
+     *          "source": "data.attributes.courseCode"
+     *      }]
+     * }
+     * @Response 200 scenario="When a User attempts to enroll again"
+     * {
+     *      "errors": [{
+     *          "status": 422,
+     *          "message": "You're Already Enrolled!",
+     *          "source": "data.attributes.courseCode"
+     *      }]
+     * }
+     * @Response 200 scenario="When The Instructor attempts to enroll into his/her own course."
+     * {
+     *      "errors": [{
+     *          "status": 422,
+     *          "message": "You are the Instructor, you can not be a student for this course!",
+     *          "source": "data.attributes.courseCode"
+     *      }]
+     * }
+     */
     public function store(StoreEnrollmentRequest $request)
     {
         $courseCode = $request->mappedAttributes();
@@ -25,7 +57,30 @@ class EnrollmentsController extends ApiController
     }
 
     /**
-     * Display the specified resource.
+     * Show a specific enrollment.
+     * 
+     * Display an individual enrollment for the student.
+     * * available relationships for this resourc : 
+     *      * course : The course that the Enrollment belongs to.
+     *      * student : The student that the Enrollment belongs to.
+     * @group Manage Enrollments
+     * @queryParam include string data field(s) to include any other relationships. Seprate multiple fields with commas. Example: include=course,student
+     * @apiResource App\Http\Resources\V1\EnrollmentResource
+     * @apiResourceModel App\Models\Enrollment
+     * @Response 200 scenario="When you are NOT the student who belongs to the Enrollment." 
+     * {
+     *      "errors": [{
+     *          "status": 401,
+     *          "message": "NOT Authorized"
+     *      }]
+     * }
+     * @Response 404 
+     * {
+     *      "errors": [{
+     *          "status": 404,
+     *          "message": "The Resource Could Not Be Found :("
+     *      }]
+     * }
      */
     public function show(Enrollment $enrollment)
     {
@@ -45,7 +100,30 @@ class EnrollmentsController extends ApiController
     }
 
     /**
-     * Remove the specified resource from storage.
+     * Delete a specific enrollment.
+     * 
+     * Delete an individual enrollment for the student.
+     * @group Manage Enrollments
+     * @Response 200 scenario="When you are NOT the student who belongs to the Enrollment." 
+     * {
+     *      "errors": [{
+     *          "status": 401,
+     *          "message": "NOT Authorized"
+     *      }]
+     * }
+     * @Response 200 scenario="Successful deletion" 
+     * {
+     *      "data": [],
+     *      "message": "Enrollment deleted successfully",
+     *      "code": 200
+     * }
+     * @Response 404 
+     * {
+     *      "errors": [{
+     *          "status": 404,
+     *          "message": "The Resource Could Not Be Found :("
+     *      }]
+     * }
      */
     public function destroy(Enrollment $enrollment)
     {

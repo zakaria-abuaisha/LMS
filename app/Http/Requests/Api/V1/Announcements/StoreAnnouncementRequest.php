@@ -3,7 +3,6 @@
 namespace App\Http\Requests\Api\V1\Announcements;
 
 use App\Http\Requests\Api\V1\Announcements\BaseAnnouncementRequest;
-use Illuminate\Foundation\Http\FormRequest;
 
 class StoreAnnouncementRequest extends BaseAnnouncementRequest
 {
@@ -23,8 +22,28 @@ class StoreAnnouncementRequest extends BaseAnnouncementRequest
     public function rules(): array
     {
         return [
+            "data" => ["required", "array"],
+            "data.attributes" => ["required", "array"],
             "data.attributes.title" => ["required","string","max:255"],
             "data.attributes.description" => ["required","string","max:2500"],
+        ];
+    }
+
+    public function bodyParameters(): array
+    {
+        return [
+            'data.attributes.title' => [
+                'type' => "string",
+                'description' => 'The title of the announcement',
+                'required' => true, 
+                'example' => 'Adjustments on assignment 3',
+            ],
+            'data.attributes.description' => [
+                'type' => "string",
+                'description' => 'The description of the announcement!',
+                'required' => true, 
+                'example' => 'dear students, There are some changes on the assignment number 3, please check them out!',
+            ],
         ];
     }
 }

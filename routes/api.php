@@ -65,15 +65,15 @@ Route::middleware("auth:sanctum")->group(function () {
 
         // Student Examination
         Route::prefix("studentExaminations")->group(function () {
-            Route::get("/{examinations}", [StudentExaminationsController::class,"show"]);
+            Route::get("/{examination}", [StudentExaminationsController::class,"show"]);
          });
 
 
         // Examinations
         Route::prefix("examinations")->group(function () {
-            Route::get("/{examinations}", [ExaminationsController::class,"show"]);
-            Route::patch("/{examinations}", [ExaminationsController::class,"update"]);
-            Route::delete("/{examinations}", [ExaminationsController::class,"destroy"]);
+            Route::get("/{examination}", [ExaminationsController::class,"show"]);
+            Route::patch("/{examination}", [ExaminationsController::class,"update"]);
+            Route::delete("/{examination}", [ExaminationsController::class,"destroy"]);
         });
 
         // Enrollments

@@ -2,7 +2,6 @@
 
 namespace App\Http\Resources\V1;
 
-use App\Models\Examination;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\JsonResource;
 
@@ -24,7 +23,7 @@ class CourseResource extends JsonResource
                 "courseCode" => $this->course_code ,
                 "startAt" => $this->start_at ,
                 "endAt" => $this->end_at ,
-                "instructorId" => $this->instructure_id ,
+                "instructorId" => $this->instructor_id ,
                 "assignmentPercent" => $this->assignment_percent ,
                 "quizPercent" => $this->quiz_percent ,
                 "midPercent" => $this->mid_percent ,

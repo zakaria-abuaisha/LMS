@@ -24,8 +24,28 @@ class StoreExaminationRequest extends BaseExaminationRequest
     public function rules(): array
     {
         return [
+            "data" => ["required", "array"],
+            "data.attributes" => ["required", "array"],
             "data.attributes.type" => ["required", new Enum(ExaminationType::class)],
-            "data.attributes.grade" => ["required", "between:0,100"],
+            "data.attributes.grade" => ["required", "numeric", "between:0,100"],
+        ];
+    }
+
+    public function bodyParameters():array 
+    {
+        return [
+            'data.attributes.type' => [
+                'type' => "string",
+                'description' => 'The type of the examination (quiz, mid, final).',
+                'required' => true, 
+                'example' => 'quiz',
+            ],
+            'data.attributes.grade' => [
+                'type' => 'numeric',
+                'description' => 'The grade of the examination, between 0 and 100.',
+                'required' => true, 
+                'example' => 65,
+            ],
         ];
     }
 }
