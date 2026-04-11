@@ -20,7 +20,21 @@ class StoreDiscussionsRequest extends BaseDiscussionsRequest
     public function rules(): array
     {
         return [
+            "data" => ["required", "array"],
+            "data.attributes" => ["required", "array"],
             'data.attributes.content' => ["required", "string", "max:5000"],
+        ];
+    }
+
+    public function bodyParameters(): array
+    {
+        return [
+            'data.attributes.content' => [
+                'type' => "string",
+                'description' => 'The content of the discussion',
+                'required' => true, 
+                'example' => 'I think I enhanced the convergence of gradient descent',
+            ]
         ];
     }
 }

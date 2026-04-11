@@ -243,7 +243,7 @@ endpoints:
       -
         custom: []
         status: 200
-        content: '{"type":"course","id":7,"data":{"courseName":"Nihil accusantium harum.","description":"Deserunt aut ab provident perspiciatis quo omnis nostrum. Adipisci quidem nostrum qui commodi incidunt iure. Et et modi ipsum nostrum.","courseCode":"uG1n7cmAy","startAt":"2026-04-27 06:03:38","endAt":"2026-05-16 08:28:08","instructorId":7,"assignmentPercent":35,"quizPercent":16,"midPercent":28,"finalPercent":21,"createdAt":"2026-04-09T20:09:49.000000Z"},"included":[],"links":[]}'
+        content: '{"type":"course","id":7,"data":{"courseName":"Nihil accusantium harum.","description":"Deserunt aut ab provident perspiciatis quo omnis nostrum. Adipisci quidem nostrum qui commodi incidunt iure. Et et modi ipsum nostrum.","courseCode":"QbyxddXLs","startAt":"2026-04-29 06:14:38","endAt":"2026-05-18 08:39:08","instructorId":22,"assignmentPercent":35,"quizPercent":16,"midPercent":28,"finalPercent":21,"createdAt":"2026-04-11T20:20:49.000000Z"},"included":[],"links":[]}'
         headers: []
         description: ''
       -
@@ -351,7 +351,7 @@ endpoints:
       -
         custom: []
         status: 200
-        content: '{"type":"course","id":2,"data":{"courseName":"Vitae voluptas nesciunt.","description":"Reiciendis quia sequi voluptatibus. Atque corrupti dolorem est vitae omnis facilis nemo. Temporibus qui rerum quidem ut.","courseCode":"u2ukXOMkO","startAt":"2026-04-19 13:37:02","endAt":"2026-04-25 02:00:08","instructorId":1,"assignmentPercent":11,"quizPercent":11,"midPercent":11,"finalPercent":67,"createdAt":"2026-04-07T15:24:43.000000Z"},"included":{"lectures":[]},"links":[]}'
+        content: '{"type":"course","id":2,"data":{"courseName":"Vitae voluptas nesciunt.","description":"Reiciendis quia sequi voluptatibus. Atque corrupti dolorem est vitae omnis facilis nemo. Temporibus qui rerum quidem ut.","courseCode":"u2ukXOMkO","startAt":"2026-04-19 13:37:02","endAt":"2026-04-25 02:00:08","instructorId":1,"assignmentPercent":11,"quizPercent":11,"midPercent":11,"finalPercent":67,"createdAt":"2026-04-07T15:24:43.000000Z"},"included":{"lectures":[{"type":"lecture","id":1,"data":{"name":"Eager and Auto Loading.pdf","path":"lectures\/ZpjLWU1QMfmBhTEfboZc8A867yrtRnd43fkpUyTj.pdf","courseId":2,"createdAt":"2026-04-11T19:17:23.000000Z"},"included":[],"links":[]}]},"links":[]}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -460,7 +460,7 @@ endpoints:
       data.attributes.startAt:
         custom: []
         name: data.attributes.startAt
-        description: 'Course start date. Must be at least tomorrow. This field is required when <code>data.attributes.endAt</code> is present. Must be a valid date. Must be a valid date. Must be a date after or equal to <code>2026-04-10</code>.'
+        description: 'Course start date. Must be at least tomorrow. This field is required when <code>data.attributes.endAt</code> is present. Must be a valid date. Must be a valid date. Must be a date after or equal to <code>2026-04-12</code>.'
         required: false
         example: '2026-05-01'
         type: string
@@ -539,7 +539,7 @@ endpoints:
       -
         custom: []
         status: 200
-        content: '{"type":"course","id":7,"data":{"courseName":"Quos velit et fugiat.","description":"Accusantium harum mollitia modi deserunt aut ab. Perspiciatis quo omnis nostrum aut adipisci quidem nostrum qui. Incidunt iure odit et et modi ipsum.","courseCode":"mSG9DAR3Y","startAt":"2026-03-12 14:52:16","endAt":"2026-07-01 19:17:04","instructorId":17,"assignmentPercent":37,"quizPercent":28,"midPercent":10,"finalPercent":25,"createdAt":"2026-04-09T20:09:49.000000Z"},"included":[],"links":[]}'
+        content: '{"type":"course","id":7,"data":{"courseName":"Quos velit et fugiat.","description":"Accusantium harum mollitia modi deserunt aut ab. Perspiciatis quo omnis nostrum aut adipisci quidem nostrum qui. Incidunt iure odit et et modi ipsum.","courseCode":"d7g0LkFrg","startAt":"2026-03-14 15:03:16","endAt":"2026-07-03 19:28:04","instructorId":3,"assignmentPercent":37,"quizPercent":28,"midPercent":10,"finalPercent":25,"createdAt":"2026-04-11T20:20:49.000000Z"},"included":[],"links":[]}'
         headers: []
         description: ''
       -

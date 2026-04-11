@@ -22,9 +22,10 @@ class AnnouncementsController extends ApiController
      * Get all Announcements of a particular course.
      * 
      * @group Manage Announcements
+     * @apiResourceCollection App\Http\Resources\V1\AnnouncementResource
      * @queryParam sort string data field(s) to sort by. Seprate multiple fields with commas. Denote descending sort with a minus sign. Example: sort=-created_at
-     * @queryParam filter[title] Filter Announcements by the title. [quiz, mid, final].Example: *Adjustments on The Assignment!*
-     * @queryParam filter[createdAt] Filter examinations by creation date date, you cam also send a comma seprated values that represent (from,to). Example: 2026-4-1,2026-4-7
+     * @queryParam filter[title] Filter Announcements by the title. Example: *Adjustments on The Assignment!*
+     * @queryParam filter[createdAt] Filter Announcements by creation date date, you cam also send a comma seprated values that represent (from,to). Example: 2026-4-1,2026-4-7
      * @Response 200 scenario="When you are NOT The instructor of the course, Or NOT an enrolled student." 
      * {
      *      "errors": [{
@@ -94,11 +95,11 @@ class AnnouncementsController extends ApiController
      * 
      * Display an individual announcement for.
      * * available relationships for this resource : 
-     *      * course : The course that the examination belongs to.
+     *      * course : The course that the Announcement belongs to.
      * @group Manage Announcements
      * @queryParam include string data field(s) to include any other relationships. Seprate multiple fields with commas. Example: include=course
-     * @apiResource App\Http\Resources\V1\ExaminationResource
-     * @apiResourceModel App\Models\Examination
+     * @apiResource App\Http\Resources\V1\AnnouncementResource
+     * @apiResourceModel App\Models\Announcement
      * @Response 200 scenario="When you are NOT the instructor of the course, Or NOT even an enrolled student." 
      * {
      *      "errors": [{

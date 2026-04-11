@@ -35,4 +35,28 @@ class UpdateAssignmentRequest extends BaseAssignmentRequest
             ],
         ];
     }
+
+    public function bodyParameters(): array
+    {
+        return [
+            'data.attributes.subject' => [
+                'type' => "string",
+                'description' => 'The subject of the assignment',
+                'required' => false, 
+                'example' => 'Assignment-3',
+            ],
+            'data.attributes.content' => [
+                'type' => "string",
+                'description' => 'The content of the assignment',
+                'required' => false, 
+                'example' => 'Implement Logistic Regrission',
+            ],
+            'data.attributes.dueDate' => [
+                'type' => "date",
+                'description' => 'The due date of the assignment',
+                'required' => false, 
+                'example' => '2026-05-20',
+            ],
+        ];
+    }
 }

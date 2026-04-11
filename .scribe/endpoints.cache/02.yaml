@@ -6,101 +6,6 @@ endpoints:
   -
     custom: []
     httpMethods:
-      - GET
-    uri: 'api/V1/courses/{course_id}/announcements'
-    metadata:
-      custom: []
-      groupName: 'Manage Announcements'
-      groupDescription: ''
-      subgroup: ''
-      subgroupDescription: ''
-      title: 'Get Announcements'
-      description: 'Get all Announcements of a particular course.'
-      authenticated: true
-      deprecated: false
-    headers:
-      Authorization: 'Bearer {YOUR_AUTH_KEY}'
-      Content-Type: application/json
-      Accept: application/json
-    urlParameters:
-      course_id:
-        custom: []
-        name: course_id
-        description: 'The ID of the course.'
-        required: true
-        example: 2
-        type: integer
-        enumValues: []
-        exampleWasSpecified: false
-        nullable: false
-        deprecated: false
-    cleanUrlParameters:
-      course_id: 2
-    queryParameters:
-      sort:
-        custom: []
-        name: sort
-        description: 'data field(s) to sort by. Seprate multiple fields with commas. Denote descending sort with a minus sign.'
-        required: false
-        example: sort=-created_at
-        type: string
-        enumValues: []
-        exampleWasSpecified: true
-        nullable: false
-        deprecated: false
-      'filter[title]':
-        custom: []
-        name: 'filter[title]'
-        description: 'Filter Announcements by the title. [quiz, mid, final].'
-        required: false
-        example: '*Adjustments on The Assignment!*'
-        type: string
-        enumValues: []
-        exampleWasSpecified: true
-        nullable: false
-        deprecated: false
-      'filter[createdAt]':
-        custom: []
-        name: 'filter[createdAt]'
-        description: 'Filter examinations by creation date date, you cam also send a comma seprated values that represent (from,to).'
-        required: false
-        example: '2026-4-1,2026-4-7'
-        type: string
-        enumValues: []
-        exampleWasSpecified: true
-        nullable: false
-        deprecated: false
-    cleanQueryParameters:
-      sort: sort=-created_at
-      'filter[title]': '*Adjustments on The Assignment!*'
-      'filter[createdAt]': '2026-4-1,2026-4-7'
-    bodyParameters: []
-    cleanBodyParameters: []
-    fileParameters: []
-    responses:
-      -
-        custom: []
-        status: 200
-        content: |-
-          {
-               "errors": [{
-                   "status": 401,
-                   "message": "NOT Authorized"
-               }]
-          }
-        headers: []
-        description: 'When you are NOT The instructor of the course, Or NOT an enrolled student.'
-    responseFields: []
-    auth:
-      - headers
-      - Authorization
-      - 'Bearer 1|HJQ9iufdC89b9RkDgczVZ8fQ1w5k9n8eOCarhqfk321c28af'
-    controller: null
-    method: null
-    route: null
-  -
-    custom: []
-    httpMethods:
       - POST
     uri: 'api/V1/courses/{course_id}/announcements/register'
     metadata:
@@ -240,7 +145,7 @@ endpoints:
       description: |-
         Display an individual announcement for.
         * available relationships for this resource :
-             * course : The course that the examination belongs to.
+             * course : The course that the Announcement belongs to.
       authenticated: true
       deprecated: false
     headers:
@@ -282,7 +187,7 @@ endpoints:
       -
         custom: []
         status: 200
-        content: '{"type":"examination","id":null,"data":{"type":null,"grade":null,"courseId":null,"studentId":null,"createdAt":null},"included":[],"links":[]}'
+        content: '{"type":"announcement","id":null,"data":{"title":null,"description":null,"courseId":null,"createdAt":null},"included":[],"links":[]}'
         headers: []
         description: ''
       -

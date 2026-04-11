@@ -1,0 +1,191 @@
+name: 'Student Examinations'
+description: ''
+endpoints:
+  -
+    custom: []
+    httpMethods:
+      - GET
+    uri: 'api/V1/courses/{course_id}/studentExaminations'
+    metadata:
+      custom: []
+      groupName: 'Student Examinations'
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Get Student Examinations'
+      description: 'Get all examinations of a particular course for a student in a particular course.'
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      course_id:
+        custom: []
+        name: course_id
+        description: 'The ID of the course.'
+        required: true
+        example: 2
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+    cleanUrlParameters:
+      course_id: 2
+    queryParameters:
+      sort:
+        custom: []
+        name: sort
+        description: 'data field(s) to sort by. Seprate multiple fields with commas. Denote descending sort with a minus sign.'
+        required: false
+        example: 'sort=grade,-created_at'
+        type: string
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        deprecated: false
+      'filter[type]':
+        custom: []
+        name: 'filter[type]'
+        description: "Filter examinations by it's type. [quiz, mid, final]."
+        required: false
+        example: '*Machine Learning*'
+        type: string
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        deprecated: false
+      'filter[cratedAt]':
+        custom: []
+        name: 'filter[cratedAt]'
+        description: 'Filter examinations by cratedAt date, you cam also send a comma seprated values that represent (from,to).'
+        required: false
+        example: '2026-4-1,2026-4-7'
+        type: string
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        deprecated: false
+    cleanQueryParameters:
+      sort: 'sort=grade,-created_at'
+      'filter[type]': '*Machine Learning*'
+      'filter[cratedAt]': '2026-4-1,2026-4-7'
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 200
+        content: |-
+          {
+               "errors": [{
+                   "status": 401,
+                   "message": "NOT Authorized"
+               }]
+          }
+        headers: []
+        description: 'When you are NOT Enrolled in the course.'
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 1|HJQ9iufdC89b9RkDgczVZ8fQ1w5k9n8eOCarhqfk321c28af'
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - GET
+    uri: 'api/V1/studentExaminations/{examination_id}'
+    metadata:
+      custom: []
+      groupName: 'Student Examinations'
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Show a Student Examination.'
+      description: |-
+        Display an individual examination for the student.
+        * available relationships for this resource :
+             * course : The course that the examination belongs to.
+             * student : The student that the examination belongs to.
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      examination_id:
+        custom: []
+        name: examination_id
+        description: 'The ID of the examination.'
+        required: true
+        example: 16
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+    cleanUrlParameters:
+      examination_id: 16
+    queryParameters:
+      include:
+        custom: []
+        name: include
+        description: 'data field(s) to include any other relationships. Seprate multiple fields with commas.'
+        required: false
+        example: 'include=course,student'
+        type: string
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        deprecated: false
+    cleanQueryParameters:
+      include: 'include=course,student'
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 200
+        content: '{"type":"examination","id":null,"data":{"type":null,"grade":null,"courseId":null,"studentId":null,"createdAt":null},"included":[],"links":[]}'
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 200
+        content: |-
+          {
+               "errors": [{
+                   "status": 401,
+                   "message": "NOT Authorized"
+               }]
+          }
+        headers: []
+        description: 'When you are NOT Enrolled in the course.'
+      -
+        custom: []
+        status: 404
+        content: |-
+          {
+               "errors": [{
+                   "status": 404,
+                   "message": "The Resource Could Not Be Found :("
+               }]
+          }
+        headers: []
+        description: ''
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 1|HJQ9iufdC89b9RkDgczVZ8fQ1w5k9n8eOCarhqfk321c28af'
+    controller: null
+    method: null
+    route: null

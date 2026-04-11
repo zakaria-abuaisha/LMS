@@ -23,4 +23,16 @@ class UpdateDiscussionsRequest extends BaseDiscussionsRequest
             'data.attributes.content' => ["sometimes", "string", "max:5000"],
         ];
     }
+
+    public function bodyParameters(): array
+    {
+        return [
+            'data.attributes.content' => [
+                'type' => "string",
+                'description' => 'The content of the discussion',
+                'required' => false, 
+                'example' => 'I think I enhanced the convergence of gradient descent',
+            ]
+        ];
+    }
 }
