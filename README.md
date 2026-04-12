@@ -1,37 +1,122 @@
 # Laravel Learning Management System (LMS)
 
-Welcome to the **Laravel Learning Management System (LMS)**! This project is a robust backend API built with Laravel 12 to power an educational platform. It provides the essential endpoints and features needed for instructors to manage educational content and for students to learn interactively.
-
-## Features
-
-This LMS exposes an API (Version 1) handling the core concepts of online education:
-- **Courses:** Create, manage, and browse educational courses.
-- **Lectures:** Structured modules containing the actual learning material.
-- **Enrollments:** Secure registration for students taking specific courses.
-- **Discussions:** Interactive Q&A and conversations between students and instructors within a course context.
-- **Announcements:** Broadcast important updates to enrolled students.
-
-The API uses **Laravel Sanctum** for secure authentication and authorization natively ensuring that instructors and students only access what they are permitted to.
-
-## Tech Stack
-- **Framework:** Laravel 12.x
-- **Authentication:** Laravel Sanctum
-- **Database:** SQLite (Default) 
-- **Assets:** Vite
+A robust **REST API** for an educational platform built with **Laravel 12**. The system supports a full instructor–student workflow: creating and managing courses, delivering lectures, handling assignments with file uploads, registering quizzes and exams, facilitating discussions, broadcasting announcements, and tracking per-student academic statistics — all secured via token-based authentication.
 
 ---
 
-## Setup Pipeline
+## Features
 
-Follow these steps to clone the project and start running it locally.
+###  Authentication
+- Register, login, and logout with **Laravel Sanctum** token-based auth
+- Tokens expire automatically after **1 month**
+- All protected routes require a `Bearer` token
+
+###  Courses
+- Create and manage courses with configurable grading percentages (assignments, quizzes, mid-term, final)
+- Browse all created courses
+- Query filtering support
+- Enrolling courses via codes
+
+###  Enrollments
+- Students enroll in and withdraw from courses
+- Enrollment-aware authorization across all resources
+
+###  Announcements
+- Instructors post announcements per course
+- Enrolled students receive **automatic email notifications** via a queued job (`PropagateAnnouncement`)
+
+###  Lectures
+- Attach lecture content to courses
+- **File download** endpoint for lecture materials
+
+###  Discussions & Comments
+- Students and instructors create discussions within a course
+- Threaded **comments** on each discussion
+
+###  Assignments
+- Instructors create assignments with attached files (`AssignmentFile`)
+- Students submit work (`StudentSubmission`) with **file uploads** (`SubmissionFile`)
+- File **download** endpoints for both assignment files and submission files
+- Enrolled students receive **email notifications** when a new assignment is posted (`PropagateAssignment`)
+
+###  Examinations (Quizzes / Mid / Final)
+- Instructors record per-student examination grades (typed as `quiz`, `mid`, or `final` via `ExaminationType` enum)
+- Students can view their own examination records
+
+###  Student Statistics
+- Dedicated endpoint computes a student's **weighted average score** across assignments, quizzes, mid-term, and final exam using each course's configured grading percentages
+
+###  Email Notifications (Queue-Driven)
+| Job | Trigger |
+|-----|---------|
+| `PropagateAnnouncement` | New announcement posted |
+| `PropagateAssignment` | New assignment posted |
+| `PropagateSubmissionGrade` | Instructor grades a student submission |
+| `DeleteAssignmentFiles` | Assignment deleted (cleans up files) |
+| `DeleteSubmissionsFiles` | Submission deleted (cleans up files) |
+
+###  API Documentation
+- Auto-generated interactive docs powered by **Scribe** — available at `/docs` after setup
+
+---
+
+## Tech Stack
+
+| Layer | Technology |
+|-------|-----------|
+| Framework | Laravel 12.x |
+| Authentication | Laravel Sanctum 4.x |
+| Database | SQLite (default) / MySQL / PostgreSQL |
+| Queue / Jobs | Laravel Database Queue |
+| Mail | Laravel Mailer (log driver by default) |
+| API Docs | Knuckleswtf/Scribe 5.x |
+| Testing | Pest 4.x |
+| Code Style | Laravel Pint |
+| Assets | Vite |
+
+---
+
+## API Overview
+
+All authenticated routes are versioned under `/api/V1/`.
+
+| Resource | Endpoints |
+|----------|-----------|
+| **Auth** | `POST /api/login`, `POST /api/register`, `POST /api/logout` |
+| **Courses** | CRUD + `/stats`, `/announcements`, `/lectures`, `/discussions`, `/assignments`, `/examinations` |
+| **Enrollments** | Register, show, delete |
+| **Announcements** | Show, update, delete |
+| **Lectures** | Show, download file, delete |
+| **Discussions** | Show, update, delete + comments |
+| **Comments** | Show, update, delete |
+| **Assignments** | Show, update, delete + files + submissions |
+| **Assignment Files** | Show, download, delete |
+| **Submissions** | Show, grade + student submission + submission files |
+| **Submission Files** | Show, download, delete |
+| **Examinations** | Show, update, delete |
+| **Student Stats** | Weighted grade average per course |
+
+---
+
+## Setup
 
 ### Prerequisites
-- PHP 8.2 or higher
+
+- PHP **8.2+**
 - Composer
-- Node.js & npm (for optionally building frontend assets)
+- Node.js & npm
 - Git
 
-### Installation Steps
+### Quick Setup (one command)
+
+```bash
+git clone https://github.com/zakaria-abuaisha/LMS && cd LMS
+composer setup
+```
+
+This single command runs: `composer install` → copies `.env` → generates app key → runs migrations → `npm install` → `npm run build`.
+
+### Manual Setup (step by step)
 
 1. **Clone the repository**
    ```bash
@@ -39,42 +124,86 @@ Follow these steps to clone the project and start running it locally.
    cd LMS
    ```
 
-2. **Install PHP Dependencies**
-   Run Composer to install the required Laravel packages:
+2. **Install PHP dependencies**
    ```bash
    composer install
    ```
 
-3. **Configure the Environment**
-   Copy the example environment file and configure it:
+3. **Configure the environment**
    ```bash
    cp .env.example .env
    ```
-   *Note: By default, the `.env` uses an SQLite database (`DB_CONNECTION=sqlite`). If you wish to use MySQL/PostgreSQL, update your `.env` accordingly.*
+   > **SQLite (default):** No extra config needed. Laravel will create `database/database.sqlite` automatically on first migration.
+   >
+   > **MySQL / PostgreSQL:** Uncomment and fill in the `DB_HOST`, `DB_PORT`, `DB_DATABASE`, `DB_USERNAME`, and `DB_PASSWORD` variables in `.env`.
 
-4. **Generate Application Key**
-   Generate a unique app key to secure your application:
+4. **Generate the application key**
    ```bash
    php artisan key:generate
    ```
 
-5. **Run Database Migrations**
-   Create the necessary tables (including Courses, Lectures, Discussions, etc.):
+5. **Run database migrations and seeder**
    ```bash
-   php artisan migrate
-   ```
-   *(If you are using SQLite and the `database/database.sqlite` file doesn't exist, Laravel will prompt you to create it).*
-
-6. **Install and Build Frontend Assets (Optional but recommended)**
-   If there are frontend assets managed by Vite, install JS packages and build them:
-   ```bash
-   npm install
-   npm run build
+   php artisan migrate --seed
    ```
 
-7. **Start the Local Development Server**
-   Start the Laravel Artisan server:
+6. **Install and build frontend assets**
+   ```bash
+   npm install && npm run build
+   ```
+
+7. **Start the development server**
    ```bash
    php artisan serve
    ```
-   The API will now be accessible at `http://localhost:8000` (e.g., `http://localhost:8000/api/v1/...`).
+
+   The API will be available at: **`http://localhost:8000`**
+
+### Generating API Documentation
+
+```bash
+php artisan scribe:generate
+```
+
+Then visit **`http://localhost:8000/docs`** to browse the interactive API reference.
+
+---
+
+## Environment Variables (Key Settings)
+
+| Variable | Default | Description |
+|----------|---------|-------------|
+| `APP_URL` | `http://localhost` | Base URL of the application |
+| `DB_CONNECTION` | `sqlite` | Database driver (`sqlite`, `mysql`, `pgsql`) |
+| `QUEUE_CONNECTION` | `database` | Queue driver (use `database` to enable email jobs) |
+| `MAIL_MAILER` | `log` | Mail driver — change to `smtp` for real email sending |
+| `MAIL_FROM_ADDRESS` | `hello@example.com` | Sender email address |
+| `FILESYSTEM_DISK` | `local` | Storage disk for file uploads |
+
+---
+
+## Project Structure
+
+```
+app/
+├── Enums/              # ExaminationType (quiz, mid, final)
+├── Http/
+│   ├── Controllers/Api/
+│   │   ├── AuthController.php
+│   │   └── V1/         # 15 resource controllers
+│   ├── Filters/        # Query filter classes
+│   ├── Requests/       # Form request validation
+│   └── Resources/      # API resource transformers
+├── Jobs/               # 5 queued jobs (notifications + file cleanup)
+├── Mail/               # 3 Mailable classes
+├── Models/             # 12 Eloquent models
+├── Policies/           # CoursePolicy, UserPolicy
+├── Rules/              # Custom validation rules
+└── Traits/             # ApiResponses helper trait
+database/
+├── migrations/         # 15 migration files
+├── factories/          # Model factories for testing
+└── seeders/
+routes/
+└── api.php             # All API routes (versioned under /V1/)
+```
