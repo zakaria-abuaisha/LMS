@@ -26,4 +26,15 @@ class StoreSubmissionFileRequest extends BaseSubmissionFileRequest
             "submissionFiles.*" => ["file", "mimes:pdf,jpg,jpeg,png,docx,zip,txt","max:51200"] // 50MB
         ];
     }
+
+    public function bodyParameters():array 
+    {
+        return [
+            'submissionFiles.*' => [
+                'type' => "file",
+                'description' => 'Uploaded files for a submission. [pdf, jpg, jpeg, png, docx, zip, txt] 50MB.',
+                'required' => true, 
+            ]
+        ];
+    }
 }

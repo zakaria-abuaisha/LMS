@@ -1,19 +1,19 @@
-name: 'Manage Examinations'
+name: 'Manage Discussions Comments'
 description: ''
 endpoints:
   -
     custom: []
     httpMethods:
       - GET
-    uri: 'api/V1/courses/{course_id}/examinations'
+    uri: 'api/V1/discussions/{discussion_id}/comments'
     metadata:
       custom: []
-      groupName: 'Manage Examinations'
+      groupName: 'Manage Discussions Comments'
       groupDescription: ''
       subgroup: ''
       subgroupDescription: ''
-      title: 'Get Examinations'
-      description: 'Get all examinations of a particular course for the instructor.'
+      title: "Get Discussion's Comments"
+      description: 'Get all Comments of a particular Discussion.'
       authenticated: true
       deprecated: false
     headers:
@@ -21,57 +21,21 @@ endpoints:
       Content-Type: application/json
       Accept: application/json
     urlParameters:
-      course_id:
+      discussion_id:
         custom: []
-        name: course_id
-        description: 'The ID of the course.'
+        name: discussion_id
+        description: 'The ID of the discussion.'
         required: true
-        example: 2
+        example: 13
         type: integer
         enumValues: []
         exampleWasSpecified: false
         nullable: false
         deprecated: false
     cleanUrlParameters:
-      course_id: 2
-    queryParameters:
-      sort:
-        custom: []
-        name: sort
-        description: 'data field(s) to sort by. Seprate multiple fields with commas. Denote descending sort with a minus sign.'
-        required: false
-        example: 'sort=grade,-created_at'
-        type: string
-        enumValues: []
-        exampleWasSpecified: true
-        nullable: false
-        deprecated: false
-      'filter[type]':
-        custom: []
-        name: 'filter[type]'
-        description: "Filter examinations by it's type. [quiz, mid, final]."
-        required: false
-        example: '*Machine Learning*'
-        type: string
-        enumValues: []
-        exampleWasSpecified: true
-        nullable: false
-        deprecated: false
-      'filter[cratedAt]':
-        custom: []
-        name: 'filter[cratedAt]'
-        description: 'Filter examinations by creation date, you cam also send a comma seprated values that represent (from,to).'
-        required: false
-        example: '2026-4-1,2026-4-7'
-        type: string
-        enumValues: []
-        exampleWasSpecified: true
-        nullable: false
-        deprecated: false
-    cleanQueryParameters:
-      sort: 'sort=grade,-created_at'
-      'filter[type]': '*Machine Learning*'
-      'filter[cratedAt]': '2026-4-1,2026-4-7'
+      discussion_id: 13
+    queryParameters: []
+    cleanQueryParameters: []
     bodyParameters: []
     cleanBodyParameters: []
     fileParameters: []
@@ -87,7 +51,19 @@ endpoints:
                }]
           }
         headers: []
-        description: 'When you are NOT The instructor of the course.'
+        description: 'When you are NOT The instructor of the course, Or NOT an enrolled student.'
+      -
+        custom: []
+        status: 404
+        content: |-
+          {
+               "errors": [{
+                   "status": 404,
+                   "message": "The Resource Could Not Be Found :("
+               }]
+          }
+        headers: []
+        description: ''
     responseFields: []
     auth:
       - headers
@@ -100,15 +76,15 @@ endpoints:
     custom: []
     httpMethods:
       - POST
-    uri: 'api/V1/courses/{course_id}/examinations/student/{user_id}'
+    uri: 'api/V1/discussions/{discussion_id}/comments/register'
     metadata:
       custom: []
-      groupName: 'Manage Examinations'
+      groupName: 'Manage Discussions Comments'
       groupDescription: ''
       subgroup: ''
       subgroupDescription: ''
-      title: 'Create an Examination.'
-      description: 'Create an examination by the instructor for a student in a particular course.'
+      title: 'Create a Comment.'
+      description: 'Create a Comment by a user.'
       authenticated: true
       deprecated: false
     headers:
@@ -116,31 +92,19 @@ endpoints:
       Content-Type: application/json
       Accept: application/json
     urlParameters:
-      course_id:
+      discussion_id:
         custom: []
-        name: course_id
-        description: 'The ID of the course.'
+        name: discussion_id
+        description: 'The ID of the discussion.'
         required: true
-        example: 2
-        type: integer
-        enumValues: []
-        exampleWasSpecified: false
-        nullable: false
-        deprecated: false
-      user_id:
-        custom: []
-        name: user_id
-        description: 'The ID of the user.'
-        required: true
-        example: 1
+        example: 13
         type: integer
         enumValues: []
         exampleWasSpecified: false
         nullable: false
         deprecated: false
     cleanUrlParameters:
-      course_id: 2
-      user_id: 1
+      discussion_id: 13
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters:
@@ -166,27 +130,13 @@ endpoints:
         exampleWasSpecified: false
         nullable: false
         deprecated: false
-      data.attributes.type:
+      data.attributes.content:
         custom: []
-        name: data.attributes.type
-        description: 'The type of the examination (quiz, mid, final).'
+        name: data.attributes.content
+        description: 'The content of the comment. Must not be greater than 2500 characters.'
         required: true
-        example: quiz
+        example: 'I think I enhanced the convergence of gradient descent'
         type: string
-        enumValues:
-          - quiz
-          - mid
-          - final
-        exampleWasSpecified: false
-        nullable: false
-        deprecated: false
-      data.attributes.grade:
-        custom: []
-        name: data.attributes.grade
-        description: 'The grade of the examination, between 0 and 100. Must be between 0 and 100.'
-        required: true
-        example: 65.0
-        type: number
         enumValues: []
         exampleWasSpecified: false
         nullable: false
@@ -194,14 +144,13 @@ endpoints:
     cleanBodyParameters:
       data:
         attributes:
-          type: quiz
-          grade: 65.0
+          content: 'I think I enhanced the convergence of gradient descent'
     fileParameters: []
     responses:
       -
         custom: []
         status: 200
-        content: '{"type":"examination","id":null,"data":{"type":null,"grade":null,"courseId":null,"studentId":null,"createdAt":null},"included":[],"links":[]}'
+        content: '{"type":"comment","id":217,"data":{"content":"Eius et animi quos velit et fugiat sunt.","discussion_id":43,"user_id":4,"createdAt":"2026-04-12T18:14:40.000000Z"},"included":[],"links":[]}'
         headers: []
         description: ''
       -
@@ -215,7 +164,22 @@ endpoints:
                }]
           }
         headers: []
-        description: 'When you are NOT the instructor of the course OR the student is not even enrolled.'
+        description: 'When you are NOT The instructor of the course, Or NOT an enrolled student.'
+      -
+        custom: []
+        status: 200
+        content: |-
+          {
+             "errors": [
+                 {
+                     "status": 422,
+                     "message": "The data.attributes.content field must not be greater than 2500 characters.",
+                     "source": "data.attributes.content"
+                }
+             ]
+          }
+        headers: []
+        description: 'When The content field exceeds 2500 characters'
       -
         custom: []
         status: 404
@@ -240,19 +204,19 @@ endpoints:
     custom: []
     httpMethods:
       - GET
-    uri: 'api/V1/examinations/{examination_id}'
+    uri: 'api/V1/comments/{comment_id}'
     metadata:
       custom: []
-      groupName: 'Manage Examinations'
+      groupName: 'Manage Discussions Comments'
       groupDescription: ''
       subgroup: ''
       subgroupDescription: ''
-      title: 'Show a specific Examination.'
+      title: 'Show a specific Comment.'
       description: |-
-        Display an individual examination for the instructor.
+        Display an individual Comment for a particular Discussion.
         * available relationships for this resource :
-             * course : The course that the examination belongs to.
-             * student : The student that the examination belongs to.
+             * discussion : The discussion that the comment belongs to.
+             * user : The creator of that comment.
       authenticated: true
       deprecated: false
     headers:
@@ -260,33 +224,33 @@ endpoints:
       Content-Type: application/json
       Accept: application/json
     urlParameters:
-      examination_id:
+      comment_id:
         custom: []
-        name: examination_id
-        description: 'The ID of the examination.'
+        name: comment_id
+        description: 'The ID of the comment.'
         required: true
-        example: 16
+        example: 37
         type: integer
         enumValues: []
         exampleWasSpecified: false
         nullable: false
         deprecated: false
     cleanUrlParameters:
-      examination_id: 16
+      comment_id: 37
     queryParameters:
       include:
         custom: []
         name: include
         description: 'data field(s) to include any other relationships. Seprate multiple fields with commas.'
         required: false
-        example: 'include=course,student'
+        example: include=course
         type: string
         enumValues: []
         exampleWasSpecified: true
         nullable: false
         deprecated: false
     cleanQueryParameters:
-      include: 'include=course,student'
+      include: include=course
     bodyParameters: []
     cleanBodyParameters: []
     fileParameters: []
@@ -294,7 +258,7 @@ endpoints:
       -
         custom: []
         status: 200
-        content: '{"type":"examination","id":null,"data":{"type":null,"grade":null,"courseId":null,"studentId":null,"createdAt":null},"included":[],"links":[]}'
+        content: '{"type":"comment","id":217,"data":{"content":"Adipisci quidem nostrum qui commodi incidunt iure odit et.","discussion_id":46,"user_id":14,"createdAt":"2026-04-12T18:14:40.000000Z"},"included":[],"links":[]}'
         headers: []
         description: ''
       -
@@ -308,7 +272,7 @@ endpoints:
                }]
           }
         headers: []
-        description: 'When you are NOT the instructor of the course.'
+        description: 'When you are NOT the instructor of the course, Or NOT even an enrolled student.'
       -
         custom: []
         status: 404
@@ -333,15 +297,15 @@ endpoints:
     custom: []
     httpMethods:
       - PATCH
-    uri: 'api/V1/examinations/{examination_id}'
+    uri: 'api/V1/comments/{comment_id}'
     metadata:
       custom: []
-      groupName: 'Manage Examinations'
+      groupName: 'Manage Discussions Comments'
       groupDescription: ''
       subgroup: ''
       subgroupDescription: ''
-      title: 'Update an Examination.'
-      description: 'Update a specific examination by the instructor.'
+      title: 'Update a Comment.'
+      description: 'Update a specific Comment.'
       authenticated: true
       deprecated: false
     headers:
@@ -349,19 +313,19 @@ endpoints:
       Content-Type: application/json
       Accept: application/json
     urlParameters:
-      examination_id:
+      comment_id:
         custom: []
-        name: examination_id
-        description: 'The ID of the examination.'
+        name: comment_id
+        description: 'The ID of the comment.'
         required: true
-        example: 16
+        example: 37
         type: integer
         enumValues: []
         exampleWasSpecified: false
         nullable: false
         deprecated: false
     cleanUrlParameters:
-      examination_id: 16
+      comment_id: 37
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters:
@@ -387,27 +351,13 @@ endpoints:
         exampleWasSpecified: false
         nullable: false
         deprecated: false
-      data.attributes.type:
+      data.attributes.content:
         custom: []
-        name: data.attributes.type
-        description: 'The type of the examination (quiz, mid, final).'
+        name: data.attributes.content
+        description: 'The content of the comment. Must not be greater than 2500 characters.'
         required: false
-        example: quiz
+        example: 'I think I enhanced the convergence of gradient descent'
         type: string
-        enumValues:
-          - quiz
-          - mid
-          - final
-        exampleWasSpecified: false
-        nullable: false
-        deprecated: false
-      data.attributes.grade:
-        custom: []
-        name: data.attributes.grade
-        description: 'The grade of the examination, between 0 and 100. Must be between 0 and 100.'
-        required: false
-        example: 65.0
-        type: number
         enumValues: []
         exampleWasSpecified: false
         nullable: false
@@ -415,14 +365,13 @@ endpoints:
     cleanBodyParameters:
       data:
         attributes:
-          type: quiz
-          grade: 65.0
+          content: 'I think I enhanced the convergence of gradient descent'
     fileParameters: []
     responses:
       -
         custom: []
         status: 200
-        content: '{"type":"examination","id":null,"data":{"type":null,"grade":null,"courseId":null,"studentId":null,"createdAt":null},"included":[],"links":[]}'
+        content: '{"type":"comment","id":217,"data":{"content":"Eius et animi quos velit et fugiat sunt.","discussion_id":70,"user_id":4,"createdAt":"2026-04-12T18:14:40.000000Z"},"included":[],"links":[]}'
         headers: []
         description: ''
       -
@@ -436,7 +385,23 @@ endpoints:
                }]
           }
         headers: []
-        description: 'When you are NOT the instructor of the course.'
+        description: "When you're not enrolled, or you're not the owner of the comment."
+      -
+        custom: []
+        status: 200
+        content: |-
+          cenario="When The content field exceeds 5000 characters"
+          {
+             "errors": [
+                 {
+                     "status": 422,
+                     "message": "The data.attributes.content field must not be greater than 5000 characters.",
+                     "source": "data.attributes.content"
+                }
+             ]
+          }
+        headers: []
+        description: ''
       -
         custom: []
         status: 404
@@ -461,15 +426,15 @@ endpoints:
     custom: []
     httpMethods:
       - DELETE
-    uri: 'api/V1/examinations/{examination_id}'
+    uri: 'api/V1/comments/{comment_id}'
     metadata:
       custom: []
-      groupName: 'Manage Examinations'
+      groupName: 'Manage Discussions Comments'
       groupDescription: ''
       subgroup: ''
       subgroupDescription: ''
-      title: 'Delete an Examinations.'
-      description: 'Delete a specific examination by the instructor.'
+      title: 'Delete a Comment.'
+      description: 'Delete a specific Comment.'
       authenticated: true
       deprecated: false
     headers:
@@ -477,19 +442,19 @@ endpoints:
       Content-Type: application/json
       Accept: application/json
     urlParameters:
-      examination_id:
+      comment_id:
         custom: []
-        name: examination_id
-        description: 'The ID of the examination.'
+        name: comment_id
+        description: 'The ID of the comment.'
         required: true
-        example: 16
+        example: 37
         type: integer
         enumValues: []
         exampleWasSpecified: false
         nullable: false
         deprecated: false
     cleanUrlParameters:
-      examination_id: 16
+      comment_id: 37
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -507,14 +472,14 @@ endpoints:
                }]
           }
         headers: []
-        description: 'When you are NOT the instructor of the course.'
+        description: "When you're not enrolled, or you're not the owner of the comment."
       -
         custom: []
         status: 200
         content: |-
           {
                "data": [],
-               "message": "Examination deleted successfully",
+               "message": "Comment deleted successfully",
                "code": 200
           }
         headers: []

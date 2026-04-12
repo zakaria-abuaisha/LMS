@@ -62,6 +62,28 @@ class StudentStatisticsController extends ApiController
         return $stats;
     }
 
+    /**
+     * Show a specific Statistics.
+     * 
+     * Display an individual Statistics for a particular student.
+     * @group Manage Student Statistics
+     * @apiResource App\Http\Resources\V1\StudentStatisticsResource
+     * @apiResourceModel App\Models\Course
+     * @Response 200 scenario="When you are NOT enrolled in the course" 
+     * {
+     *      "errors": [{
+     *          "status": 401,
+     *          "message": "NOT Authorized"
+     *      }]
+     * }
+     * @Response 404 
+     * {
+     *      "errors": [{
+     *          "status": 404,
+     *          "message": "The Resource Could Not Be Found :("
+     *      }]
+     * }
+     */
     public function __invoke(Course $course)
     {
         if($this->isAble("IsStudentEnrolled", $course))

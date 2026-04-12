@@ -36,7 +36,7 @@ Route::middleware("auth:sanctum")->group(function () {
             Route::delete("/{course}", [CoursesController::class,"destroy"]);
 
             // Student Statistics
-            Route::get("/{course}/stats", [StudentStatisticsController::class,"index"]);
+            Route::get("/{course}/stats", StudentStatisticsController::class);
 
             // Announcements
             Route::get("/{course}/announcements", [AnnouncementsController::class,"index"]);

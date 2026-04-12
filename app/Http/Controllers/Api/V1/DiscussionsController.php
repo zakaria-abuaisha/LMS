@@ -24,7 +24,7 @@ class DiscussionsController extends ApiController
      * @apiResourceCollection App\Http\Resources\V1\DiscussionResource
      * @queryParam sort string data field(s) to sort by. Seprate multiple fields with commas. Denote descending sort with a minus sign. Example: sort=-created_at
      * @queryParam filter[content] Filter discussions by the title. Example: *What do you think of Linear regression ?*
-     * @queryParam filter[createdAt] Filter discussions by creation date date, you cam also send a comma seprated values that represent (from,to). Example: 2026-4-1,2026-4-7
+     * @queryParam filter[createdAt] Filter discussions by creation date, you can also send a comma seprated values that represent (from,to). Example: 2026-4-1,2026-4-7
      * @Response 200 scenario="When you are NOT The instructor of the course, Or NOT an enrolled student." 
      * {
      *      "errors": [{
@@ -57,7 +57,7 @@ class DiscussionsController extends ApiController
     /**
      * Create a Discussion.
      * 
-     * Create an Discussion by the instructor or any student in a particular course.
+     * Create a Discussion by the instructor or any student in a particular course.
      * 
      * @group Manage Discussions
      * @apiResource App\Http\Resources\V1\DiscussionResource

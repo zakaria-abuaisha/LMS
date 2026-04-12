@@ -82,76 +82,6 @@
                             </li>
                                                                         </ul>
                             </ul>
-                    <ul id="tocify-header-endpoints" class="tocify-header">
-                <li class="tocify-item level-1" data-unique="endpoints">
-                    <a href="#endpoints">Endpoints</a>
-                </li>
-                                    <ul id="tocify-subheader-endpoints" class="tocify-subheader">
-                                                    <li class="tocify-item level-2" data-unique="endpoints-GETapi-V1-discussions--discussion_id--comments">
-                                <a href="#endpoints-GETapi-V1-discussions--discussion_id--comments">GET api/V1/discussions/{discussion_id}/comments</a>
-                            </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-POSTapi-V1-discussions--discussion_id--comments-register">
-                                <a href="#endpoints-POSTapi-V1-discussions--discussion_id--comments-register">POST api/V1/discussions/{discussion_id}/comments/register</a>
-                            </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-GETapi-V1-assignments--assignment_id--assignmentFiles">
-                                <a href="#endpoints-GETapi-V1-assignments--assignment_id--assignmentFiles">GET api/V1/assignments/{assignment_id}/assignmentFiles</a>
-                            </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-POSTapi-V1-assignments--assignment_id--assignmentFiles-register">
-                                <a href="#endpoints-POSTapi-V1-assignments--assignment_id--assignmentFiles-register">POST api/V1/assignments/{assignment_id}/assignmentFiles/register</a>
-                            </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-GETapi-V1-assignments--assignment_id--submissions">
-                                <a href="#endpoints-GETapi-V1-assignments--assignment_id--submissions">GET api/V1/assignments/{assignment_id}/submissions</a>
-                            </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-POSTapi-V1-assignments--assignment_id--studentSubmission-register">
-                                <a href="#endpoints-POSTapi-V1-assignments--assignment_id--studentSubmission-register">POST api/V1/assignments/{assignment_id}/studentSubmission/register</a>
-                            </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-GETapi-V1-submissions--submission_id-">
-                                <a href="#endpoints-GETapi-V1-submissions--submission_id-">GET api/V1/submissions/{submission_id}</a>
-                            </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-PATCHapi-V1-submissions-grade--submission_id-">
-                                <a href="#endpoints-PATCHapi-V1-submissions-grade--submission_id-">PATCH api/V1/submissions/grade/{submission_id}</a>
-                            </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-GETapi-V1-submissions--submission_id--studentSubmission">
-                                <a href="#endpoints-GETapi-V1-submissions--submission_id--studentSubmission">GET api/V1/submissions/{submission_id}/studentSubmission</a>
-                            </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-DELETEapi-V1-submissions--submission_id--studentSubmission">
-                                <a href="#endpoints-DELETEapi-V1-submissions--submission_id--studentSubmission">DELETE api/V1/submissions/{submission_id}/studentSubmission</a>
-                            </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-GETapi-V1-submissions--submission_id--submissionFile">
-                                <a href="#endpoints-GETapi-V1-submissions--submission_id--submissionFile">GET api/V1/submissions/{submission_id}/submissionFile</a>
-                            </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-POSTapi-V1-submissions--submission_id--submissionFile-register">
-                                <a href="#endpoints-POSTapi-V1-submissions--submission_id--submissionFile-register">POST api/V1/submissions/{submission_id}/submissionFile/register</a>
-                            </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-GETapi-V1-submissionFile--submissionFile_id-">
-                                <a href="#endpoints-GETapi-V1-submissionFile--submissionFile_id-">GET api/V1/submissionFile/{submissionFile_id}</a>
-                            </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-GETapi-V1-submissionFile-download--submissionFile_id-">
-                                <a href="#endpoints-GETapi-V1-submissionFile-download--submissionFile_id-">GET api/V1/submissionFile/download/{submissionFile_id}</a>
-                            </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-DELETEapi-V1-submissionFile--submissionFile_id-">
-                                <a href="#endpoints-DELETEapi-V1-submissionFile--submissionFile_id-">DELETE api/V1/submissionFile/{submissionFile_id}</a>
-                            </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-GETapi-V1-assignmentFiles--assignmentFile_id-">
-                                <a href="#endpoints-GETapi-V1-assignmentFiles--assignmentFile_id-">GET api/V1/assignmentFiles/{assignmentFile_id}</a>
-                            </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-GETapi-V1-assignmentFiles-download--assignmentFile_id-">
-                                <a href="#endpoints-GETapi-V1-assignmentFiles-download--assignmentFile_id-">GET api/V1/assignmentFiles/download/{assignmentFile_id}</a>
-                            </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-DELETEapi-V1-assignmentFiles--assignmentFile_id-">
-                                <a href="#endpoints-DELETEapi-V1-assignmentFiles--assignmentFile_id-">DELETE api/V1/assignmentFiles/{assignmentFile_id}</a>
-                            </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-GETapi-V1-comments--comment_id-">
-                                <a href="#endpoints-GETapi-V1-comments--comment_id-">GET api/V1/comments/{comment_id}</a>
-                            </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-PATCHapi-V1-comments--comment_id-">
-                                <a href="#endpoints-PATCHapi-V1-comments--comment_id-">PATCH api/V1/comments/{comment_id}</a>
-                            </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-DELETEapi-V1-comments--comment_id-">
-                                <a href="#endpoints-DELETEapi-V1-comments--comment_id-">DELETE api/V1/comments/{comment_id}</a>
-                            </li>
-                                                                        </ul>
-                            </ul>
                     <ul id="tocify-header-manage-announcements" class="tocify-header">
                 <li class="tocify-item level-1" data-unique="manage-announcements">
                     <a href="#manage-announcements">Manage Announcements</a>
@@ -168,6 +98,28 @@
                             </li>
                                                                                 <li class="tocify-item level-2" data-unique="manage-announcements-DELETEapi-V1-announcements--announcement_id-">
                                 <a href="#manage-announcements-DELETEapi-V1-announcements--announcement_id-">Delete an Announcement.</a>
+                            </li>
+                                                                        </ul>
+                            </ul>
+                    <ul id="tocify-header-manage-assignment-files" class="tocify-header">
+                <li class="tocify-item level-1" data-unique="manage-assignment-files">
+                    <a href="#manage-assignment-files">Manage Assignment Files</a>
+                </li>
+                                    <ul id="tocify-subheader-manage-assignment-files" class="tocify-subheader">
+                                                    <li class="tocify-item level-2" data-unique="manage-assignment-files-GETapi-V1-assignments--assignment_id--assignmentFiles">
+                                <a href="#manage-assignment-files-GETapi-V1-assignments--assignment_id--assignmentFiles">Get Files of an Assignment</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="manage-assignment-files-POSTapi-V1-assignments--assignment_id--assignmentFiles-register">
+                                <a href="#manage-assignment-files-POSTapi-V1-assignments--assignment_id--assignmentFiles-register">Create an Assignment File.</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="manage-assignment-files-GETapi-V1-assignmentFiles--assignmentFile_id-">
+                                <a href="#manage-assignment-files-GETapi-V1-assignmentFiles--assignmentFile_id-">Show a specific Assignment File.</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="manage-assignment-files-GETapi-V1-assignmentFiles-download--assignmentFile_id-">
+                                <a href="#manage-assignment-files-GETapi-V1-assignmentFiles-download--assignmentFile_id-">Download an Assignment File.</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="manage-assignment-files-DELETEapi-V1-assignmentFiles--assignmentFile_id-">
+                                <a href="#manage-assignment-files-DELETEapi-V1-assignmentFiles--assignmentFile_id-">Delete an Assignment File.</a>
                             </li>
                                                                         </ul>
                             </ul>
@@ -256,6 +208,28 @@
                             </li>
                                                                         </ul>
                             </ul>
+                    <ul id="tocify-header-manage-discussions-comments" class="tocify-header">
+                <li class="tocify-item level-1" data-unique="manage-discussions-comments">
+                    <a href="#manage-discussions-comments">Manage Discussions Comments</a>
+                </li>
+                                    <ul id="tocify-subheader-manage-discussions-comments" class="tocify-subheader">
+                                                    <li class="tocify-item level-2" data-unique="manage-discussions-comments-GETapi-V1-discussions--discussion_id--comments">
+                                <a href="#manage-discussions-comments-GETapi-V1-discussions--discussion_id--comments">Get Discussion's Comments</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="manage-discussions-comments-POSTapi-V1-discussions--discussion_id--comments-register">
+                                <a href="#manage-discussions-comments-POSTapi-V1-discussions--discussion_id--comments-register">Create a Comment.</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="manage-discussions-comments-GETapi-V1-comments--comment_id-">
+                                <a href="#manage-discussions-comments-GETapi-V1-comments--comment_id-">Show a specific Comment.</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="manage-discussions-comments-PATCHapi-V1-comments--comment_id-">
+                                <a href="#manage-discussions-comments-PATCHapi-V1-comments--comment_id-">Update a Comment.</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="manage-discussions-comments-DELETEapi-V1-comments--comment_id-">
+                                <a href="#manage-discussions-comments-DELETEapi-V1-comments--comment_id-">Delete a Comment.</a>
+                            </li>
+                                                                        </ul>
+                            </ul>
                     <ul id="tocify-header-manage-enrollments" class="tocify-header">
                 <li class="tocify-item level-1" data-unique="manage-enrollments">
                     <a href="#manage-enrollments">Manage Enrollments</a>
@@ -294,6 +268,70 @@
                             </li>
                                                                         </ul>
                             </ul>
+                    <ul id="tocify-header-manage-student-statistics" class="tocify-header">
+                <li class="tocify-item level-1" data-unique="manage-student-statistics">
+                    <a href="#manage-student-statistics">Manage Student Statistics</a>
+                </li>
+                                    <ul id="tocify-subheader-manage-student-statistics" class="tocify-subheader">
+                                                    <li class="tocify-item level-2" data-unique="manage-student-statistics-GETapi-V1-courses--course_id--stats">
+                                <a href="#manage-student-statistics-GETapi-V1-courses--course_id--stats">Show a specific Statistics.</a>
+                            </li>
+                                                                        </ul>
+                            </ul>
+                    <ul id="tocify-header-manage-student-submissions" class="tocify-header">
+                <li class="tocify-item level-1" data-unique="manage-student-submissions">
+                    <a href="#manage-student-submissions">Manage Student Submissions</a>
+                </li>
+                                    <ul id="tocify-subheader-manage-student-submissions" class="tocify-subheader">
+                                                    <li class="tocify-item level-2" data-unique="manage-student-submissions-POSTapi-V1-assignments--assignment_id--studentSubmission-register">
+                                <a href="#manage-student-submissions-POSTapi-V1-assignments--assignment_id--studentSubmission-register">Create a Submission.</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="manage-student-submissions-GETapi-V1-submissions--submission_id--studentSubmission">
+                                <a href="#manage-student-submissions-GETapi-V1-submissions--submission_id--studentSubmission">Show a Student Submission.</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="manage-student-submissions-DELETEapi-V1-submissions--submission_id--studentSubmission">
+                                <a href="#manage-student-submissions-DELETEapi-V1-submissions--submission_id--studentSubmission">Delete a Submission.</a>
+                            </li>
+                                                                        </ul>
+                            </ul>
+                    <ul id="tocify-header-manage-submission-files" class="tocify-header">
+                <li class="tocify-item level-1" data-unique="manage-submission-files">
+                    <a href="#manage-submission-files">Manage Submission Files</a>
+                </li>
+                                    <ul id="tocify-subheader-manage-submission-files" class="tocify-subheader">
+                                                    <li class="tocify-item level-2" data-unique="manage-submission-files-GETapi-V1-submissions--submission_id--submissionFile">
+                                <a href="#manage-submission-files-GETapi-V1-submissions--submission_id--submissionFile">Get Files of a Submission</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="manage-submission-files-POSTapi-V1-submissions--submission_id--submissionFile-register">
+                                <a href="#manage-submission-files-POSTapi-V1-submissions--submission_id--submissionFile-register">Create a Submission File.</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="manage-submission-files-GETapi-V1-submissionFile--submissionFile_id-">
+                                <a href="#manage-submission-files-GETapi-V1-submissionFile--submissionFile_id-">Show a specific Submission File.</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="manage-submission-files-GETapi-V1-submissionFile-download--submissionFile_id-">
+                                <a href="#manage-submission-files-GETapi-V1-submissionFile-download--submissionFile_id-">Download a Submission File.</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="manage-submission-files-DELETEapi-V1-submissionFile--submissionFile_id-">
+                                <a href="#manage-submission-files-DELETEapi-V1-submissionFile--submissionFile_id-">Delete a Submission File.</a>
+                            </li>
+                                                                        </ul>
+                            </ul>
+                    <ul id="tocify-header-manage-submissions-for-instructor" class="tocify-header">
+                <li class="tocify-item level-1" data-unique="manage-submissions-for-instructor">
+                    <a href="#manage-submissions-for-instructor">Manage Submissions For Instructor</a>
+                </li>
+                                    <ul id="tocify-subheader-manage-submissions-for-instructor" class="tocify-subheader">
+                                                    <li class="tocify-item level-2" data-unique="manage-submissions-for-instructor-GETapi-V1-assignments--assignment_id--submissions">
+                                <a href="#manage-submissions-for-instructor-GETapi-V1-assignments--assignment_id--submissions">Get Submissions</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="manage-submissions-for-instructor-GETapi-V1-submissions--submission_id-">
+                                <a href="#manage-submissions-for-instructor-GETapi-V1-submissions--submission_id-">Show a Student Submission.</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="manage-submissions-for-instructor-PATCHapi-V1-submissions-grade--submission_id-">
+                                <a href="#manage-submissions-for-instructor-PATCHapi-V1-submissions-grade--submission_id-">Grade a Submission.</a>
+                            </li>
+                                                                        </ul>
+                            </ul>
                     <ul id="tocify-header-student-examinations" class="tocify-header">
                 <li class="tocify-item level-1" data-unique="student-examinations">
                     <a href="#student-examinations">Student Examinations</a>
@@ -316,7 +354,7 @@
     </ul>
 
     <ul class="toc-footer" id="last-updated">
-        <li>Last updated: April 11, 2026</li>
+        <li>Last updated: April 12, 2026</li>
     </ul>
 </div>
 
@@ -832,3364 +870,6 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <p>Example: <code>application/json</code></p>
             </div>
                         </form>
-
-                <h1 id="endpoints">Endpoints</h1>
-
-    
-
-                                <h2 id="endpoints-GETapi-V1-discussions--discussion_id--comments">GET api/V1/discussions/{discussion_id}/comments</h2>
-
-<p>
-<small class="badge badge-darkred">requires authentication</small>
-</p>
-
-
-
-<span id="example-requests-GETapi-V1-discussions--discussion_id--comments">
-<blockquote>Example request:</blockquote>
-
-
-<div class="bash-example">
-    <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost/api/V1/discussions/13/comments" \
-    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
-    --header "Content-Type: application/json" \
-    --header "Accept: application/json"</code></pre></div>
-
-
-<div class="javascript-example">
-    <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/V1/discussions/13/comments"
-);
-
-const headers = {
-    "Authorization": "Bearer {YOUR_AUTH_KEY}",
-    "Content-Type": "application/json",
-    "Accept": "application/json",
-};
-
-
-fetch(url, {
-    method: "GET",
-    headers,
-}).then(response =&gt; response.json());</code></pre></div>
-
-</span>
-
-<span id="example-responses-GETapi-V1-discussions--discussion_id--comments">
-            <blockquote>
-            <p>Example response (200):</p>
-        </blockquote>
-                <details class="annotation">
-            <summary style="cursor: pointer;">
-                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
-            </summary>
-            <pre><code class="language-http">cache-control: no-cache, private
-content-type: application/json
-access-control-allow-origin: *
- </code></pre></details>         <pre>
-
-<code class="language-json" style="max-height: 300px;">{
-    &quot;data&quot;: [
-        {
-            &quot;type&quot;: &quot;comment&quot;,
-            &quot;id&quot;: 37,
-            &quot;data&quot;: {
-                &quot;content&quot;: &quot;Voluptatum alias dolorem praesentium impedit saepe et recusandae sit.&quot;,
-                &quot;discussion_id&quot;: 13,
-                &quot;user_id&quot;: 19,
-                &quot;createdAt&quot;: &quot;2026-04-07T15:24:44.000000Z&quot;
-            },
-            &quot;included&quot;: [],
-            &quot;links&quot;: []
-        },
-        {
-            &quot;type&quot;: &quot;comment&quot;,
-            &quot;id&quot;: 38,
-            &quot;data&quot;: {
-                &quot;content&quot;: &quot;Labore voluptas accusamus deserunt accusantium sed quod.&quot;,
-                &quot;discussion_id&quot;: 13,
-                &quot;user_id&quot;: 23,
-                &quot;createdAt&quot;: &quot;2026-04-07T15:24:44.000000Z&quot;
-            },
-            &quot;included&quot;: [],
-            &quot;links&quot;: []
-        },
-        {
-            &quot;type&quot;: &quot;comment&quot;,
-            &quot;id&quot;: 39,
-            &quot;data&quot;: {
-                &quot;content&quot;: &quot;Velit impedit deserunt itaque similique asperiores sed et iste.&quot;,
-                &quot;discussion_id&quot;: 13,
-                &quot;user_id&quot;: 7,
-                &quot;createdAt&quot;: &quot;2026-04-07T15:24:44.000000Z&quot;
-            },
-            &quot;included&quot;: [],
-            &quot;links&quot;: []
-        }
-    ],
-    &quot;links&quot;: {
-        &quot;first&quot;: &quot;http://localhost/api/V1/discussions/13/comments?page=1&quot;,
-        &quot;last&quot;: &quot;http://localhost/api/V1/discussions/13/comments?page=1&quot;,
-        &quot;prev&quot;: null,
-        &quot;next&quot;: null
-    },
-    &quot;meta&quot;: {
-        &quot;current_page&quot;: 1,
-        &quot;from&quot;: 1,
-        &quot;last_page&quot;: 1,
-        &quot;links&quot;: [
-            {
-                &quot;url&quot;: null,
-                &quot;label&quot;: &quot;&amp;laquo; Previous&quot;,
-                &quot;page&quot;: null,
-                &quot;active&quot;: false
-            },
-            {
-                &quot;url&quot;: &quot;http://localhost/api/V1/discussions/13/comments?page=1&quot;,
-                &quot;label&quot;: &quot;1&quot;,
-                &quot;page&quot;: 1,
-                &quot;active&quot;: true
-            },
-            {
-                &quot;url&quot;: null,
-                &quot;label&quot;: &quot;Next &amp;raquo;&quot;,
-                &quot;page&quot;: null,
-                &quot;active&quot;: false
-            }
-        ],
-        &quot;path&quot;: &quot;http://localhost/api/V1/discussions/13/comments&quot;,
-        &quot;per_page&quot;: 15,
-        &quot;to&quot;: 3,
-        &quot;total&quot;: 3
-    }
-}</code>
- </pre>
-    </span>
-<span id="execution-results-GETapi-V1-discussions--discussion_id--comments" hidden>
-    <blockquote>Received response<span
-                id="execution-response-status-GETapi-V1-discussions--discussion_id--comments"></span>:
-    </blockquote>
-    <pre class="json"><code id="execution-response-content-GETapi-V1-discussions--discussion_id--comments"
-      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
-</span>
-<span id="execution-error-GETapi-V1-discussions--discussion_id--comments" hidden>
-    <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-GETapi-V1-discussions--discussion_id--comments">
-
-Tip: Check that you&#039;re properly connected to the network.
-If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
-You can check the Dev Tools console for debugging information.</code></pre>
-</span>
-<form id="form-GETapi-V1-discussions--discussion_id--comments" data-method="GET"
-      data-path="api/V1/discussions/{discussion_id}/comments"
-      data-authed="1"
-      data-hasfiles="0"
-      data-isarraybody="0"
-      autocomplete="off"
-      onsubmit="event.preventDefault(); executeTryOut('GETapi-V1-discussions--discussion_id--comments', this);">
-    <h3>
-        Request&nbsp;&nbsp;&nbsp;
-                    <button type="button"
-                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-tryout-GETapi-V1-discussions--discussion_id--comments"
-                    onclick="tryItOut('GETapi-V1-discussions--discussion_id--comments');">Try it out ⚡
-            </button>
-            <button type="button"
-                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-canceltryout-GETapi-V1-discussions--discussion_id--comments"
-                    onclick="cancelTryOut('GETapi-V1-discussions--discussion_id--comments');" hidden>Cancel 🛑
-            </button>&nbsp;&nbsp;
-            <button type="submit"
-                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-executetryout-GETapi-V1-discussions--discussion_id--comments"
-                    data-initial-text="Send Request 💥"
-                    data-loading-text="⏱ Sending..."
-                    hidden>Send Request 💥
-            </button>
-            </h3>
-            <p>
-            <small class="badge badge-green">GET</small>
-            <b><code>api/V1/discussions/{discussion_id}/comments</code></b>
-        </p>
-                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Authorization" class="auth-value"               data-endpoint="GETapi-V1-discussions--discussion_id--comments"
-               value="Bearer {YOUR_AUTH_KEY}"
-               data-component="header">
-    <br>
-<p>Example: <code>Bearer {YOUR_AUTH_KEY}</code></p>
-            </div>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Content-Type"                data-endpoint="GETapi-V1-discussions--discussion_id--comments"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Accept"                data-endpoint="GETapi-V1-discussions--discussion_id--comments"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
-                    <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>discussion_id</code></b>&nbsp;&nbsp;
-<small>integer</small>&nbsp;
- &nbsp;
- &nbsp;
-                <input type="number" style="display: none"
-               step="any"               name="discussion_id"                data-endpoint="GETapi-V1-discussions--discussion_id--comments"
-               value="13"
-               data-component="url">
-    <br>
-<p>The ID of the discussion. Example: <code>13</code></p>
-            </div>
-                    </form>
-
-                    <h2 id="endpoints-POSTapi-V1-discussions--discussion_id--comments-register">POST api/V1/discussions/{discussion_id}/comments/register</h2>
-
-<p>
-<small class="badge badge-darkred">requires authentication</small>
-</p>
-
-
-
-<span id="example-requests-POSTapi-V1-discussions--discussion_id--comments-register">
-<blockquote>Example request:</blockquote>
-
-
-<div class="bash-example">
-    <pre><code class="language-bash">curl --request POST \
-    "http://localhost/api/V1/discussions/13/comments/register" \
-    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
-    --header "Content-Type: application/json" \
-    --header "Accept: application/json" \
-    --data "{
-    \"content\": \"b\"
-}"
-</code></pre></div>
-
-
-<div class="javascript-example">
-    <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/V1/discussions/13/comments/register"
-);
-
-const headers = {
-    "Authorization": "Bearer {YOUR_AUTH_KEY}",
-    "Content-Type": "application/json",
-    "Accept": "application/json",
-};
-
-let body = {
-    "content": "b"
-};
-
-fetch(url, {
-    method: "POST",
-    headers,
-    body: JSON.stringify(body),
-}).then(response =&gt; response.json());</code></pre></div>
-
-</span>
-
-<span id="example-responses-POSTapi-V1-discussions--discussion_id--comments-register">
-</span>
-<span id="execution-results-POSTapi-V1-discussions--discussion_id--comments-register" hidden>
-    <blockquote>Received response<span
-                id="execution-response-status-POSTapi-V1-discussions--discussion_id--comments-register"></span>:
-    </blockquote>
-    <pre class="json"><code id="execution-response-content-POSTapi-V1-discussions--discussion_id--comments-register"
-      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
-</span>
-<span id="execution-error-POSTapi-V1-discussions--discussion_id--comments-register" hidden>
-    <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-POSTapi-V1-discussions--discussion_id--comments-register">
-
-Tip: Check that you&#039;re properly connected to the network.
-If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
-You can check the Dev Tools console for debugging information.</code></pre>
-</span>
-<form id="form-POSTapi-V1-discussions--discussion_id--comments-register" data-method="POST"
-      data-path="api/V1/discussions/{discussion_id}/comments/register"
-      data-authed="1"
-      data-hasfiles="0"
-      data-isarraybody="0"
-      autocomplete="off"
-      onsubmit="event.preventDefault(); executeTryOut('POSTapi-V1-discussions--discussion_id--comments-register', this);">
-    <h3>
-        Request&nbsp;&nbsp;&nbsp;
-                    <button type="button"
-                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-tryout-POSTapi-V1-discussions--discussion_id--comments-register"
-                    onclick="tryItOut('POSTapi-V1-discussions--discussion_id--comments-register');">Try it out ⚡
-            </button>
-            <button type="button"
-                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-canceltryout-POSTapi-V1-discussions--discussion_id--comments-register"
-                    onclick="cancelTryOut('POSTapi-V1-discussions--discussion_id--comments-register');" hidden>Cancel 🛑
-            </button>&nbsp;&nbsp;
-            <button type="submit"
-                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-executetryout-POSTapi-V1-discussions--discussion_id--comments-register"
-                    data-initial-text="Send Request 💥"
-                    data-loading-text="⏱ Sending..."
-                    hidden>Send Request 💥
-            </button>
-            </h3>
-            <p>
-            <small class="badge badge-black">POST</small>
-            <b><code>api/V1/discussions/{discussion_id}/comments/register</code></b>
-        </p>
-                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Authorization" class="auth-value"               data-endpoint="POSTapi-V1-discussions--discussion_id--comments-register"
-               value="Bearer {YOUR_AUTH_KEY}"
-               data-component="header">
-    <br>
-<p>Example: <code>Bearer {YOUR_AUTH_KEY}</code></p>
-            </div>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Content-Type"                data-endpoint="POSTapi-V1-discussions--discussion_id--comments-register"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Accept"                data-endpoint="POSTapi-V1-discussions--discussion_id--comments-register"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
-                    <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>discussion_id</code></b>&nbsp;&nbsp;
-<small>integer</small>&nbsp;
- &nbsp;
- &nbsp;
-                <input type="number" style="display: none"
-               step="any"               name="discussion_id"                data-endpoint="POSTapi-V1-discussions--discussion_id--comments-register"
-               value="13"
-               data-component="url">
-    <br>
-<p>The ID of the discussion. Example: <code>13</code></p>
-            </div>
-                            <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
-        <div style=" padding-left: 28px;  clear: unset;">
-            <b style="line-height: 2;"><code>content</code></b>&nbsp;&nbsp;
-<small>string</small>&nbsp;
- &nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="content"                data-endpoint="POSTapi-V1-discussions--discussion_id--comments-register"
-               value="b"
-               data-component="body">
-    <br>
-<p>Must not be greater than 2500 characters. Example: <code>b</code></p>
-        </div>
-        </form>
-
-                    <h2 id="endpoints-GETapi-V1-assignments--assignment_id--assignmentFiles">GET api/V1/assignments/{assignment_id}/assignmentFiles</h2>
-
-<p>
-<small class="badge badge-darkred">requires authentication</small>
-</p>
-
-
-
-<span id="example-requests-GETapi-V1-assignments--assignment_id--assignmentFiles">
-<blockquote>Example request:</blockquote>
-
-
-<div class="bash-example">
-    <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost/api/V1/assignments/16/assignmentFiles" \
-    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
-    --header "Content-Type: application/json" \
-    --header "Accept: application/json"</code></pre></div>
-
-
-<div class="javascript-example">
-    <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/V1/assignments/16/assignmentFiles"
-);
-
-const headers = {
-    "Authorization": "Bearer {YOUR_AUTH_KEY}",
-    "Content-Type": "application/json",
-    "Accept": "application/json",
-};
-
-
-fetch(url, {
-    method: "GET",
-    headers,
-}).then(response =&gt; response.json());</code></pre></div>
-
-</span>
-
-<span id="example-responses-GETapi-V1-assignments--assignment_id--assignmentFiles">
-            <blockquote>
-            <p>Example response (200):</p>
-        </blockquote>
-                <details class="annotation">
-            <summary style="cursor: pointer;">
-                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
-            </summary>
-            <pre><code class="language-http">cache-control: no-cache, private
-content-type: application/json
-access-control-allow-origin: *
- </code></pre></details>         <pre>
-
-<code class="language-json" style="max-height: 300px;">{
-    &quot;errors&quot;: [
-        {
-            &quot;status&quot;: 404,
-            &quot;message&quot;: &quot;The Resource Could Not Be Found :(&quot;
-        }
-    ]
-}</code>
- </pre>
-    </span>
-<span id="execution-results-GETapi-V1-assignments--assignment_id--assignmentFiles" hidden>
-    <blockquote>Received response<span
-                id="execution-response-status-GETapi-V1-assignments--assignment_id--assignmentFiles"></span>:
-    </blockquote>
-    <pre class="json"><code id="execution-response-content-GETapi-V1-assignments--assignment_id--assignmentFiles"
-      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
-</span>
-<span id="execution-error-GETapi-V1-assignments--assignment_id--assignmentFiles" hidden>
-    <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-GETapi-V1-assignments--assignment_id--assignmentFiles">
-
-Tip: Check that you&#039;re properly connected to the network.
-If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
-You can check the Dev Tools console for debugging information.</code></pre>
-</span>
-<form id="form-GETapi-V1-assignments--assignment_id--assignmentFiles" data-method="GET"
-      data-path="api/V1/assignments/{assignment_id}/assignmentFiles"
-      data-authed="1"
-      data-hasfiles="0"
-      data-isarraybody="0"
-      autocomplete="off"
-      onsubmit="event.preventDefault(); executeTryOut('GETapi-V1-assignments--assignment_id--assignmentFiles', this);">
-    <h3>
-        Request&nbsp;&nbsp;&nbsp;
-                    <button type="button"
-                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-tryout-GETapi-V1-assignments--assignment_id--assignmentFiles"
-                    onclick="tryItOut('GETapi-V1-assignments--assignment_id--assignmentFiles');">Try it out ⚡
-            </button>
-            <button type="button"
-                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-canceltryout-GETapi-V1-assignments--assignment_id--assignmentFiles"
-                    onclick="cancelTryOut('GETapi-V1-assignments--assignment_id--assignmentFiles');" hidden>Cancel 🛑
-            </button>&nbsp;&nbsp;
-            <button type="submit"
-                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-executetryout-GETapi-V1-assignments--assignment_id--assignmentFiles"
-                    data-initial-text="Send Request 💥"
-                    data-loading-text="⏱ Sending..."
-                    hidden>Send Request 💥
-            </button>
-            </h3>
-            <p>
-            <small class="badge badge-green">GET</small>
-            <b><code>api/V1/assignments/{assignment_id}/assignmentFiles</code></b>
-        </p>
-                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Authorization" class="auth-value"               data-endpoint="GETapi-V1-assignments--assignment_id--assignmentFiles"
-               value="Bearer {YOUR_AUTH_KEY}"
-               data-component="header">
-    <br>
-<p>Example: <code>Bearer {YOUR_AUTH_KEY}</code></p>
-            </div>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Content-Type"                data-endpoint="GETapi-V1-assignments--assignment_id--assignmentFiles"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Accept"                data-endpoint="GETapi-V1-assignments--assignment_id--assignmentFiles"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
-                    <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>assignment_id</code></b>&nbsp;&nbsp;
-<small>integer</small>&nbsp;
- &nbsp;
- &nbsp;
-                <input type="number" style="display: none"
-               step="any"               name="assignment_id"                data-endpoint="GETapi-V1-assignments--assignment_id--assignmentFiles"
-               value="16"
-               data-component="url">
-    <br>
-<p>The ID of the assignment. Example: <code>16</code></p>
-            </div>
-                    </form>
-
-                    <h2 id="endpoints-POSTapi-V1-assignments--assignment_id--assignmentFiles-register">POST api/V1/assignments/{assignment_id}/assignmentFiles/register</h2>
-
-<p>
-<small class="badge badge-darkred">requires authentication</small>
-</p>
-
-
-
-<span id="example-requests-POSTapi-V1-assignments--assignment_id--assignmentFiles-register">
-<blockquote>Example request:</blockquote>
-
-
-<div class="bash-example">
-    <pre><code class="language-bash">curl --request POST \
-    "http://localhost/api/V1/assignments/16/assignmentFiles/register" \
-    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
-    --header "Content-Type: multipart/form-data" \
-    --header "Accept: application/json" \
-    --form "assignmentFile[]=@/tmp/php7u2enprqs3i3a37b1vB" </code></pre></div>
-
-
-<div class="javascript-example">
-    <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/V1/assignments/16/assignmentFiles/register"
-);
-
-const headers = {
-    "Authorization": "Bearer {YOUR_AUTH_KEY}",
-    "Content-Type": "multipart/form-data",
-    "Accept": "application/json",
-};
-
-const body = new FormData();
-body.append('assignmentFile[]', document.querySelector('input[name="assignmentFile[]"]').files[0]);
-
-fetch(url, {
-    method: "POST",
-    headers,
-    body,
-}).then(response =&gt; response.json());</code></pre></div>
-
-</span>
-
-<span id="example-responses-POSTapi-V1-assignments--assignment_id--assignmentFiles-register">
-</span>
-<span id="execution-results-POSTapi-V1-assignments--assignment_id--assignmentFiles-register" hidden>
-    <blockquote>Received response<span
-                id="execution-response-status-POSTapi-V1-assignments--assignment_id--assignmentFiles-register"></span>:
-    </blockquote>
-    <pre class="json"><code id="execution-response-content-POSTapi-V1-assignments--assignment_id--assignmentFiles-register"
-      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
-</span>
-<span id="execution-error-POSTapi-V1-assignments--assignment_id--assignmentFiles-register" hidden>
-    <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-POSTapi-V1-assignments--assignment_id--assignmentFiles-register">
-
-Tip: Check that you&#039;re properly connected to the network.
-If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
-You can check the Dev Tools console for debugging information.</code></pre>
-</span>
-<form id="form-POSTapi-V1-assignments--assignment_id--assignmentFiles-register" data-method="POST"
-      data-path="api/V1/assignments/{assignment_id}/assignmentFiles/register"
-      data-authed="1"
-      data-hasfiles="1"
-      data-isarraybody="0"
-      autocomplete="off"
-      onsubmit="event.preventDefault(); executeTryOut('POSTapi-V1-assignments--assignment_id--assignmentFiles-register', this);">
-    <h3>
-        Request&nbsp;&nbsp;&nbsp;
-                    <button type="button"
-                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-tryout-POSTapi-V1-assignments--assignment_id--assignmentFiles-register"
-                    onclick="tryItOut('POSTapi-V1-assignments--assignment_id--assignmentFiles-register');">Try it out ⚡
-            </button>
-            <button type="button"
-                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-canceltryout-POSTapi-V1-assignments--assignment_id--assignmentFiles-register"
-                    onclick="cancelTryOut('POSTapi-V1-assignments--assignment_id--assignmentFiles-register');" hidden>Cancel 🛑
-            </button>&nbsp;&nbsp;
-            <button type="submit"
-                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-executetryout-POSTapi-V1-assignments--assignment_id--assignmentFiles-register"
-                    data-initial-text="Send Request 💥"
-                    data-loading-text="⏱ Sending..."
-                    hidden>Send Request 💥
-            </button>
-            </h3>
-            <p>
-            <small class="badge badge-black">POST</small>
-            <b><code>api/V1/assignments/{assignment_id}/assignmentFiles/register</code></b>
-        </p>
-                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Authorization" class="auth-value"               data-endpoint="POSTapi-V1-assignments--assignment_id--assignmentFiles-register"
-               value="Bearer {YOUR_AUTH_KEY}"
-               data-component="header">
-    <br>
-<p>Example: <code>Bearer {YOUR_AUTH_KEY}</code></p>
-            </div>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Content-Type"                data-endpoint="POSTapi-V1-assignments--assignment_id--assignmentFiles-register"
-               value="multipart/form-data"
-               data-component="header">
-    <br>
-<p>Example: <code>multipart/form-data</code></p>
-            </div>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Accept"                data-endpoint="POSTapi-V1-assignments--assignment_id--assignmentFiles-register"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
-                    <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>assignment_id</code></b>&nbsp;&nbsp;
-<small>integer</small>&nbsp;
- &nbsp;
- &nbsp;
-                <input type="number" style="display: none"
-               step="any"               name="assignment_id"                data-endpoint="POSTapi-V1-assignments--assignment_id--assignmentFiles-register"
-               value="16"
-               data-component="url">
-    <br>
-<p>The ID of the assignment. Example: <code>16</code></p>
-            </div>
-                            <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
-        <div style=" padding-left: 28px;  clear: unset;">
-            <b style="line-height: 2;"><code>assignmentFile</code></b>&nbsp;&nbsp;
-<small>file[]</small>&nbsp;
-<i>optional</i> &nbsp;
- &nbsp;
-                <input type="file" style="display: none"
-                              name="assignmentFile[0]"                data-endpoint="POSTapi-V1-assignments--assignment_id--assignmentFiles-register"
-               data-component="body">
-        <input type="file" style="display: none"
-               name="assignmentFile[1]"                data-endpoint="POSTapi-V1-assignments--assignment_id--assignmentFiles-register"
-               data-component="body">
-    <br>
-<p>Must be a file. Must not be greater than 51200 kilobytes.</p>
-        </div>
-        </form>
-
-                    <h2 id="endpoints-GETapi-V1-assignments--assignment_id--submissions">GET api/V1/assignments/{assignment_id}/submissions</h2>
-
-<p>
-<small class="badge badge-darkred">requires authentication</small>
-</p>
-
-
-
-<span id="example-requests-GETapi-V1-assignments--assignment_id--submissions">
-<blockquote>Example request:</blockquote>
-
-
-<div class="bash-example">
-    <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost/api/V1/assignments/16/submissions" \
-    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
-    --header "Content-Type: application/json" \
-    --header "Accept: application/json"</code></pre></div>
-
-
-<div class="javascript-example">
-    <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/V1/assignments/16/submissions"
-);
-
-const headers = {
-    "Authorization": "Bearer {YOUR_AUTH_KEY}",
-    "Content-Type": "application/json",
-    "Accept": "application/json",
-};
-
-
-fetch(url, {
-    method: "GET",
-    headers,
-}).then(response =&gt; response.json());</code></pre></div>
-
-</span>
-
-<span id="example-responses-GETapi-V1-assignments--assignment_id--submissions">
-            <blockquote>
-            <p>Example response (200):</p>
-        </blockquote>
-                <details class="annotation">
-            <summary style="cursor: pointer;">
-                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
-            </summary>
-            <pre><code class="language-http">cache-control: no-cache, private
-content-type: application/json
-access-control-allow-origin: *
- </code></pre></details>         <pre>
-
-<code class="language-json" style="max-height: 300px;">{
-    &quot;errors&quot;: [
-        {
-            &quot;status&quot;: 404,
-            &quot;message&quot;: &quot;The Resource Could Not Be Found :(&quot;
-        }
-    ]
-}</code>
- </pre>
-    </span>
-<span id="execution-results-GETapi-V1-assignments--assignment_id--submissions" hidden>
-    <blockquote>Received response<span
-                id="execution-response-status-GETapi-V1-assignments--assignment_id--submissions"></span>:
-    </blockquote>
-    <pre class="json"><code id="execution-response-content-GETapi-V1-assignments--assignment_id--submissions"
-      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
-</span>
-<span id="execution-error-GETapi-V1-assignments--assignment_id--submissions" hidden>
-    <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-GETapi-V1-assignments--assignment_id--submissions">
-
-Tip: Check that you&#039;re properly connected to the network.
-If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
-You can check the Dev Tools console for debugging information.</code></pre>
-</span>
-<form id="form-GETapi-V1-assignments--assignment_id--submissions" data-method="GET"
-      data-path="api/V1/assignments/{assignment_id}/submissions"
-      data-authed="1"
-      data-hasfiles="0"
-      data-isarraybody="0"
-      autocomplete="off"
-      onsubmit="event.preventDefault(); executeTryOut('GETapi-V1-assignments--assignment_id--submissions', this);">
-    <h3>
-        Request&nbsp;&nbsp;&nbsp;
-                    <button type="button"
-                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-tryout-GETapi-V1-assignments--assignment_id--submissions"
-                    onclick="tryItOut('GETapi-V1-assignments--assignment_id--submissions');">Try it out ⚡
-            </button>
-            <button type="button"
-                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-canceltryout-GETapi-V1-assignments--assignment_id--submissions"
-                    onclick="cancelTryOut('GETapi-V1-assignments--assignment_id--submissions');" hidden>Cancel 🛑
-            </button>&nbsp;&nbsp;
-            <button type="submit"
-                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-executetryout-GETapi-V1-assignments--assignment_id--submissions"
-                    data-initial-text="Send Request 💥"
-                    data-loading-text="⏱ Sending..."
-                    hidden>Send Request 💥
-            </button>
-            </h3>
-            <p>
-            <small class="badge badge-green">GET</small>
-            <b><code>api/V1/assignments/{assignment_id}/submissions</code></b>
-        </p>
-                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Authorization" class="auth-value"               data-endpoint="GETapi-V1-assignments--assignment_id--submissions"
-               value="Bearer {YOUR_AUTH_KEY}"
-               data-component="header">
-    <br>
-<p>Example: <code>Bearer {YOUR_AUTH_KEY}</code></p>
-            </div>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Content-Type"                data-endpoint="GETapi-V1-assignments--assignment_id--submissions"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Accept"                data-endpoint="GETapi-V1-assignments--assignment_id--submissions"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
-                    <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>assignment_id</code></b>&nbsp;&nbsp;
-<small>integer</small>&nbsp;
- &nbsp;
- &nbsp;
-                <input type="number" style="display: none"
-               step="any"               name="assignment_id"                data-endpoint="GETapi-V1-assignments--assignment_id--submissions"
-               value="16"
-               data-component="url">
-    <br>
-<p>The ID of the assignment. Example: <code>16</code></p>
-            </div>
-                    </form>
-
-                    <h2 id="endpoints-POSTapi-V1-assignments--assignment_id--studentSubmission-register">POST api/V1/assignments/{assignment_id}/studentSubmission/register</h2>
-
-<p>
-<small class="badge badge-darkred">requires authentication</small>
-</p>
-
-
-
-<span id="example-requests-POSTapi-V1-assignments--assignment_id--studentSubmission-register">
-<blockquote>Example request:</blockquote>
-
-
-<div class="bash-example">
-    <pre><code class="language-bash">curl --request POST \
-    "http://localhost/api/V1/assignments/16/studentSubmission/register" \
-    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
-    --header "Content-Type: application/json" \
-    --header "Accept: application/json"</code></pre></div>
-
-
-<div class="javascript-example">
-    <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/V1/assignments/16/studentSubmission/register"
-);
-
-const headers = {
-    "Authorization": "Bearer {YOUR_AUTH_KEY}",
-    "Content-Type": "application/json",
-    "Accept": "application/json",
-};
-
-
-fetch(url, {
-    method: "POST",
-    headers,
-}).then(response =&gt; response.json());</code></pre></div>
-
-</span>
-
-<span id="example-responses-POSTapi-V1-assignments--assignment_id--studentSubmission-register">
-</span>
-<span id="execution-results-POSTapi-V1-assignments--assignment_id--studentSubmission-register" hidden>
-    <blockquote>Received response<span
-                id="execution-response-status-POSTapi-V1-assignments--assignment_id--studentSubmission-register"></span>:
-    </blockquote>
-    <pre class="json"><code id="execution-response-content-POSTapi-V1-assignments--assignment_id--studentSubmission-register"
-      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
-</span>
-<span id="execution-error-POSTapi-V1-assignments--assignment_id--studentSubmission-register" hidden>
-    <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-POSTapi-V1-assignments--assignment_id--studentSubmission-register">
-
-Tip: Check that you&#039;re properly connected to the network.
-If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
-You can check the Dev Tools console for debugging information.</code></pre>
-</span>
-<form id="form-POSTapi-V1-assignments--assignment_id--studentSubmission-register" data-method="POST"
-      data-path="api/V1/assignments/{assignment_id}/studentSubmission/register"
-      data-authed="1"
-      data-hasfiles="0"
-      data-isarraybody="0"
-      autocomplete="off"
-      onsubmit="event.preventDefault(); executeTryOut('POSTapi-V1-assignments--assignment_id--studentSubmission-register', this);">
-    <h3>
-        Request&nbsp;&nbsp;&nbsp;
-                    <button type="button"
-                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-tryout-POSTapi-V1-assignments--assignment_id--studentSubmission-register"
-                    onclick="tryItOut('POSTapi-V1-assignments--assignment_id--studentSubmission-register');">Try it out ⚡
-            </button>
-            <button type="button"
-                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-canceltryout-POSTapi-V1-assignments--assignment_id--studentSubmission-register"
-                    onclick="cancelTryOut('POSTapi-V1-assignments--assignment_id--studentSubmission-register');" hidden>Cancel 🛑
-            </button>&nbsp;&nbsp;
-            <button type="submit"
-                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-executetryout-POSTapi-V1-assignments--assignment_id--studentSubmission-register"
-                    data-initial-text="Send Request 💥"
-                    data-loading-text="⏱ Sending..."
-                    hidden>Send Request 💥
-            </button>
-            </h3>
-            <p>
-            <small class="badge badge-black">POST</small>
-            <b><code>api/V1/assignments/{assignment_id}/studentSubmission/register</code></b>
-        </p>
-                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Authorization" class="auth-value"               data-endpoint="POSTapi-V1-assignments--assignment_id--studentSubmission-register"
-               value="Bearer {YOUR_AUTH_KEY}"
-               data-component="header">
-    <br>
-<p>Example: <code>Bearer {YOUR_AUTH_KEY}</code></p>
-            </div>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Content-Type"                data-endpoint="POSTapi-V1-assignments--assignment_id--studentSubmission-register"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Accept"                data-endpoint="POSTapi-V1-assignments--assignment_id--studentSubmission-register"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
-                    <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>assignment_id</code></b>&nbsp;&nbsp;
-<small>integer</small>&nbsp;
- &nbsp;
- &nbsp;
-                <input type="number" style="display: none"
-               step="any"               name="assignment_id"                data-endpoint="POSTapi-V1-assignments--assignment_id--studentSubmission-register"
-               value="16"
-               data-component="url">
-    <br>
-<p>The ID of the assignment. Example: <code>16</code></p>
-            </div>
-                    </form>
-
-                    <h2 id="endpoints-GETapi-V1-submissions--submission_id-">GET api/V1/submissions/{submission_id}</h2>
-
-<p>
-<small class="badge badge-darkred">requires authentication</small>
-</p>
-
-
-
-<span id="example-requests-GETapi-V1-submissions--submission_id-">
-<blockquote>Example request:</blockquote>
-
-
-<div class="bash-example">
-    <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost/api/V1/submissions/16" \
-    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
-    --header "Content-Type: application/json" \
-    --header "Accept: application/json"</code></pre></div>
-
-
-<div class="javascript-example">
-    <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/V1/submissions/16"
-);
-
-const headers = {
-    "Authorization": "Bearer {YOUR_AUTH_KEY}",
-    "Content-Type": "application/json",
-    "Accept": "application/json",
-};
-
-
-fetch(url, {
-    method: "GET",
-    headers,
-}).then(response =&gt; response.json());</code></pre></div>
-
-</span>
-
-<span id="example-responses-GETapi-V1-submissions--submission_id-">
-            <blockquote>
-            <p>Example response (200):</p>
-        </blockquote>
-                <details class="annotation">
-            <summary style="cursor: pointer;">
-                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
-            </summary>
-            <pre><code class="language-http">cache-control: no-cache, private
-content-type: application/json
-access-control-allow-origin: *
- </code></pre></details>         <pre>
-
-<code class="language-json" style="max-height: 300px;">{
-    &quot;errors&quot;: [
-        {
-            &quot;status&quot;: 404,
-            &quot;message&quot;: &quot;The Resource Could Not Be Found :(&quot;
-        }
-    ]
-}</code>
- </pre>
-    </span>
-<span id="execution-results-GETapi-V1-submissions--submission_id-" hidden>
-    <blockquote>Received response<span
-                id="execution-response-status-GETapi-V1-submissions--submission_id-"></span>:
-    </blockquote>
-    <pre class="json"><code id="execution-response-content-GETapi-V1-submissions--submission_id-"
-      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
-</span>
-<span id="execution-error-GETapi-V1-submissions--submission_id-" hidden>
-    <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-GETapi-V1-submissions--submission_id-">
-
-Tip: Check that you&#039;re properly connected to the network.
-If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
-You can check the Dev Tools console for debugging information.</code></pre>
-</span>
-<form id="form-GETapi-V1-submissions--submission_id-" data-method="GET"
-      data-path="api/V1/submissions/{submission_id}"
-      data-authed="1"
-      data-hasfiles="0"
-      data-isarraybody="0"
-      autocomplete="off"
-      onsubmit="event.preventDefault(); executeTryOut('GETapi-V1-submissions--submission_id-', this);">
-    <h3>
-        Request&nbsp;&nbsp;&nbsp;
-                    <button type="button"
-                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-tryout-GETapi-V1-submissions--submission_id-"
-                    onclick="tryItOut('GETapi-V1-submissions--submission_id-');">Try it out ⚡
-            </button>
-            <button type="button"
-                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-canceltryout-GETapi-V1-submissions--submission_id-"
-                    onclick="cancelTryOut('GETapi-V1-submissions--submission_id-');" hidden>Cancel 🛑
-            </button>&nbsp;&nbsp;
-            <button type="submit"
-                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-executetryout-GETapi-V1-submissions--submission_id-"
-                    data-initial-text="Send Request 💥"
-                    data-loading-text="⏱ Sending..."
-                    hidden>Send Request 💥
-            </button>
-            </h3>
-            <p>
-            <small class="badge badge-green">GET</small>
-            <b><code>api/V1/submissions/{submission_id}</code></b>
-        </p>
-                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Authorization" class="auth-value"               data-endpoint="GETapi-V1-submissions--submission_id-"
-               value="Bearer {YOUR_AUTH_KEY}"
-               data-component="header">
-    <br>
-<p>Example: <code>Bearer {YOUR_AUTH_KEY}</code></p>
-            </div>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Content-Type"                data-endpoint="GETapi-V1-submissions--submission_id-"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Accept"                data-endpoint="GETapi-V1-submissions--submission_id-"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
-                    <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>submission_id</code></b>&nbsp;&nbsp;
-<small>integer</small>&nbsp;
- &nbsp;
- &nbsp;
-                <input type="number" style="display: none"
-               step="any"               name="submission_id"                data-endpoint="GETapi-V1-submissions--submission_id-"
-               value="16"
-               data-component="url">
-    <br>
-<p>The ID of the submission. Example: <code>16</code></p>
-            </div>
-                    </form>
-
-                    <h2 id="endpoints-PATCHapi-V1-submissions-grade--submission_id-">PATCH api/V1/submissions/grade/{submission_id}</h2>
-
-<p>
-<small class="badge badge-darkred">requires authentication</small>
-</p>
-
-
-
-<span id="example-requests-PATCHapi-V1-submissions-grade--submission_id-">
-<blockquote>Example request:</blockquote>
-
-
-<div class="bash-example">
-    <pre><code class="language-bash">curl --request PATCH \
-    "http://localhost/api/V1/submissions/grade/16" \
-    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
-    --header "Content-Type: application/json" \
-    --header "Accept: application/json" \
-    --data "{
-    \"data\": {
-        \"attributes\": {
-            \"grade\": 1
-        }
-    }
-}"
-</code></pre></div>
-
-
-<div class="javascript-example">
-    <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/V1/submissions/grade/16"
-);
-
-const headers = {
-    "Authorization": "Bearer {YOUR_AUTH_KEY}",
-    "Content-Type": "application/json",
-    "Accept": "application/json",
-};
-
-let body = {
-    "data": {
-        "attributes": {
-            "grade": 1
-        }
-    }
-};
-
-fetch(url, {
-    method: "PATCH",
-    headers,
-    body: JSON.stringify(body),
-}).then(response =&gt; response.json());</code></pre></div>
-
-</span>
-
-<span id="example-responses-PATCHapi-V1-submissions-grade--submission_id-">
-</span>
-<span id="execution-results-PATCHapi-V1-submissions-grade--submission_id-" hidden>
-    <blockquote>Received response<span
-                id="execution-response-status-PATCHapi-V1-submissions-grade--submission_id-"></span>:
-    </blockquote>
-    <pre class="json"><code id="execution-response-content-PATCHapi-V1-submissions-grade--submission_id-"
-      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
-</span>
-<span id="execution-error-PATCHapi-V1-submissions-grade--submission_id-" hidden>
-    <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-PATCHapi-V1-submissions-grade--submission_id-">
-
-Tip: Check that you&#039;re properly connected to the network.
-If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
-You can check the Dev Tools console for debugging information.</code></pre>
-</span>
-<form id="form-PATCHapi-V1-submissions-grade--submission_id-" data-method="PATCH"
-      data-path="api/V1/submissions/grade/{submission_id}"
-      data-authed="1"
-      data-hasfiles="0"
-      data-isarraybody="0"
-      autocomplete="off"
-      onsubmit="event.preventDefault(); executeTryOut('PATCHapi-V1-submissions-grade--submission_id-', this);">
-    <h3>
-        Request&nbsp;&nbsp;&nbsp;
-                    <button type="button"
-                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-tryout-PATCHapi-V1-submissions-grade--submission_id-"
-                    onclick="tryItOut('PATCHapi-V1-submissions-grade--submission_id-');">Try it out ⚡
-            </button>
-            <button type="button"
-                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-canceltryout-PATCHapi-V1-submissions-grade--submission_id-"
-                    onclick="cancelTryOut('PATCHapi-V1-submissions-grade--submission_id-');" hidden>Cancel 🛑
-            </button>&nbsp;&nbsp;
-            <button type="submit"
-                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-executetryout-PATCHapi-V1-submissions-grade--submission_id-"
-                    data-initial-text="Send Request 💥"
-                    data-loading-text="⏱ Sending..."
-                    hidden>Send Request 💥
-            </button>
-            </h3>
-            <p>
-            <small class="badge badge-purple">PATCH</small>
-            <b><code>api/V1/submissions/grade/{submission_id}</code></b>
-        </p>
-                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Authorization" class="auth-value"               data-endpoint="PATCHapi-V1-submissions-grade--submission_id-"
-               value="Bearer {YOUR_AUTH_KEY}"
-               data-component="header">
-    <br>
-<p>Example: <code>Bearer {YOUR_AUTH_KEY}</code></p>
-            </div>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Content-Type"                data-endpoint="PATCHapi-V1-submissions-grade--submission_id-"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Accept"                data-endpoint="PATCHapi-V1-submissions-grade--submission_id-"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
-                    <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>submission_id</code></b>&nbsp;&nbsp;
-<small>integer</small>&nbsp;
- &nbsp;
- &nbsp;
-                <input type="number" style="display: none"
-               step="any"               name="submission_id"                data-endpoint="PATCHapi-V1-submissions-grade--submission_id-"
-               value="16"
-               data-component="url">
-    <br>
-<p>The ID of the submission. Example: <code>16</code></p>
-            </div>
-                            <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
-        <div style=" padding-left: 28px;  clear: unset;">
-        <details>
-            <summary style="padding-bottom: 10px;">
-                <b style="line-height: 2;"><code>data</code></b>&nbsp;&nbsp;
-<small>object</small>&nbsp;
-<i>optional</i> &nbsp;
- &nbsp;
-<br>
-
-            </summary>
-                                                <div style=" margin-left: 14px; clear: unset;">
-        <details>
-            <summary style="padding-bottom: 10px;">
-                <b style="line-height: 2;"><code>attributes</code></b>&nbsp;&nbsp;
-<small>object</small>&nbsp;
-<i>optional</i> &nbsp;
- &nbsp;
-<br>
-
-            </summary>
-                                                <div style="margin-left: 28px; clear: unset;">
-                        <b style="line-height: 2;"><code>grade</code></b>&nbsp;&nbsp;
-<small>number</small>&nbsp;
- &nbsp;
- &nbsp;
-                <input type="number" style="display: none"
-               step="any"               name="data.attributes.grade"                data-endpoint="PATCHapi-V1-submissions-grade--submission_id-"
-               value="1"
-               data-component="body">
-    <br>
-<p>Must be between 0 and 100. Example: <code>1</code></p>
-                    </div>
-                                    </details>
-        </div>
-                                        </details>
-        </div>
-        </form>
-
-                    <h2 id="endpoints-GETapi-V1-submissions--submission_id--studentSubmission">GET api/V1/submissions/{submission_id}/studentSubmission</h2>
-
-<p>
-<small class="badge badge-darkred">requires authentication</small>
-</p>
-
-
-
-<span id="example-requests-GETapi-V1-submissions--submission_id--studentSubmission">
-<blockquote>Example request:</blockquote>
-
-
-<div class="bash-example">
-    <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost/api/V1/submissions/16/studentSubmission" \
-    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
-    --header "Content-Type: application/json" \
-    --header "Accept: application/json"</code></pre></div>
-
-
-<div class="javascript-example">
-    <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/V1/submissions/16/studentSubmission"
-);
-
-const headers = {
-    "Authorization": "Bearer {YOUR_AUTH_KEY}",
-    "Content-Type": "application/json",
-    "Accept": "application/json",
-};
-
-
-fetch(url, {
-    method: "GET",
-    headers,
-}).then(response =&gt; response.json());</code></pre></div>
-
-</span>
-
-<span id="example-responses-GETapi-V1-submissions--submission_id--studentSubmission">
-            <blockquote>
-            <p>Example response (200):</p>
-        </blockquote>
-                <details class="annotation">
-            <summary style="cursor: pointer;">
-                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
-            </summary>
-            <pre><code class="language-http">cache-control: no-cache, private
-content-type: application/json
-access-control-allow-origin: *
- </code></pre></details>         <pre>
-
-<code class="language-json" style="max-height: 300px;">{
-    &quot;errors&quot;: [
-        {
-            &quot;status&quot;: 404,
-            &quot;message&quot;: &quot;The Resource Could Not Be Found :(&quot;
-        }
-    ]
-}</code>
- </pre>
-    </span>
-<span id="execution-results-GETapi-V1-submissions--submission_id--studentSubmission" hidden>
-    <blockquote>Received response<span
-                id="execution-response-status-GETapi-V1-submissions--submission_id--studentSubmission"></span>:
-    </blockquote>
-    <pre class="json"><code id="execution-response-content-GETapi-V1-submissions--submission_id--studentSubmission"
-      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
-</span>
-<span id="execution-error-GETapi-V1-submissions--submission_id--studentSubmission" hidden>
-    <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-GETapi-V1-submissions--submission_id--studentSubmission">
-
-Tip: Check that you&#039;re properly connected to the network.
-If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
-You can check the Dev Tools console for debugging information.</code></pre>
-</span>
-<form id="form-GETapi-V1-submissions--submission_id--studentSubmission" data-method="GET"
-      data-path="api/V1/submissions/{submission_id}/studentSubmission"
-      data-authed="1"
-      data-hasfiles="0"
-      data-isarraybody="0"
-      autocomplete="off"
-      onsubmit="event.preventDefault(); executeTryOut('GETapi-V1-submissions--submission_id--studentSubmission', this);">
-    <h3>
-        Request&nbsp;&nbsp;&nbsp;
-                    <button type="button"
-                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-tryout-GETapi-V1-submissions--submission_id--studentSubmission"
-                    onclick="tryItOut('GETapi-V1-submissions--submission_id--studentSubmission');">Try it out ⚡
-            </button>
-            <button type="button"
-                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-canceltryout-GETapi-V1-submissions--submission_id--studentSubmission"
-                    onclick="cancelTryOut('GETapi-V1-submissions--submission_id--studentSubmission');" hidden>Cancel 🛑
-            </button>&nbsp;&nbsp;
-            <button type="submit"
-                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-executetryout-GETapi-V1-submissions--submission_id--studentSubmission"
-                    data-initial-text="Send Request 💥"
-                    data-loading-text="⏱ Sending..."
-                    hidden>Send Request 💥
-            </button>
-            </h3>
-            <p>
-            <small class="badge badge-green">GET</small>
-            <b><code>api/V1/submissions/{submission_id}/studentSubmission</code></b>
-        </p>
-                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Authorization" class="auth-value"               data-endpoint="GETapi-V1-submissions--submission_id--studentSubmission"
-               value="Bearer {YOUR_AUTH_KEY}"
-               data-component="header">
-    <br>
-<p>Example: <code>Bearer {YOUR_AUTH_KEY}</code></p>
-            </div>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Content-Type"                data-endpoint="GETapi-V1-submissions--submission_id--studentSubmission"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Accept"                data-endpoint="GETapi-V1-submissions--submission_id--studentSubmission"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
-                    <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>submission_id</code></b>&nbsp;&nbsp;
-<small>integer</small>&nbsp;
- &nbsp;
- &nbsp;
-                <input type="number" style="display: none"
-               step="any"               name="submission_id"                data-endpoint="GETapi-V1-submissions--submission_id--studentSubmission"
-               value="16"
-               data-component="url">
-    <br>
-<p>The ID of the submission. Example: <code>16</code></p>
-            </div>
-                    </form>
-
-                    <h2 id="endpoints-DELETEapi-V1-submissions--submission_id--studentSubmission">DELETE api/V1/submissions/{submission_id}/studentSubmission</h2>
-
-<p>
-<small class="badge badge-darkred">requires authentication</small>
-</p>
-
-
-
-<span id="example-requests-DELETEapi-V1-submissions--submission_id--studentSubmission">
-<blockquote>Example request:</blockquote>
-
-
-<div class="bash-example">
-    <pre><code class="language-bash">curl --request DELETE \
-    "http://localhost/api/V1/submissions/16/studentSubmission" \
-    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
-    --header "Content-Type: application/json" \
-    --header "Accept: application/json"</code></pre></div>
-
-
-<div class="javascript-example">
-    <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/V1/submissions/16/studentSubmission"
-);
-
-const headers = {
-    "Authorization": "Bearer {YOUR_AUTH_KEY}",
-    "Content-Type": "application/json",
-    "Accept": "application/json",
-};
-
-
-fetch(url, {
-    method: "DELETE",
-    headers,
-}).then(response =&gt; response.json());</code></pre></div>
-
-</span>
-
-<span id="example-responses-DELETEapi-V1-submissions--submission_id--studentSubmission">
-</span>
-<span id="execution-results-DELETEapi-V1-submissions--submission_id--studentSubmission" hidden>
-    <blockquote>Received response<span
-                id="execution-response-status-DELETEapi-V1-submissions--submission_id--studentSubmission"></span>:
-    </blockquote>
-    <pre class="json"><code id="execution-response-content-DELETEapi-V1-submissions--submission_id--studentSubmission"
-      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
-</span>
-<span id="execution-error-DELETEapi-V1-submissions--submission_id--studentSubmission" hidden>
-    <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-DELETEapi-V1-submissions--submission_id--studentSubmission">
-
-Tip: Check that you&#039;re properly connected to the network.
-If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
-You can check the Dev Tools console for debugging information.</code></pre>
-</span>
-<form id="form-DELETEapi-V1-submissions--submission_id--studentSubmission" data-method="DELETE"
-      data-path="api/V1/submissions/{submission_id}/studentSubmission"
-      data-authed="1"
-      data-hasfiles="0"
-      data-isarraybody="0"
-      autocomplete="off"
-      onsubmit="event.preventDefault(); executeTryOut('DELETEapi-V1-submissions--submission_id--studentSubmission', this);">
-    <h3>
-        Request&nbsp;&nbsp;&nbsp;
-                    <button type="button"
-                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-tryout-DELETEapi-V1-submissions--submission_id--studentSubmission"
-                    onclick="tryItOut('DELETEapi-V1-submissions--submission_id--studentSubmission');">Try it out ⚡
-            </button>
-            <button type="button"
-                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-canceltryout-DELETEapi-V1-submissions--submission_id--studentSubmission"
-                    onclick="cancelTryOut('DELETEapi-V1-submissions--submission_id--studentSubmission');" hidden>Cancel 🛑
-            </button>&nbsp;&nbsp;
-            <button type="submit"
-                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-executetryout-DELETEapi-V1-submissions--submission_id--studentSubmission"
-                    data-initial-text="Send Request 💥"
-                    data-loading-text="⏱ Sending..."
-                    hidden>Send Request 💥
-            </button>
-            </h3>
-            <p>
-            <small class="badge badge-red">DELETE</small>
-            <b><code>api/V1/submissions/{submission_id}/studentSubmission</code></b>
-        </p>
-                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Authorization" class="auth-value"               data-endpoint="DELETEapi-V1-submissions--submission_id--studentSubmission"
-               value="Bearer {YOUR_AUTH_KEY}"
-               data-component="header">
-    <br>
-<p>Example: <code>Bearer {YOUR_AUTH_KEY}</code></p>
-            </div>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Content-Type"                data-endpoint="DELETEapi-V1-submissions--submission_id--studentSubmission"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Accept"                data-endpoint="DELETEapi-V1-submissions--submission_id--studentSubmission"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
-                    <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>submission_id</code></b>&nbsp;&nbsp;
-<small>integer</small>&nbsp;
- &nbsp;
- &nbsp;
-                <input type="number" style="display: none"
-               step="any"               name="submission_id"                data-endpoint="DELETEapi-V1-submissions--submission_id--studentSubmission"
-               value="16"
-               data-component="url">
-    <br>
-<p>The ID of the submission. Example: <code>16</code></p>
-            </div>
-                    </form>
-
-                    <h2 id="endpoints-GETapi-V1-submissions--submission_id--submissionFile">GET api/V1/submissions/{submission_id}/submissionFile</h2>
-
-<p>
-<small class="badge badge-darkred">requires authentication</small>
-</p>
-
-
-
-<span id="example-requests-GETapi-V1-submissions--submission_id--submissionFile">
-<blockquote>Example request:</blockquote>
-
-
-<div class="bash-example">
-    <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost/api/V1/submissions/16/submissionFile" \
-    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
-    --header "Content-Type: application/json" \
-    --header "Accept: application/json"</code></pre></div>
-
-
-<div class="javascript-example">
-    <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/V1/submissions/16/submissionFile"
-);
-
-const headers = {
-    "Authorization": "Bearer {YOUR_AUTH_KEY}",
-    "Content-Type": "application/json",
-    "Accept": "application/json",
-};
-
-
-fetch(url, {
-    method: "GET",
-    headers,
-}).then(response =&gt; response.json());</code></pre></div>
-
-</span>
-
-<span id="example-responses-GETapi-V1-submissions--submission_id--submissionFile">
-            <blockquote>
-            <p>Example response (200):</p>
-        </blockquote>
-                <details class="annotation">
-            <summary style="cursor: pointer;">
-                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
-            </summary>
-            <pre><code class="language-http">cache-control: no-cache, private
-content-type: application/json
-access-control-allow-origin: *
- </code></pre></details>         <pre>
-
-<code class="language-json" style="max-height: 300px;">{
-    &quot;errors&quot;: [
-        {
-            &quot;status&quot;: 404,
-            &quot;message&quot;: &quot;The Resource Could Not Be Found :(&quot;
-        }
-    ]
-}</code>
- </pre>
-    </span>
-<span id="execution-results-GETapi-V1-submissions--submission_id--submissionFile" hidden>
-    <blockquote>Received response<span
-                id="execution-response-status-GETapi-V1-submissions--submission_id--submissionFile"></span>:
-    </blockquote>
-    <pre class="json"><code id="execution-response-content-GETapi-V1-submissions--submission_id--submissionFile"
-      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
-</span>
-<span id="execution-error-GETapi-V1-submissions--submission_id--submissionFile" hidden>
-    <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-GETapi-V1-submissions--submission_id--submissionFile">
-
-Tip: Check that you&#039;re properly connected to the network.
-If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
-You can check the Dev Tools console for debugging information.</code></pre>
-</span>
-<form id="form-GETapi-V1-submissions--submission_id--submissionFile" data-method="GET"
-      data-path="api/V1/submissions/{submission_id}/submissionFile"
-      data-authed="1"
-      data-hasfiles="0"
-      data-isarraybody="0"
-      autocomplete="off"
-      onsubmit="event.preventDefault(); executeTryOut('GETapi-V1-submissions--submission_id--submissionFile', this);">
-    <h3>
-        Request&nbsp;&nbsp;&nbsp;
-                    <button type="button"
-                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-tryout-GETapi-V1-submissions--submission_id--submissionFile"
-                    onclick="tryItOut('GETapi-V1-submissions--submission_id--submissionFile');">Try it out ⚡
-            </button>
-            <button type="button"
-                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-canceltryout-GETapi-V1-submissions--submission_id--submissionFile"
-                    onclick="cancelTryOut('GETapi-V1-submissions--submission_id--submissionFile');" hidden>Cancel 🛑
-            </button>&nbsp;&nbsp;
-            <button type="submit"
-                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-executetryout-GETapi-V1-submissions--submission_id--submissionFile"
-                    data-initial-text="Send Request 💥"
-                    data-loading-text="⏱ Sending..."
-                    hidden>Send Request 💥
-            </button>
-            </h3>
-            <p>
-            <small class="badge badge-green">GET</small>
-            <b><code>api/V1/submissions/{submission_id}/submissionFile</code></b>
-        </p>
-                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Authorization" class="auth-value"               data-endpoint="GETapi-V1-submissions--submission_id--submissionFile"
-               value="Bearer {YOUR_AUTH_KEY}"
-               data-component="header">
-    <br>
-<p>Example: <code>Bearer {YOUR_AUTH_KEY}</code></p>
-            </div>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Content-Type"                data-endpoint="GETapi-V1-submissions--submission_id--submissionFile"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Accept"                data-endpoint="GETapi-V1-submissions--submission_id--submissionFile"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
-                    <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>submission_id</code></b>&nbsp;&nbsp;
-<small>integer</small>&nbsp;
- &nbsp;
- &nbsp;
-                <input type="number" style="display: none"
-               step="any"               name="submission_id"                data-endpoint="GETapi-V1-submissions--submission_id--submissionFile"
-               value="16"
-               data-component="url">
-    <br>
-<p>The ID of the submission. Example: <code>16</code></p>
-            </div>
-                    </form>
-
-                    <h2 id="endpoints-POSTapi-V1-submissions--submission_id--submissionFile-register">POST api/V1/submissions/{submission_id}/submissionFile/register</h2>
-
-<p>
-<small class="badge badge-darkred">requires authentication</small>
-</p>
-
-
-
-<span id="example-requests-POSTapi-V1-submissions--submission_id--submissionFile-register">
-<blockquote>Example request:</blockquote>
-
-
-<div class="bash-example">
-    <pre><code class="language-bash">curl --request POST \
-    "http://localhost/api/V1/submissions/16/submissionFile/register" \
-    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
-    --header "Content-Type: multipart/form-data" \
-    --header "Accept: application/json" \
-    --form "submissionFiles[]=@/tmp/phpnoa8k24gnpcg8a7lPbn" </code></pre></div>
-
-
-<div class="javascript-example">
-    <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/V1/submissions/16/submissionFile/register"
-);
-
-const headers = {
-    "Authorization": "Bearer {YOUR_AUTH_KEY}",
-    "Content-Type": "multipart/form-data",
-    "Accept": "application/json",
-};
-
-const body = new FormData();
-body.append('submissionFiles[]', document.querySelector('input[name="submissionFiles[]"]').files[0]);
-
-fetch(url, {
-    method: "POST",
-    headers,
-    body,
-}).then(response =&gt; response.json());</code></pre></div>
-
-</span>
-
-<span id="example-responses-POSTapi-V1-submissions--submission_id--submissionFile-register">
-</span>
-<span id="execution-results-POSTapi-V1-submissions--submission_id--submissionFile-register" hidden>
-    <blockquote>Received response<span
-                id="execution-response-status-POSTapi-V1-submissions--submission_id--submissionFile-register"></span>:
-    </blockquote>
-    <pre class="json"><code id="execution-response-content-POSTapi-V1-submissions--submission_id--submissionFile-register"
-      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
-</span>
-<span id="execution-error-POSTapi-V1-submissions--submission_id--submissionFile-register" hidden>
-    <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-POSTapi-V1-submissions--submission_id--submissionFile-register">
-
-Tip: Check that you&#039;re properly connected to the network.
-If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
-You can check the Dev Tools console for debugging information.</code></pre>
-</span>
-<form id="form-POSTapi-V1-submissions--submission_id--submissionFile-register" data-method="POST"
-      data-path="api/V1/submissions/{submission_id}/submissionFile/register"
-      data-authed="1"
-      data-hasfiles="1"
-      data-isarraybody="0"
-      autocomplete="off"
-      onsubmit="event.preventDefault(); executeTryOut('POSTapi-V1-submissions--submission_id--submissionFile-register', this);">
-    <h3>
-        Request&nbsp;&nbsp;&nbsp;
-                    <button type="button"
-                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-tryout-POSTapi-V1-submissions--submission_id--submissionFile-register"
-                    onclick="tryItOut('POSTapi-V1-submissions--submission_id--submissionFile-register');">Try it out ⚡
-            </button>
-            <button type="button"
-                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-canceltryout-POSTapi-V1-submissions--submission_id--submissionFile-register"
-                    onclick="cancelTryOut('POSTapi-V1-submissions--submission_id--submissionFile-register');" hidden>Cancel 🛑
-            </button>&nbsp;&nbsp;
-            <button type="submit"
-                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-executetryout-POSTapi-V1-submissions--submission_id--submissionFile-register"
-                    data-initial-text="Send Request 💥"
-                    data-loading-text="⏱ Sending..."
-                    hidden>Send Request 💥
-            </button>
-            </h3>
-            <p>
-            <small class="badge badge-black">POST</small>
-            <b><code>api/V1/submissions/{submission_id}/submissionFile/register</code></b>
-        </p>
-                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Authorization" class="auth-value"               data-endpoint="POSTapi-V1-submissions--submission_id--submissionFile-register"
-               value="Bearer {YOUR_AUTH_KEY}"
-               data-component="header">
-    <br>
-<p>Example: <code>Bearer {YOUR_AUTH_KEY}</code></p>
-            </div>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Content-Type"                data-endpoint="POSTapi-V1-submissions--submission_id--submissionFile-register"
-               value="multipart/form-data"
-               data-component="header">
-    <br>
-<p>Example: <code>multipart/form-data</code></p>
-            </div>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Accept"                data-endpoint="POSTapi-V1-submissions--submission_id--submissionFile-register"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
-                    <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>submission_id</code></b>&nbsp;&nbsp;
-<small>integer</small>&nbsp;
- &nbsp;
- &nbsp;
-                <input type="number" style="display: none"
-               step="any"               name="submission_id"                data-endpoint="POSTapi-V1-submissions--submission_id--submissionFile-register"
-               value="16"
-               data-component="url">
-    <br>
-<p>The ID of the submission. Example: <code>16</code></p>
-            </div>
-                            <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
-        <div style=" padding-left: 28px;  clear: unset;">
-            <b style="line-height: 2;"><code>submissionFiles</code></b>&nbsp;&nbsp;
-<small>file[]</small>&nbsp;
-<i>optional</i> &nbsp;
- &nbsp;
-                <input type="file" style="display: none"
-                              name="submissionFiles[0]"                data-endpoint="POSTapi-V1-submissions--submission_id--submissionFile-register"
-               data-component="body">
-        <input type="file" style="display: none"
-               name="submissionFiles[1]"                data-endpoint="POSTapi-V1-submissions--submission_id--submissionFile-register"
-               data-component="body">
-    <br>
-<p>Must be a file. Must not be greater than 51200 kilobytes.</p>
-        </div>
-        </form>
-
-                    <h2 id="endpoints-GETapi-V1-submissionFile--submissionFile_id-">GET api/V1/submissionFile/{submissionFile_id}</h2>
-
-<p>
-<small class="badge badge-darkred">requires authentication</small>
-</p>
-
-
-
-<span id="example-requests-GETapi-V1-submissionFile--submissionFile_id-">
-<blockquote>Example request:</blockquote>
-
-
-<div class="bash-example">
-    <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost/api/V1/submissionFile/16" \
-    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
-    --header "Content-Type: application/json" \
-    --header "Accept: application/json"</code></pre></div>
-
-
-<div class="javascript-example">
-    <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/V1/submissionFile/16"
-);
-
-const headers = {
-    "Authorization": "Bearer {YOUR_AUTH_KEY}",
-    "Content-Type": "application/json",
-    "Accept": "application/json",
-};
-
-
-fetch(url, {
-    method: "GET",
-    headers,
-}).then(response =&gt; response.json());</code></pre></div>
-
-</span>
-
-<span id="example-responses-GETapi-V1-submissionFile--submissionFile_id-">
-            <blockquote>
-            <p>Example response (200):</p>
-        </blockquote>
-                <details class="annotation">
-            <summary style="cursor: pointer;">
-                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
-            </summary>
-            <pre><code class="language-http">cache-control: no-cache, private
-content-type: application/json
-access-control-allow-origin: *
- </code></pre></details>         <pre>
-
-<code class="language-json" style="max-height: 300px;">{
-    &quot;errors&quot;: [
-        {
-            &quot;status&quot;: 404,
-            &quot;message&quot;: &quot;The Resource Could Not Be Found :(&quot;
-        }
-    ]
-}</code>
- </pre>
-    </span>
-<span id="execution-results-GETapi-V1-submissionFile--submissionFile_id-" hidden>
-    <blockquote>Received response<span
-                id="execution-response-status-GETapi-V1-submissionFile--submissionFile_id-"></span>:
-    </blockquote>
-    <pre class="json"><code id="execution-response-content-GETapi-V1-submissionFile--submissionFile_id-"
-      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
-</span>
-<span id="execution-error-GETapi-V1-submissionFile--submissionFile_id-" hidden>
-    <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-GETapi-V1-submissionFile--submissionFile_id-">
-
-Tip: Check that you&#039;re properly connected to the network.
-If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
-You can check the Dev Tools console for debugging information.</code></pre>
-</span>
-<form id="form-GETapi-V1-submissionFile--submissionFile_id-" data-method="GET"
-      data-path="api/V1/submissionFile/{submissionFile_id}"
-      data-authed="1"
-      data-hasfiles="0"
-      data-isarraybody="0"
-      autocomplete="off"
-      onsubmit="event.preventDefault(); executeTryOut('GETapi-V1-submissionFile--submissionFile_id-', this);">
-    <h3>
-        Request&nbsp;&nbsp;&nbsp;
-                    <button type="button"
-                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-tryout-GETapi-V1-submissionFile--submissionFile_id-"
-                    onclick="tryItOut('GETapi-V1-submissionFile--submissionFile_id-');">Try it out ⚡
-            </button>
-            <button type="button"
-                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-canceltryout-GETapi-V1-submissionFile--submissionFile_id-"
-                    onclick="cancelTryOut('GETapi-V1-submissionFile--submissionFile_id-');" hidden>Cancel 🛑
-            </button>&nbsp;&nbsp;
-            <button type="submit"
-                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-executetryout-GETapi-V1-submissionFile--submissionFile_id-"
-                    data-initial-text="Send Request 💥"
-                    data-loading-text="⏱ Sending..."
-                    hidden>Send Request 💥
-            </button>
-            </h3>
-            <p>
-            <small class="badge badge-green">GET</small>
-            <b><code>api/V1/submissionFile/{submissionFile_id}</code></b>
-        </p>
-                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Authorization" class="auth-value"               data-endpoint="GETapi-V1-submissionFile--submissionFile_id-"
-               value="Bearer {YOUR_AUTH_KEY}"
-               data-component="header">
-    <br>
-<p>Example: <code>Bearer {YOUR_AUTH_KEY}</code></p>
-            </div>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Content-Type"                data-endpoint="GETapi-V1-submissionFile--submissionFile_id-"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Accept"                data-endpoint="GETapi-V1-submissionFile--submissionFile_id-"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
-                    <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>submissionFile_id</code></b>&nbsp;&nbsp;
-<small>integer</small>&nbsp;
- &nbsp;
- &nbsp;
-                <input type="number" style="display: none"
-               step="any"               name="submissionFile_id"                data-endpoint="GETapi-V1-submissionFile--submissionFile_id-"
-               value="16"
-               data-component="url">
-    <br>
-<p>The ID of the submissionFile. Example: <code>16</code></p>
-            </div>
-                    </form>
-
-                    <h2 id="endpoints-GETapi-V1-submissionFile-download--submissionFile_id-">GET api/V1/submissionFile/download/{submissionFile_id}</h2>
-
-<p>
-<small class="badge badge-darkred">requires authentication</small>
-</p>
-
-
-
-<span id="example-requests-GETapi-V1-submissionFile-download--submissionFile_id-">
-<blockquote>Example request:</blockquote>
-
-
-<div class="bash-example">
-    <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost/api/V1/submissionFile/download/16" \
-    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
-    --header "Content-Type: application/json" \
-    --header "Accept: application/json"</code></pre></div>
-
-
-<div class="javascript-example">
-    <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/V1/submissionFile/download/16"
-);
-
-const headers = {
-    "Authorization": "Bearer {YOUR_AUTH_KEY}",
-    "Content-Type": "application/json",
-    "Accept": "application/json",
-};
-
-
-fetch(url, {
-    method: "GET",
-    headers,
-}).then(response =&gt; response.json());</code></pre></div>
-
-</span>
-
-<span id="example-responses-GETapi-V1-submissionFile-download--submissionFile_id-">
-            <blockquote>
-            <p>Example response (200):</p>
-        </blockquote>
-                <details class="annotation">
-            <summary style="cursor: pointer;">
-                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
-            </summary>
-            <pre><code class="language-http">cache-control: no-cache, private
-content-type: application/json
-access-control-allow-origin: *
- </code></pre></details>         <pre>
-
-<code class="language-json" style="max-height: 300px;">{
-    &quot;errors&quot;: [
-        {
-            &quot;status&quot;: 404,
-            &quot;message&quot;: &quot;The Resource Could Not Be Found :(&quot;
-        }
-    ]
-}</code>
- </pre>
-    </span>
-<span id="execution-results-GETapi-V1-submissionFile-download--submissionFile_id-" hidden>
-    <blockquote>Received response<span
-                id="execution-response-status-GETapi-V1-submissionFile-download--submissionFile_id-"></span>:
-    </blockquote>
-    <pre class="json"><code id="execution-response-content-GETapi-V1-submissionFile-download--submissionFile_id-"
-      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
-</span>
-<span id="execution-error-GETapi-V1-submissionFile-download--submissionFile_id-" hidden>
-    <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-GETapi-V1-submissionFile-download--submissionFile_id-">
-
-Tip: Check that you&#039;re properly connected to the network.
-If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
-You can check the Dev Tools console for debugging information.</code></pre>
-</span>
-<form id="form-GETapi-V1-submissionFile-download--submissionFile_id-" data-method="GET"
-      data-path="api/V1/submissionFile/download/{submissionFile_id}"
-      data-authed="1"
-      data-hasfiles="0"
-      data-isarraybody="0"
-      autocomplete="off"
-      onsubmit="event.preventDefault(); executeTryOut('GETapi-V1-submissionFile-download--submissionFile_id-', this);">
-    <h3>
-        Request&nbsp;&nbsp;&nbsp;
-                    <button type="button"
-                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-tryout-GETapi-V1-submissionFile-download--submissionFile_id-"
-                    onclick="tryItOut('GETapi-V1-submissionFile-download--submissionFile_id-');">Try it out ⚡
-            </button>
-            <button type="button"
-                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-canceltryout-GETapi-V1-submissionFile-download--submissionFile_id-"
-                    onclick="cancelTryOut('GETapi-V1-submissionFile-download--submissionFile_id-');" hidden>Cancel 🛑
-            </button>&nbsp;&nbsp;
-            <button type="submit"
-                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-executetryout-GETapi-V1-submissionFile-download--submissionFile_id-"
-                    data-initial-text="Send Request 💥"
-                    data-loading-text="⏱ Sending..."
-                    hidden>Send Request 💥
-            </button>
-            </h3>
-            <p>
-            <small class="badge badge-green">GET</small>
-            <b><code>api/V1/submissionFile/download/{submissionFile_id}</code></b>
-        </p>
-                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Authorization" class="auth-value"               data-endpoint="GETapi-V1-submissionFile-download--submissionFile_id-"
-               value="Bearer {YOUR_AUTH_KEY}"
-               data-component="header">
-    <br>
-<p>Example: <code>Bearer {YOUR_AUTH_KEY}</code></p>
-            </div>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Content-Type"                data-endpoint="GETapi-V1-submissionFile-download--submissionFile_id-"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Accept"                data-endpoint="GETapi-V1-submissionFile-download--submissionFile_id-"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
-                    <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>submissionFile_id</code></b>&nbsp;&nbsp;
-<small>integer</small>&nbsp;
- &nbsp;
- &nbsp;
-                <input type="number" style="display: none"
-               step="any"               name="submissionFile_id"                data-endpoint="GETapi-V1-submissionFile-download--submissionFile_id-"
-               value="16"
-               data-component="url">
-    <br>
-<p>The ID of the submissionFile. Example: <code>16</code></p>
-            </div>
-                    </form>
-
-                    <h2 id="endpoints-DELETEapi-V1-submissionFile--submissionFile_id-">DELETE api/V1/submissionFile/{submissionFile_id}</h2>
-
-<p>
-<small class="badge badge-darkred">requires authentication</small>
-</p>
-
-
-
-<span id="example-requests-DELETEapi-V1-submissionFile--submissionFile_id-">
-<blockquote>Example request:</blockquote>
-
-
-<div class="bash-example">
-    <pre><code class="language-bash">curl --request DELETE \
-    "http://localhost/api/V1/submissionFile/16" \
-    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
-    --header "Content-Type: application/json" \
-    --header "Accept: application/json"</code></pre></div>
-
-
-<div class="javascript-example">
-    <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/V1/submissionFile/16"
-);
-
-const headers = {
-    "Authorization": "Bearer {YOUR_AUTH_KEY}",
-    "Content-Type": "application/json",
-    "Accept": "application/json",
-};
-
-
-fetch(url, {
-    method: "DELETE",
-    headers,
-}).then(response =&gt; response.json());</code></pre></div>
-
-</span>
-
-<span id="example-responses-DELETEapi-V1-submissionFile--submissionFile_id-">
-</span>
-<span id="execution-results-DELETEapi-V1-submissionFile--submissionFile_id-" hidden>
-    <blockquote>Received response<span
-                id="execution-response-status-DELETEapi-V1-submissionFile--submissionFile_id-"></span>:
-    </blockquote>
-    <pre class="json"><code id="execution-response-content-DELETEapi-V1-submissionFile--submissionFile_id-"
-      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
-</span>
-<span id="execution-error-DELETEapi-V1-submissionFile--submissionFile_id-" hidden>
-    <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-DELETEapi-V1-submissionFile--submissionFile_id-">
-
-Tip: Check that you&#039;re properly connected to the network.
-If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
-You can check the Dev Tools console for debugging information.</code></pre>
-</span>
-<form id="form-DELETEapi-V1-submissionFile--submissionFile_id-" data-method="DELETE"
-      data-path="api/V1/submissionFile/{submissionFile_id}"
-      data-authed="1"
-      data-hasfiles="0"
-      data-isarraybody="0"
-      autocomplete="off"
-      onsubmit="event.preventDefault(); executeTryOut('DELETEapi-V1-submissionFile--submissionFile_id-', this);">
-    <h3>
-        Request&nbsp;&nbsp;&nbsp;
-                    <button type="button"
-                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-tryout-DELETEapi-V1-submissionFile--submissionFile_id-"
-                    onclick="tryItOut('DELETEapi-V1-submissionFile--submissionFile_id-');">Try it out ⚡
-            </button>
-            <button type="button"
-                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-canceltryout-DELETEapi-V1-submissionFile--submissionFile_id-"
-                    onclick="cancelTryOut('DELETEapi-V1-submissionFile--submissionFile_id-');" hidden>Cancel 🛑
-            </button>&nbsp;&nbsp;
-            <button type="submit"
-                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-executetryout-DELETEapi-V1-submissionFile--submissionFile_id-"
-                    data-initial-text="Send Request 💥"
-                    data-loading-text="⏱ Sending..."
-                    hidden>Send Request 💥
-            </button>
-            </h3>
-            <p>
-            <small class="badge badge-red">DELETE</small>
-            <b><code>api/V1/submissionFile/{submissionFile_id}</code></b>
-        </p>
-                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Authorization" class="auth-value"               data-endpoint="DELETEapi-V1-submissionFile--submissionFile_id-"
-               value="Bearer {YOUR_AUTH_KEY}"
-               data-component="header">
-    <br>
-<p>Example: <code>Bearer {YOUR_AUTH_KEY}</code></p>
-            </div>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Content-Type"                data-endpoint="DELETEapi-V1-submissionFile--submissionFile_id-"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Accept"                data-endpoint="DELETEapi-V1-submissionFile--submissionFile_id-"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
-                    <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>submissionFile_id</code></b>&nbsp;&nbsp;
-<small>integer</small>&nbsp;
- &nbsp;
- &nbsp;
-                <input type="number" style="display: none"
-               step="any"               name="submissionFile_id"                data-endpoint="DELETEapi-V1-submissionFile--submissionFile_id-"
-               value="16"
-               data-component="url">
-    <br>
-<p>The ID of the submissionFile. Example: <code>16</code></p>
-            </div>
-                    </form>
-
-                    <h2 id="endpoints-GETapi-V1-assignmentFiles--assignmentFile_id-">GET api/V1/assignmentFiles/{assignmentFile_id}</h2>
-
-<p>
-<small class="badge badge-darkred">requires authentication</small>
-</p>
-
-
-
-<span id="example-requests-GETapi-V1-assignmentFiles--assignmentFile_id-">
-<blockquote>Example request:</blockquote>
-
-
-<div class="bash-example">
-    <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost/api/V1/assignmentFiles/16" \
-    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
-    --header "Content-Type: application/json" \
-    --header "Accept: application/json"</code></pre></div>
-
-
-<div class="javascript-example">
-    <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/V1/assignmentFiles/16"
-);
-
-const headers = {
-    "Authorization": "Bearer {YOUR_AUTH_KEY}",
-    "Content-Type": "application/json",
-    "Accept": "application/json",
-};
-
-
-fetch(url, {
-    method: "GET",
-    headers,
-}).then(response =&gt; response.json());</code></pre></div>
-
-</span>
-
-<span id="example-responses-GETapi-V1-assignmentFiles--assignmentFile_id-">
-            <blockquote>
-            <p>Example response (200):</p>
-        </blockquote>
-                <details class="annotation">
-            <summary style="cursor: pointer;">
-                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
-            </summary>
-            <pre><code class="language-http">cache-control: no-cache, private
-content-type: application/json
-access-control-allow-origin: *
- </code></pre></details>         <pre>
-
-<code class="language-json" style="max-height: 300px;">{
-    &quot;errors&quot;: [
-        {
-            &quot;status&quot;: 404,
-            &quot;message&quot;: &quot;The Resource Could Not Be Found :(&quot;
-        }
-    ]
-}</code>
- </pre>
-    </span>
-<span id="execution-results-GETapi-V1-assignmentFiles--assignmentFile_id-" hidden>
-    <blockquote>Received response<span
-                id="execution-response-status-GETapi-V1-assignmentFiles--assignmentFile_id-"></span>:
-    </blockquote>
-    <pre class="json"><code id="execution-response-content-GETapi-V1-assignmentFiles--assignmentFile_id-"
-      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
-</span>
-<span id="execution-error-GETapi-V1-assignmentFiles--assignmentFile_id-" hidden>
-    <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-GETapi-V1-assignmentFiles--assignmentFile_id-">
-
-Tip: Check that you&#039;re properly connected to the network.
-If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
-You can check the Dev Tools console for debugging information.</code></pre>
-</span>
-<form id="form-GETapi-V1-assignmentFiles--assignmentFile_id-" data-method="GET"
-      data-path="api/V1/assignmentFiles/{assignmentFile_id}"
-      data-authed="1"
-      data-hasfiles="0"
-      data-isarraybody="0"
-      autocomplete="off"
-      onsubmit="event.preventDefault(); executeTryOut('GETapi-V1-assignmentFiles--assignmentFile_id-', this);">
-    <h3>
-        Request&nbsp;&nbsp;&nbsp;
-                    <button type="button"
-                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-tryout-GETapi-V1-assignmentFiles--assignmentFile_id-"
-                    onclick="tryItOut('GETapi-V1-assignmentFiles--assignmentFile_id-');">Try it out ⚡
-            </button>
-            <button type="button"
-                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-canceltryout-GETapi-V1-assignmentFiles--assignmentFile_id-"
-                    onclick="cancelTryOut('GETapi-V1-assignmentFiles--assignmentFile_id-');" hidden>Cancel 🛑
-            </button>&nbsp;&nbsp;
-            <button type="submit"
-                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-executetryout-GETapi-V1-assignmentFiles--assignmentFile_id-"
-                    data-initial-text="Send Request 💥"
-                    data-loading-text="⏱ Sending..."
-                    hidden>Send Request 💥
-            </button>
-            </h3>
-            <p>
-            <small class="badge badge-green">GET</small>
-            <b><code>api/V1/assignmentFiles/{assignmentFile_id}</code></b>
-        </p>
-                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Authorization" class="auth-value"               data-endpoint="GETapi-V1-assignmentFiles--assignmentFile_id-"
-               value="Bearer {YOUR_AUTH_KEY}"
-               data-component="header">
-    <br>
-<p>Example: <code>Bearer {YOUR_AUTH_KEY}</code></p>
-            </div>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Content-Type"                data-endpoint="GETapi-V1-assignmentFiles--assignmentFile_id-"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Accept"                data-endpoint="GETapi-V1-assignmentFiles--assignmentFile_id-"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
-                    <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>assignmentFile_id</code></b>&nbsp;&nbsp;
-<small>integer</small>&nbsp;
- &nbsp;
- &nbsp;
-                <input type="number" style="display: none"
-               step="any"               name="assignmentFile_id"                data-endpoint="GETapi-V1-assignmentFiles--assignmentFile_id-"
-               value="16"
-               data-component="url">
-    <br>
-<p>The ID of the assignmentFile. Example: <code>16</code></p>
-            </div>
-                    </form>
-
-                    <h2 id="endpoints-GETapi-V1-assignmentFiles-download--assignmentFile_id-">GET api/V1/assignmentFiles/download/{assignmentFile_id}</h2>
-
-<p>
-<small class="badge badge-darkred">requires authentication</small>
-</p>
-
-
-
-<span id="example-requests-GETapi-V1-assignmentFiles-download--assignmentFile_id-">
-<blockquote>Example request:</blockquote>
-
-
-<div class="bash-example">
-    <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost/api/V1/assignmentFiles/download/16" \
-    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
-    --header "Content-Type: application/json" \
-    --header "Accept: application/json"</code></pre></div>
-
-
-<div class="javascript-example">
-    <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/V1/assignmentFiles/download/16"
-);
-
-const headers = {
-    "Authorization": "Bearer {YOUR_AUTH_KEY}",
-    "Content-Type": "application/json",
-    "Accept": "application/json",
-};
-
-
-fetch(url, {
-    method: "GET",
-    headers,
-}).then(response =&gt; response.json());</code></pre></div>
-
-</span>
-
-<span id="example-responses-GETapi-V1-assignmentFiles-download--assignmentFile_id-">
-            <blockquote>
-            <p>Example response (200):</p>
-        </blockquote>
-                <details class="annotation">
-            <summary style="cursor: pointer;">
-                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
-            </summary>
-            <pre><code class="language-http">cache-control: no-cache, private
-content-type: application/json
-access-control-allow-origin: *
- </code></pre></details>         <pre>
-
-<code class="language-json" style="max-height: 300px;">{
-    &quot;errors&quot;: [
-        {
-            &quot;status&quot;: 404,
-            &quot;message&quot;: &quot;The Resource Could Not Be Found :(&quot;
-        }
-    ]
-}</code>
- </pre>
-    </span>
-<span id="execution-results-GETapi-V1-assignmentFiles-download--assignmentFile_id-" hidden>
-    <blockquote>Received response<span
-                id="execution-response-status-GETapi-V1-assignmentFiles-download--assignmentFile_id-"></span>:
-    </blockquote>
-    <pre class="json"><code id="execution-response-content-GETapi-V1-assignmentFiles-download--assignmentFile_id-"
-      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
-</span>
-<span id="execution-error-GETapi-V1-assignmentFiles-download--assignmentFile_id-" hidden>
-    <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-GETapi-V1-assignmentFiles-download--assignmentFile_id-">
-
-Tip: Check that you&#039;re properly connected to the network.
-If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
-You can check the Dev Tools console for debugging information.</code></pre>
-</span>
-<form id="form-GETapi-V1-assignmentFiles-download--assignmentFile_id-" data-method="GET"
-      data-path="api/V1/assignmentFiles/download/{assignmentFile_id}"
-      data-authed="1"
-      data-hasfiles="0"
-      data-isarraybody="0"
-      autocomplete="off"
-      onsubmit="event.preventDefault(); executeTryOut('GETapi-V1-assignmentFiles-download--assignmentFile_id-', this);">
-    <h3>
-        Request&nbsp;&nbsp;&nbsp;
-                    <button type="button"
-                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-tryout-GETapi-V1-assignmentFiles-download--assignmentFile_id-"
-                    onclick="tryItOut('GETapi-V1-assignmentFiles-download--assignmentFile_id-');">Try it out ⚡
-            </button>
-            <button type="button"
-                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-canceltryout-GETapi-V1-assignmentFiles-download--assignmentFile_id-"
-                    onclick="cancelTryOut('GETapi-V1-assignmentFiles-download--assignmentFile_id-');" hidden>Cancel 🛑
-            </button>&nbsp;&nbsp;
-            <button type="submit"
-                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-executetryout-GETapi-V1-assignmentFiles-download--assignmentFile_id-"
-                    data-initial-text="Send Request 💥"
-                    data-loading-text="⏱ Sending..."
-                    hidden>Send Request 💥
-            </button>
-            </h3>
-            <p>
-            <small class="badge badge-green">GET</small>
-            <b><code>api/V1/assignmentFiles/download/{assignmentFile_id}</code></b>
-        </p>
-                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Authorization" class="auth-value"               data-endpoint="GETapi-V1-assignmentFiles-download--assignmentFile_id-"
-               value="Bearer {YOUR_AUTH_KEY}"
-               data-component="header">
-    <br>
-<p>Example: <code>Bearer {YOUR_AUTH_KEY}</code></p>
-            </div>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Content-Type"                data-endpoint="GETapi-V1-assignmentFiles-download--assignmentFile_id-"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Accept"                data-endpoint="GETapi-V1-assignmentFiles-download--assignmentFile_id-"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
-                    <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>assignmentFile_id</code></b>&nbsp;&nbsp;
-<small>integer</small>&nbsp;
- &nbsp;
- &nbsp;
-                <input type="number" style="display: none"
-               step="any"               name="assignmentFile_id"                data-endpoint="GETapi-V1-assignmentFiles-download--assignmentFile_id-"
-               value="16"
-               data-component="url">
-    <br>
-<p>The ID of the assignmentFile. Example: <code>16</code></p>
-            </div>
-                    </form>
-
-                    <h2 id="endpoints-DELETEapi-V1-assignmentFiles--assignmentFile_id-">DELETE api/V1/assignmentFiles/{assignmentFile_id}</h2>
-
-<p>
-<small class="badge badge-darkred">requires authentication</small>
-</p>
-
-
-
-<span id="example-requests-DELETEapi-V1-assignmentFiles--assignmentFile_id-">
-<blockquote>Example request:</blockquote>
-
-
-<div class="bash-example">
-    <pre><code class="language-bash">curl --request DELETE \
-    "http://localhost/api/V1/assignmentFiles/16" \
-    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
-    --header "Content-Type: application/json" \
-    --header "Accept: application/json"</code></pre></div>
-
-
-<div class="javascript-example">
-    <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/V1/assignmentFiles/16"
-);
-
-const headers = {
-    "Authorization": "Bearer {YOUR_AUTH_KEY}",
-    "Content-Type": "application/json",
-    "Accept": "application/json",
-};
-
-
-fetch(url, {
-    method: "DELETE",
-    headers,
-}).then(response =&gt; response.json());</code></pre></div>
-
-</span>
-
-<span id="example-responses-DELETEapi-V1-assignmentFiles--assignmentFile_id-">
-</span>
-<span id="execution-results-DELETEapi-V1-assignmentFiles--assignmentFile_id-" hidden>
-    <blockquote>Received response<span
-                id="execution-response-status-DELETEapi-V1-assignmentFiles--assignmentFile_id-"></span>:
-    </blockquote>
-    <pre class="json"><code id="execution-response-content-DELETEapi-V1-assignmentFiles--assignmentFile_id-"
-      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
-</span>
-<span id="execution-error-DELETEapi-V1-assignmentFiles--assignmentFile_id-" hidden>
-    <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-DELETEapi-V1-assignmentFiles--assignmentFile_id-">
-
-Tip: Check that you&#039;re properly connected to the network.
-If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
-You can check the Dev Tools console for debugging information.</code></pre>
-</span>
-<form id="form-DELETEapi-V1-assignmentFiles--assignmentFile_id-" data-method="DELETE"
-      data-path="api/V1/assignmentFiles/{assignmentFile_id}"
-      data-authed="1"
-      data-hasfiles="0"
-      data-isarraybody="0"
-      autocomplete="off"
-      onsubmit="event.preventDefault(); executeTryOut('DELETEapi-V1-assignmentFiles--assignmentFile_id-', this);">
-    <h3>
-        Request&nbsp;&nbsp;&nbsp;
-                    <button type="button"
-                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-tryout-DELETEapi-V1-assignmentFiles--assignmentFile_id-"
-                    onclick="tryItOut('DELETEapi-V1-assignmentFiles--assignmentFile_id-');">Try it out ⚡
-            </button>
-            <button type="button"
-                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-canceltryout-DELETEapi-V1-assignmentFiles--assignmentFile_id-"
-                    onclick="cancelTryOut('DELETEapi-V1-assignmentFiles--assignmentFile_id-');" hidden>Cancel 🛑
-            </button>&nbsp;&nbsp;
-            <button type="submit"
-                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-executetryout-DELETEapi-V1-assignmentFiles--assignmentFile_id-"
-                    data-initial-text="Send Request 💥"
-                    data-loading-text="⏱ Sending..."
-                    hidden>Send Request 💥
-            </button>
-            </h3>
-            <p>
-            <small class="badge badge-red">DELETE</small>
-            <b><code>api/V1/assignmentFiles/{assignmentFile_id}</code></b>
-        </p>
-                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Authorization" class="auth-value"               data-endpoint="DELETEapi-V1-assignmentFiles--assignmentFile_id-"
-               value="Bearer {YOUR_AUTH_KEY}"
-               data-component="header">
-    <br>
-<p>Example: <code>Bearer {YOUR_AUTH_KEY}</code></p>
-            </div>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Content-Type"                data-endpoint="DELETEapi-V1-assignmentFiles--assignmentFile_id-"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Accept"                data-endpoint="DELETEapi-V1-assignmentFiles--assignmentFile_id-"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
-                    <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>assignmentFile_id</code></b>&nbsp;&nbsp;
-<small>integer</small>&nbsp;
- &nbsp;
- &nbsp;
-                <input type="number" style="display: none"
-               step="any"               name="assignmentFile_id"                data-endpoint="DELETEapi-V1-assignmentFiles--assignmentFile_id-"
-               value="16"
-               data-component="url">
-    <br>
-<p>The ID of the assignmentFile. Example: <code>16</code></p>
-            </div>
-                    </form>
-
-                    <h2 id="endpoints-GETapi-V1-comments--comment_id-">GET api/V1/comments/{comment_id}</h2>
-
-<p>
-<small class="badge badge-darkred">requires authentication</small>
-</p>
-
-
-
-<span id="example-requests-GETapi-V1-comments--comment_id-">
-<blockquote>Example request:</blockquote>
-
-
-<div class="bash-example">
-    <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost/api/V1/comments/37" \
-    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
-    --header "Content-Type: application/json" \
-    --header "Accept: application/json"</code></pre></div>
-
-
-<div class="javascript-example">
-    <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/V1/comments/37"
-);
-
-const headers = {
-    "Authorization": "Bearer {YOUR_AUTH_KEY}",
-    "Content-Type": "application/json",
-    "Accept": "application/json",
-};
-
-
-fetch(url, {
-    method: "GET",
-    headers,
-}).then(response =&gt; response.json());</code></pre></div>
-
-</span>
-
-<span id="example-responses-GETapi-V1-comments--comment_id-">
-            <blockquote>
-            <p>Example response (200):</p>
-        </blockquote>
-                <details class="annotation">
-            <summary style="cursor: pointer;">
-                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
-            </summary>
-            <pre><code class="language-http">cache-control: no-cache, private
-content-type: application/json
-access-control-allow-origin: *
- </code></pre></details>         <pre>
-
-<code class="language-json" style="max-height: 300px;">{
-    &quot;type&quot;: &quot;comment&quot;,
-    &quot;id&quot;: 37,
-    &quot;data&quot;: {
-        &quot;content&quot;: &quot;Voluptatum alias dolorem praesentium impedit saepe et recusandae sit.&quot;,
-        &quot;discussion_id&quot;: 13,
-        &quot;user_id&quot;: 19,
-        &quot;createdAt&quot;: &quot;2026-04-07T15:24:44.000000Z&quot;
-    },
-    &quot;included&quot;: [],
-    &quot;links&quot;: []
-}</code>
- </pre>
-    </span>
-<span id="execution-results-GETapi-V1-comments--comment_id-" hidden>
-    <blockquote>Received response<span
-                id="execution-response-status-GETapi-V1-comments--comment_id-"></span>:
-    </blockquote>
-    <pre class="json"><code id="execution-response-content-GETapi-V1-comments--comment_id-"
-      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
-</span>
-<span id="execution-error-GETapi-V1-comments--comment_id-" hidden>
-    <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-GETapi-V1-comments--comment_id-">
-
-Tip: Check that you&#039;re properly connected to the network.
-If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
-You can check the Dev Tools console for debugging information.</code></pre>
-</span>
-<form id="form-GETapi-V1-comments--comment_id-" data-method="GET"
-      data-path="api/V1/comments/{comment_id}"
-      data-authed="1"
-      data-hasfiles="0"
-      data-isarraybody="0"
-      autocomplete="off"
-      onsubmit="event.preventDefault(); executeTryOut('GETapi-V1-comments--comment_id-', this);">
-    <h3>
-        Request&nbsp;&nbsp;&nbsp;
-                    <button type="button"
-                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-tryout-GETapi-V1-comments--comment_id-"
-                    onclick="tryItOut('GETapi-V1-comments--comment_id-');">Try it out ⚡
-            </button>
-            <button type="button"
-                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-canceltryout-GETapi-V1-comments--comment_id-"
-                    onclick="cancelTryOut('GETapi-V1-comments--comment_id-');" hidden>Cancel 🛑
-            </button>&nbsp;&nbsp;
-            <button type="submit"
-                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-executetryout-GETapi-V1-comments--comment_id-"
-                    data-initial-text="Send Request 💥"
-                    data-loading-text="⏱ Sending..."
-                    hidden>Send Request 💥
-            </button>
-            </h3>
-            <p>
-            <small class="badge badge-green">GET</small>
-            <b><code>api/V1/comments/{comment_id}</code></b>
-        </p>
-                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Authorization" class="auth-value"               data-endpoint="GETapi-V1-comments--comment_id-"
-               value="Bearer {YOUR_AUTH_KEY}"
-               data-component="header">
-    <br>
-<p>Example: <code>Bearer {YOUR_AUTH_KEY}</code></p>
-            </div>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Content-Type"                data-endpoint="GETapi-V1-comments--comment_id-"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Accept"                data-endpoint="GETapi-V1-comments--comment_id-"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
-                    <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>comment_id</code></b>&nbsp;&nbsp;
-<small>integer</small>&nbsp;
- &nbsp;
- &nbsp;
-                <input type="number" style="display: none"
-               step="any"               name="comment_id"                data-endpoint="GETapi-V1-comments--comment_id-"
-               value="37"
-               data-component="url">
-    <br>
-<p>The ID of the comment. Example: <code>37</code></p>
-            </div>
-                    </form>
-
-                    <h2 id="endpoints-PATCHapi-V1-comments--comment_id-">PATCH api/V1/comments/{comment_id}</h2>
-
-<p>
-<small class="badge badge-darkred">requires authentication</small>
-</p>
-
-
-
-<span id="example-requests-PATCHapi-V1-comments--comment_id-">
-<blockquote>Example request:</blockquote>
-
-
-<div class="bash-example">
-    <pre><code class="language-bash">curl --request PATCH \
-    "http://localhost/api/V1/comments/37" \
-    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
-    --header "Content-Type: application/json" \
-    --header "Accept: application/json" \
-    --data "{
-    \"content\": \"b\"
-}"
-</code></pre></div>
-
-
-<div class="javascript-example">
-    <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/V1/comments/37"
-);
-
-const headers = {
-    "Authorization": "Bearer {YOUR_AUTH_KEY}",
-    "Content-Type": "application/json",
-    "Accept": "application/json",
-};
-
-let body = {
-    "content": "b"
-};
-
-fetch(url, {
-    method: "PATCH",
-    headers,
-    body: JSON.stringify(body),
-}).then(response =&gt; response.json());</code></pre></div>
-
-</span>
-
-<span id="example-responses-PATCHapi-V1-comments--comment_id-">
-</span>
-<span id="execution-results-PATCHapi-V1-comments--comment_id-" hidden>
-    <blockquote>Received response<span
-                id="execution-response-status-PATCHapi-V1-comments--comment_id-"></span>:
-    </blockquote>
-    <pre class="json"><code id="execution-response-content-PATCHapi-V1-comments--comment_id-"
-      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
-</span>
-<span id="execution-error-PATCHapi-V1-comments--comment_id-" hidden>
-    <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-PATCHapi-V1-comments--comment_id-">
-
-Tip: Check that you&#039;re properly connected to the network.
-If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
-You can check the Dev Tools console for debugging information.</code></pre>
-</span>
-<form id="form-PATCHapi-V1-comments--comment_id-" data-method="PATCH"
-      data-path="api/V1/comments/{comment_id}"
-      data-authed="1"
-      data-hasfiles="0"
-      data-isarraybody="0"
-      autocomplete="off"
-      onsubmit="event.preventDefault(); executeTryOut('PATCHapi-V1-comments--comment_id-', this);">
-    <h3>
-        Request&nbsp;&nbsp;&nbsp;
-                    <button type="button"
-                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-tryout-PATCHapi-V1-comments--comment_id-"
-                    onclick="tryItOut('PATCHapi-V1-comments--comment_id-');">Try it out ⚡
-            </button>
-            <button type="button"
-                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-canceltryout-PATCHapi-V1-comments--comment_id-"
-                    onclick="cancelTryOut('PATCHapi-V1-comments--comment_id-');" hidden>Cancel 🛑
-            </button>&nbsp;&nbsp;
-            <button type="submit"
-                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-executetryout-PATCHapi-V1-comments--comment_id-"
-                    data-initial-text="Send Request 💥"
-                    data-loading-text="⏱ Sending..."
-                    hidden>Send Request 💥
-            </button>
-            </h3>
-            <p>
-            <small class="badge badge-purple">PATCH</small>
-            <b><code>api/V1/comments/{comment_id}</code></b>
-        </p>
-                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Authorization" class="auth-value"               data-endpoint="PATCHapi-V1-comments--comment_id-"
-               value="Bearer {YOUR_AUTH_KEY}"
-               data-component="header">
-    <br>
-<p>Example: <code>Bearer {YOUR_AUTH_KEY}</code></p>
-            </div>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Content-Type"                data-endpoint="PATCHapi-V1-comments--comment_id-"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Accept"                data-endpoint="PATCHapi-V1-comments--comment_id-"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
-                    <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>comment_id</code></b>&nbsp;&nbsp;
-<small>integer</small>&nbsp;
- &nbsp;
- &nbsp;
-                <input type="number" style="display: none"
-               step="any"               name="comment_id"                data-endpoint="PATCHapi-V1-comments--comment_id-"
-               value="37"
-               data-component="url">
-    <br>
-<p>The ID of the comment. Example: <code>37</code></p>
-            </div>
-                            <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
-        <div style=" padding-left: 28px;  clear: unset;">
-            <b style="line-height: 2;"><code>content</code></b>&nbsp;&nbsp;
-<small>string</small>&nbsp;
-<i>optional</i> &nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="content"                data-endpoint="PATCHapi-V1-comments--comment_id-"
-               value="b"
-               data-component="body">
-    <br>
-<p>Must not be greater than 2500 characters. Example: <code>b</code></p>
-        </div>
-        </form>
-
-                    <h2 id="endpoints-DELETEapi-V1-comments--comment_id-">DELETE api/V1/comments/{comment_id}</h2>
-
-<p>
-<small class="badge badge-darkred">requires authentication</small>
-</p>
-
-
-
-<span id="example-requests-DELETEapi-V1-comments--comment_id-">
-<blockquote>Example request:</blockquote>
-
-
-<div class="bash-example">
-    <pre><code class="language-bash">curl --request DELETE \
-    "http://localhost/api/V1/comments/37" \
-    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
-    --header "Content-Type: application/json" \
-    --header "Accept: application/json"</code></pre></div>
-
-
-<div class="javascript-example">
-    <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/V1/comments/37"
-);
-
-const headers = {
-    "Authorization": "Bearer {YOUR_AUTH_KEY}",
-    "Content-Type": "application/json",
-    "Accept": "application/json",
-};
-
-
-fetch(url, {
-    method: "DELETE",
-    headers,
-}).then(response =&gt; response.json());</code></pre></div>
-
-</span>
-
-<span id="example-responses-DELETEapi-V1-comments--comment_id-">
-</span>
-<span id="execution-results-DELETEapi-V1-comments--comment_id-" hidden>
-    <blockquote>Received response<span
-                id="execution-response-status-DELETEapi-V1-comments--comment_id-"></span>:
-    </blockquote>
-    <pre class="json"><code id="execution-response-content-DELETEapi-V1-comments--comment_id-"
-      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
-</span>
-<span id="execution-error-DELETEapi-V1-comments--comment_id-" hidden>
-    <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-DELETEapi-V1-comments--comment_id-">
-
-Tip: Check that you&#039;re properly connected to the network.
-If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
-You can check the Dev Tools console for debugging information.</code></pre>
-</span>
-<form id="form-DELETEapi-V1-comments--comment_id-" data-method="DELETE"
-      data-path="api/V1/comments/{comment_id}"
-      data-authed="1"
-      data-hasfiles="0"
-      data-isarraybody="0"
-      autocomplete="off"
-      onsubmit="event.preventDefault(); executeTryOut('DELETEapi-V1-comments--comment_id-', this);">
-    <h3>
-        Request&nbsp;&nbsp;&nbsp;
-                    <button type="button"
-                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-tryout-DELETEapi-V1-comments--comment_id-"
-                    onclick="tryItOut('DELETEapi-V1-comments--comment_id-');">Try it out ⚡
-            </button>
-            <button type="button"
-                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-canceltryout-DELETEapi-V1-comments--comment_id-"
-                    onclick="cancelTryOut('DELETEapi-V1-comments--comment_id-');" hidden>Cancel 🛑
-            </button>&nbsp;&nbsp;
-            <button type="submit"
-                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-executetryout-DELETEapi-V1-comments--comment_id-"
-                    data-initial-text="Send Request 💥"
-                    data-loading-text="⏱ Sending..."
-                    hidden>Send Request 💥
-            </button>
-            </h3>
-            <p>
-            <small class="badge badge-red">DELETE</small>
-            <b><code>api/V1/comments/{comment_id}</code></b>
-        </p>
-                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Authorization" class="auth-value"               data-endpoint="DELETEapi-V1-comments--comment_id-"
-               value="Bearer {YOUR_AUTH_KEY}"
-               data-component="header">
-    <br>
-<p>Example: <code>Bearer {YOUR_AUTH_KEY}</code></p>
-            </div>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Content-Type"                data-endpoint="DELETEapi-V1-comments--comment_id-"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Accept"                data-endpoint="DELETEapi-V1-comments--comment_id-"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
-                    <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>comment_id</code></b>&nbsp;&nbsp;
-<small>integer</small>&nbsp;
- &nbsp;
- &nbsp;
-                <input type="number" style="display: none"
-               step="any"               name="comment_id"                data-endpoint="DELETEapi-V1-comments--comment_id-"
-               value="37"
-               data-component="url">
-    <br>
-<p>The ID of the comment. Example: <code>37</code></p>
-            </div>
-                    </form>
 
                 <h1 id="manage-announcements">Manage Announcements</h1>
 
@@ -5088,6 +1768,954 @@ You can check the Dev Tools console for debugging information.</code></pre>
             </div>
                     </form>
 
+                <h1 id="manage-assignment-files">Manage Assignment Files</h1>
+
+    
+
+                                <h2 id="manage-assignment-files-GETapi-V1-assignments--assignment_id--assignmentFiles">Get Files of an Assignment</h2>
+
+<p>
+<small class="badge badge-darkred">requires authentication</small>
+</p>
+
+<p>Get all Files of a particular Assignment.</p>
+
+<span id="example-requests-GETapi-V1-assignments--assignment_id--assignmentFiles">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "http://localhost/api/V1/assignments/16/assignmentFiles" \
+    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost/api/V1/assignments/16/assignmentFiles"
+);
+
+const headers = {
+    "Authorization": "Bearer {YOUR_AUTH_KEY}",
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETapi-V1-assignments--assignment_id--assignmentFiles">
+            <blockquote>
+            <p>Example response (200, When you are NOT The instructor of the course, Or NOT enrolled in the course.):</p>
+        </blockquote>
+                <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;errors&quot;: [
+        {
+            &quot;status&quot;: 401,
+            &quot;message&quot;: &quot;NOT Authorized&quot;
+        }
+    ]
+}</code>
+ </pre>
+            <blockquote>
+            <p>Example response (404):</p>
+        </blockquote>
+                <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;errors&quot;: [
+        {
+            &quot;status&quot;: 404,
+            &quot;message&quot;: &quot;The Resource Could Not Be Found :(&quot;
+        }
+    ]
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-GETapi-V1-assignments--assignment_id--assignmentFiles" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETapi-V1-assignments--assignment_id--assignmentFiles"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETapi-V1-assignments--assignment_id--assignmentFiles"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-GETapi-V1-assignments--assignment_id--assignmentFiles" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETapi-V1-assignments--assignment_id--assignmentFiles">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-GETapi-V1-assignments--assignment_id--assignmentFiles" data-method="GET"
+      data-path="api/V1/assignments/{assignment_id}/assignmentFiles"
+      data-authed="1"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-V1-assignments--assignment_id--assignmentFiles', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETapi-V1-assignments--assignment_id--assignmentFiles"
+                    onclick="tryItOut('GETapi-V1-assignments--assignment_id--assignmentFiles');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETapi-V1-assignments--assignment_id--assignmentFiles"
+                    onclick="cancelTryOut('GETapi-V1-assignments--assignment_id--assignmentFiles');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETapi-V1-assignments--assignment_id--assignmentFiles"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>api/V1/assignments/{assignment_id}/assignmentFiles</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="GETapi-V1-assignments--assignment_id--assignmentFiles"
+               value="Bearer {YOUR_AUTH_KEY}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_AUTH_KEY}</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="GETapi-V1-assignments--assignment_id--assignmentFiles"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="GETapi-V1-assignments--assignment_id--assignmentFiles"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>assignment_id</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="assignment_id"                data-endpoint="GETapi-V1-assignments--assignment_id--assignmentFiles"
+               value="16"
+               data-component="url">
+    <br>
+<p>The ID of the assignment. Example: <code>16</code></p>
+            </div>
+                    </form>
+
+                    <h2 id="manage-assignment-files-POSTapi-V1-assignments--assignment_id--assignmentFiles-register">Create an Assignment File.</h2>
+
+<p>
+<small class="badge badge-darkred">requires authentication</small>
+</p>
+
+<p>Create an Assignment File for an assignment.</p>
+
+<span id="example-requests-POSTapi-V1-assignments--assignment_id--assignmentFiles-register">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request POST \
+    "http://localhost/api/V1/assignments/16/assignmentFiles/register" \
+    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
+    --header "Content-Type: multipart/form-data" \
+    --header "Accept: application/json" \
+    --form "assignmentFile[]=@/tmp/php40c1ci117o6e2M62o80" </code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost/api/V1/assignments/16/assignmentFiles/register"
+);
+
+const headers = {
+    "Authorization": "Bearer {YOUR_AUTH_KEY}",
+    "Content-Type": "multipart/form-data",
+    "Accept": "application/json",
+};
+
+const body = new FormData();
+body.append('assignmentFile[]', document.querySelector('input[name="assignmentFile[]"]').files[0]);
+
+fetch(url, {
+    method: "POST",
+    headers,
+    body,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-POSTapi-V1-assignments--assignment_id--assignmentFiles-register">
+            <blockquote>
+            <p>Example response (200):</p>
+        </blockquote>
+                <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;data&quot;: [
+        {
+            &quot;type&quot;: &quot;assignment file&quot;,
+            &quot;id&quot;: null,
+            &quot;data&quot;: {
+                &quot;path&quot;: null,
+                &quot;assignmentId&quot;: null
+            },
+            &quot;included&quot;: [],
+            &quot;links&quot;: []
+        },
+        {
+            &quot;type&quot;: &quot;assignment file&quot;,
+            &quot;id&quot;: null,
+            &quot;data&quot;: {
+                &quot;path&quot;: null,
+                &quot;assignmentId&quot;: null
+            },
+            &quot;included&quot;: [],
+            &quot;links&quot;: []
+        }
+    ]
+}</code>
+ </pre>
+            <blockquote>
+            <p>Example response (200, When you are NOT The Instructor of the course):</p>
+        </blockquote>
+                <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;errors&quot;: [
+        {
+            &quot;status&quot;: 401,
+            &quot;message&quot;: &quot;NOT Authorized&quot;
+        }
+    ]
+}</code>
+ </pre>
+            <blockquote>
+            <p>Example response (404):</p>
+        </blockquote>
+                <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;errors&quot;: [
+        {
+            &quot;status&quot;: 404,
+            &quot;message&quot;: &quot;The Resource Could Not Be Found :(&quot;
+        }
+    ]
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-POSTapi-V1-assignments--assignment_id--assignmentFiles-register" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-POSTapi-V1-assignments--assignment_id--assignmentFiles-register"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-POSTapi-V1-assignments--assignment_id--assignmentFiles-register"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-POSTapi-V1-assignments--assignment_id--assignmentFiles-register" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-POSTapi-V1-assignments--assignment_id--assignmentFiles-register">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-POSTapi-V1-assignments--assignment_id--assignmentFiles-register" data-method="POST"
+      data-path="api/V1/assignments/{assignment_id}/assignmentFiles/register"
+      data-authed="1"
+      data-hasfiles="1"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('POSTapi-V1-assignments--assignment_id--assignmentFiles-register', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-POSTapi-V1-assignments--assignment_id--assignmentFiles-register"
+                    onclick="tryItOut('POSTapi-V1-assignments--assignment_id--assignmentFiles-register');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-POSTapi-V1-assignments--assignment_id--assignmentFiles-register"
+                    onclick="cancelTryOut('POSTapi-V1-assignments--assignment_id--assignmentFiles-register');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-POSTapi-V1-assignments--assignment_id--assignmentFiles-register"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-black">POST</small>
+            <b><code>api/V1/assignments/{assignment_id}/assignmentFiles/register</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="POSTapi-V1-assignments--assignment_id--assignmentFiles-register"
+               value="Bearer {YOUR_AUTH_KEY}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_AUTH_KEY}</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="POSTapi-V1-assignments--assignment_id--assignmentFiles-register"
+               value="multipart/form-data"
+               data-component="header">
+    <br>
+<p>Example: <code>multipart/form-data</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="POSTapi-V1-assignments--assignment_id--assignmentFiles-register"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>assignment_id</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="assignment_id"                data-endpoint="POSTapi-V1-assignments--assignment_id--assignmentFiles-register"
+               value="16"
+               data-component="url">
+    <br>
+<p>The ID of the assignment. Example: <code>16</code></p>
+            </div>
+                            <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
+        <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>assignmentFile</code></b>&nbsp;&nbsp;
+<small>file[]</small>&nbsp;
+<i>optional</i> &nbsp;
+ &nbsp;
+                <input type="file" style="display: none"
+                              name="assignmentFile[0]"                data-endpoint="POSTapi-V1-assignments--assignment_id--assignmentFiles-register"
+               data-component="body">
+        <input type="file" style="display: none"
+               name="assignmentFile[1]"                data-endpoint="POSTapi-V1-assignments--assignment_id--assignmentFiles-register"
+               data-component="body">
+    <br>
+<p>Uploaded files with an assignment. [pdf, jpg,jpeg, png, docx, zip, txt] 50MB. Must be a file. Must not be greater than 51200 kilobytes.</p>
+        </div>
+        </form>
+
+                    <h2 id="manage-assignment-files-GETapi-V1-assignmentFiles--assignmentFile_id-">Show a specific Assignment File.</h2>
+
+<p>
+<small class="badge badge-darkred">requires authentication</small>
+</p>
+
+<p>Display an individual Submission File.</p>
+<ul>
+<li>available relationships for this resource :<ul>
+<li>assignment : The assignment that the file belongs to.</li>
+</ul>
+</li>
+</ul>
+
+<span id="example-requests-GETapi-V1-assignmentFiles--assignmentFile_id-">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "http://localhost/api/V1/assignmentFiles/16?include=include%3Dassignment" \
+    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost/api/V1/assignmentFiles/16"
+);
+
+const params = {
+    "include": "include=assignment",
+};
+Object.keys(params)
+    .forEach(key =&gt; url.searchParams.append(key, params[key]));
+
+const headers = {
+    "Authorization": "Bearer {YOUR_AUTH_KEY}",
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETapi-V1-assignmentFiles--assignmentFile_id-">
+            <blockquote>
+            <p>Example response (200):</p>
+        </blockquote>
+                <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;type&quot;: &quot;assignment file&quot;,
+    &quot;id&quot;: null,
+    &quot;data&quot;: {
+        &quot;path&quot;: null,
+        &quot;assignmentId&quot;: null
+    },
+    &quot;included&quot;: [],
+    &quot;links&quot;: []
+}</code>
+ </pre>
+            <blockquote>
+            <p>Example response (200, When you are NOT The instructor of the course, Or NOT enrolled in the course.):</p>
+        </blockquote>
+                <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;errors&quot;: [
+        {
+            &quot;status&quot;: 401,
+            &quot;message&quot;: &quot;NOT Authorized&quot;
+        }
+    ]
+}</code>
+ </pre>
+            <blockquote>
+            <p>Example response (404):</p>
+        </blockquote>
+                <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;errors&quot;: [
+        {
+            &quot;status&quot;: 404,
+            &quot;message&quot;: &quot;The Resource Could Not Be Found :(&quot;
+        }
+    ]
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-GETapi-V1-assignmentFiles--assignmentFile_id-" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETapi-V1-assignmentFiles--assignmentFile_id-"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETapi-V1-assignmentFiles--assignmentFile_id-"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-GETapi-V1-assignmentFiles--assignmentFile_id-" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETapi-V1-assignmentFiles--assignmentFile_id-">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-GETapi-V1-assignmentFiles--assignmentFile_id-" data-method="GET"
+      data-path="api/V1/assignmentFiles/{assignmentFile_id}"
+      data-authed="1"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-V1-assignmentFiles--assignmentFile_id-', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETapi-V1-assignmentFiles--assignmentFile_id-"
+                    onclick="tryItOut('GETapi-V1-assignmentFiles--assignmentFile_id-');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETapi-V1-assignmentFiles--assignmentFile_id-"
+                    onclick="cancelTryOut('GETapi-V1-assignmentFiles--assignmentFile_id-');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETapi-V1-assignmentFiles--assignmentFile_id-"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>api/V1/assignmentFiles/{assignmentFile_id}</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="GETapi-V1-assignmentFiles--assignmentFile_id-"
+               value="Bearer {YOUR_AUTH_KEY}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_AUTH_KEY}</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="GETapi-V1-assignmentFiles--assignmentFile_id-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="GETapi-V1-assignmentFiles--assignmentFile_id-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>assignmentFile_id</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="assignmentFile_id"                data-endpoint="GETapi-V1-assignmentFiles--assignmentFile_id-"
+               value="16"
+               data-component="url">
+    <br>
+<p>The ID of the assignmentFile. Example: <code>16</code></p>
+            </div>
+                        <h4 class="fancy-heading-panel"><b>Query Parameters</b></h4>
+                                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>include</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+<i>optional</i> &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="include"                data-endpoint="GETapi-V1-assignmentFiles--assignmentFile_id-"
+               value="include=assignment"
+               data-component="query">
+    <br>
+<p>data field(s) to include any other relationships. Seprate multiple fields with commas. Example: <code>include=assignment</code></p>
+            </div>
+                </form>
+
+                    <h2 id="manage-assignment-files-GETapi-V1-assignmentFiles-download--assignmentFile_id-">Download an Assignment File.</h2>
+
+<p>
+<small class="badge badge-darkred">requires authentication</small>
+</p>
+
+<p>Download a file attached to a specific Assignment.
+This endpoint returns the actual file (PDF, DOCX, ZIP, etc.), not a JSON resource.</p>
+
+<span id="example-requests-GETapi-V1-assignmentFiles-download--assignmentFile_id-">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "http://localhost/api/V1/assignmentFiles/download/16" \
+    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost/api/V1/assignmentFiles/download/16"
+);
+
+const headers = {
+    "Authorization": "Bearer {YOUR_AUTH_KEY}",
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETapi-V1-assignmentFiles-download--assignmentFile_id-">
+            <blockquote>
+            <p>Example response (200, Successful download (binary file response)):</p>
+        </blockquote>
+                <pre>
+
+<code class="language-json" style="max-height: 300px;"></code>
+ </pre>
+            <blockquote>
+            <p>Example response (403, When you are NOT The instructor of the course, Or NOT enrolled in the course.):</p>
+        </blockquote>
+                <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;errors&quot;: [
+        {
+            &quot;status&quot;: 403,
+            &quot;message&quot;: &quot;NOT Authorized&quot;
+        }
+    ]
+}</code>
+ </pre>
+            <blockquote>
+            <p>Example response (404):</p>
+        </blockquote>
+                <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;errors&quot;: [
+        {
+            &quot;status&quot;: 404,
+            &quot;message&quot;: &quot;The Resource Could Not Be Found :(&quot;
+        }
+    ]
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-GETapi-V1-assignmentFiles-download--assignmentFile_id-" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETapi-V1-assignmentFiles-download--assignmentFile_id-"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETapi-V1-assignmentFiles-download--assignmentFile_id-"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-GETapi-V1-assignmentFiles-download--assignmentFile_id-" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETapi-V1-assignmentFiles-download--assignmentFile_id-">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-GETapi-V1-assignmentFiles-download--assignmentFile_id-" data-method="GET"
+      data-path="api/V1/assignmentFiles/download/{assignmentFile_id}"
+      data-authed="1"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-V1-assignmentFiles-download--assignmentFile_id-', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETapi-V1-assignmentFiles-download--assignmentFile_id-"
+                    onclick="tryItOut('GETapi-V1-assignmentFiles-download--assignmentFile_id-');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETapi-V1-assignmentFiles-download--assignmentFile_id-"
+                    onclick="cancelTryOut('GETapi-V1-assignmentFiles-download--assignmentFile_id-');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETapi-V1-assignmentFiles-download--assignmentFile_id-"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>api/V1/assignmentFiles/download/{assignmentFile_id}</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="GETapi-V1-assignmentFiles-download--assignmentFile_id-"
+               value="Bearer {YOUR_AUTH_KEY}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_AUTH_KEY}</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="GETapi-V1-assignmentFiles-download--assignmentFile_id-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="GETapi-V1-assignmentFiles-download--assignmentFile_id-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>assignmentFile_id</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="assignmentFile_id"                data-endpoint="GETapi-V1-assignmentFiles-download--assignmentFile_id-"
+               value="16"
+               data-component="url">
+    <br>
+<p>The ID of the assignmentFile. Example: <code>16</code></p>
+            </div>
+                    </form>
+
+                    <h2 id="manage-assignment-files-DELETEapi-V1-assignmentFiles--assignmentFile_id-">Delete an Assignment File.</h2>
+
+<p>
+<small class="badge badge-darkred">requires authentication</small>
+</p>
+
+<p>Delete a specific Assignment File, also from the storage.</p>
+
+<span id="example-requests-DELETEapi-V1-assignmentFiles--assignmentFile_id-">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request DELETE \
+    "http://localhost/api/V1/assignmentFiles/16" \
+    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost/api/V1/assignmentFiles/16"
+);
+
+const headers = {
+    "Authorization": "Bearer {YOUR_AUTH_KEY}",
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+
+fetch(url, {
+    method: "DELETE",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-DELETEapi-V1-assignmentFiles--assignmentFile_id-">
+            <blockquote>
+            <p>Example response (200, When you are NOT The instructor of the course.):</p>
+        </blockquote>
+                <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;errors&quot;: [
+        {
+            &quot;status&quot;: 401,
+            &quot;message&quot;: &quot;NOT Authorized&quot;
+        }
+    ]
+}</code>
+ </pre>
+            <blockquote>
+            <p>Example response (200, Successful deletion):</p>
+        </blockquote>
+                <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;data&quot;: [],
+    &quot;message&quot;: &quot;Assignment file deleted successfully&quot;,
+    &quot;code&quot;: 200
+}</code>
+ </pre>
+            <blockquote>
+            <p>Example response (404):</p>
+        </blockquote>
+                <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;errors&quot;: [
+        {
+            &quot;status&quot;: 404,
+            &quot;message&quot;: &quot;The Resource Could Not Be Found :(&quot;
+        }
+    ]
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-DELETEapi-V1-assignmentFiles--assignmentFile_id-" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-DELETEapi-V1-assignmentFiles--assignmentFile_id-"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-DELETEapi-V1-assignmentFiles--assignmentFile_id-"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-DELETEapi-V1-assignmentFiles--assignmentFile_id-" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-DELETEapi-V1-assignmentFiles--assignmentFile_id-">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-DELETEapi-V1-assignmentFiles--assignmentFile_id-" data-method="DELETE"
+      data-path="api/V1/assignmentFiles/{assignmentFile_id}"
+      data-authed="1"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('DELETEapi-V1-assignmentFiles--assignmentFile_id-', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-DELETEapi-V1-assignmentFiles--assignmentFile_id-"
+                    onclick="tryItOut('DELETEapi-V1-assignmentFiles--assignmentFile_id-');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-DELETEapi-V1-assignmentFiles--assignmentFile_id-"
+                    onclick="cancelTryOut('DELETEapi-V1-assignmentFiles--assignmentFile_id-');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-DELETEapi-V1-assignmentFiles--assignmentFile_id-"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-red">DELETE</small>
+            <b><code>api/V1/assignmentFiles/{assignmentFile_id}</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="DELETEapi-V1-assignmentFiles--assignmentFile_id-"
+               value="Bearer {YOUR_AUTH_KEY}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_AUTH_KEY}</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="DELETEapi-V1-assignmentFiles--assignmentFile_id-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="DELETEapi-V1-assignmentFiles--assignmentFile_id-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>assignmentFile_id</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="assignmentFile_id"                data-endpoint="DELETEapi-V1-assignmentFiles--assignmentFile_id-"
+               value="16"
+               data-component="url">
+    <br>
+<p>The ID of the assignmentFile. Example: <code>16</code></p>
+            </div>
+                    </form>
+
                 <h1 id="manage-assignments">Manage Assignments</h1>
 
     
@@ -5591,7 +3219,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                value="2026-05-20"
                data-component="body">
     <br>
-<p>The due date of the assignment. Must be a valid date. Must be a valid date. Must be a date after or equal to <code>2026-04-12</code>. Example: <code>2026-05-20</code></p>
+<p>The due date of the assignment. Must be a valid date. Must be a valid date. Must be a date after or equal to <code>2026-04-13</code>. Example: <code>2026-05-20</code></p>
                     </div>
                                     </details>
         </div>
@@ -6460,7 +4088,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
     --header "Content-Type: multipart/form-data" \
     --header "Accept: application/json" \
-    --form "lectureFile=@/tmp/php59utlnnks5g4edtcS44" </code></pre></div>
+    --form "lectureFile=@/tmp/php1egs7u6cooti70YlE6I" </code></pre></div>
 
 
 <div class="javascript-example">
@@ -6655,7 +4283,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                value=""
                data-component="body">
     <br>
-<p>The lecture file to upload. Allowed types: pdf, docx, zip. Maximum size: 20MB. Must be a file. Must not be greater than 20000 kilobytes. Example: <code>/tmp/php59utlnnks5g4edtcS44</code></p>
+<p>The lecture file to upload. Allowed types: pdf, docx, zip. Maximum size: 20MB. Must be a file. Must not be greater than 20000 kilobytes. Example: <code>/tmp/php1egs7u6cooti70YlE6I</code></p>
         </div>
         </form>
 
@@ -7041,18 +4669,6 @@ You can check the Dev Tools console for debugging information.</code></pre>
                data-component="url">
     <br>
 <p>The ID of the lecture. Example: <code>1</code></p>
-            </div>
-                    <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>lecture</code></b>&nbsp;&nbsp;
-<small>integer</small>&nbsp;
- &nbsp;
- &nbsp;
-                <input type="number" style="display: none"
-               step="any"               name="lecture"                data-endpoint="GETapi-V1-lectures-download--lecture_id-"
-               value="12"
-               data-component="url">
-    <br>
-<p>The ID of the Lecture. Example: <code>12</code></p>
             </div>
                     </form>
 
@@ -7574,15 +5190,15 @@ fetch(url, {
     &quot;data&quot;: {
         &quot;courseName&quot;: &quot;Nihil accusantium harum.&quot;,
         &quot;description&quot;: &quot;Deserunt aut ab provident perspiciatis quo omnis nostrum. Adipisci quidem nostrum qui commodi incidunt iure. Et et modi ipsum nostrum.&quot;,
-        &quot;courseCode&quot;: &quot;QbyxddXLs&quot;,
-        &quot;startAt&quot;: &quot;2026-04-29 06:14:38&quot;,
-        &quot;endAt&quot;: &quot;2026-05-18 08:39:08&quot;,
-        &quot;instructorId&quot;: 22,
+        &quot;courseCode&quot;: &quot;rRoVBKSOI&quot;,
+        &quot;startAt&quot;: &quot;2026-04-30 04:08:29&quot;,
+        &quot;endAt&quot;: &quot;2026-05-19 06:32:59&quot;,
+        &quot;instructorId&quot;: 23,
         &quot;assignmentPercent&quot;: 35,
         &quot;quizPercent&quot;: 16,
         &quot;midPercent&quot;: 28,
         &quot;finalPercent&quot;: 21,
-        &quot;createdAt&quot;: &quot;2026-04-11T20:20:49.000000Z&quot;
+        &quot;createdAt&quot;: &quot;2026-04-12T18:14:40.000000Z&quot;
     },
     &quot;included&quot;: [],
     &quot;links&quot;: []
@@ -8144,15 +5760,15 @@ fetch(url, {
     &quot;data&quot;: {
         &quot;courseName&quot;: &quot;Quos velit et fugiat.&quot;,
         &quot;description&quot;: &quot;Accusantium harum mollitia modi deserunt aut ab. Perspiciatis quo omnis nostrum aut adipisci quidem nostrum qui. Incidunt iure odit et et modi ipsum.&quot;,
-        &quot;courseCode&quot;: &quot;d7g0LkFrg&quot;,
-        &quot;startAt&quot;: &quot;2026-03-14 15:03:16&quot;,
-        &quot;endAt&quot;: &quot;2026-07-03 19:28:04&quot;,
-        &quot;instructorId&quot;: 3,
+        &quot;courseCode&quot;: &quot;yyR5TO12j&quot;,
+        &quot;startAt&quot;: &quot;2026-03-15 12:57:07&quot;,
+        &quot;endAt&quot;: &quot;2026-07-04 17:21:55&quot;,
+        &quot;instructorId&quot;: 4,
         &quot;assignmentPercent&quot;: 37,
         &quot;quizPercent&quot;: 28,
         &quot;midPercent&quot;: 10,
         &quot;finalPercent&quot;: 25,
-        &quot;createdAt&quot;: &quot;2026-04-11T20:20:49.000000Z&quot;
+        &quot;createdAt&quot;: &quot;2026-04-12T18:14:40.000000Z&quot;
     },
     &quot;included&quot;: [],
     &quot;links&quot;: []
@@ -8339,7 +5955,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                value="2026-05-01"
                data-component="body">
     <br>
-<p>Course start date. Must be at least tomorrow. This field is required when <code>data.attributes.endAt</code> is present. Must be a valid date. Must be a valid date. Must be a date after or equal to <code>2026-04-12</code>. Example: <code>2026-05-01</code></p>
+<p>Course start date. Must be at least tomorrow. This field is required when <code>data.attributes.endAt</code> is present. Must be a valid date. Must be a valid date. Must be a date after or equal to <code>2026-04-13</code>. Example: <code>2026-05-01</code></p>
                     </div>
                                                                 <div style="margin-left: 28px; clear: unset;">
                         <b style="line-height: 2;"><code>endAt</code></b>&nbsp;&nbsp;
@@ -8581,7 +6197,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <small class="badge badge-darkred">requires authentication</small>
 </p>
 
-<p>Create an Discussion by the instructor or any student in a particular course.</p>
+<p>Create a Discussion by the instructor or any student in a particular course.</p>
 
 <span id="example-requests-POSTapi-V1-courses--course_id--discussions-register">
 <blockquote>Example request:</blockquote>
@@ -8641,9 +6257,9 @@ fetch(url, {
     &quot;id&quot;: 73,
     &quot;data&quot;: {
         &quot;content&quot;: &quot;Eius et animi quos velit et fugiat sunt nihil accusantium.&quot;,
-        &quot;courseId&quot;: 6,
-        &quot;userId&quot;: 8,
-        &quot;createdAt&quot;: &quot;2026-04-11T20:20:49.000000Z&quot;
+        &quot;courseId&quot;: 5,
+        &quot;userId&quot;: 6,
+        &quot;createdAt&quot;: &quot;2026-04-12T18:14:40.000000Z&quot;
     },
     &quot;included&quot;: [],
     &quot;links&quot;: []
@@ -8891,9 +6507,9 @@ fetch(url, {
     &quot;id&quot;: 73,
     &quot;data&quot;: {
         &quot;content&quot;: &quot;Adipisci quidem nostrum qui commodi incidunt iure odit et et modi ipsum.&quot;,
-        &quot;courseId&quot;: 3,
-        &quot;userId&quot;: 7,
-        &quot;createdAt&quot;: &quot;2026-04-11T20:20:50.000000Z&quot;
+        &quot;courseId&quot;: 6,
+        &quot;userId&quot;: 10,
+        &quot;createdAt&quot;: &quot;2026-04-12T18:14:40.000000Z&quot;
     },
     &quot;included&quot;: [],
     &quot;links&quot;: []
@@ -9105,9 +6721,9 @@ fetch(url, {
     &quot;id&quot;: 73,
     &quot;data&quot;: {
         &quot;content&quot;: &quot;Eius et animi quos velit et fugiat sunt nihil accusantium.&quot;,
-        &quot;courseId&quot;: 3,
-        &quot;userId&quot;: 23,
-        &quot;createdAt&quot;: &quot;2026-04-11T20:20:50.000000Z&quot;
+        &quot;courseId&quot;: 5,
+        &quot;userId&quot;: 12,
+        &quot;createdAt&quot;: &quot;2026-04-12T18:14:40.000000Z&quot;
     },
     &quot;included&quot;: [],
     &quot;links&quot;: []
@@ -9471,6 +7087,1073 @@ You can check the Dev Tools console for debugging information.</code></pre>
             </div>
                     </form>
 
+                <h1 id="manage-discussions-comments">Manage Discussions Comments</h1>
+
+    
+
+                                <h2 id="manage-discussions-comments-GETapi-V1-discussions--discussion_id--comments">Get Discussion&#039;s Comments</h2>
+
+<p>
+<small class="badge badge-darkred">requires authentication</small>
+</p>
+
+<p>Get all Comments of a particular Discussion.</p>
+
+<span id="example-requests-GETapi-V1-discussions--discussion_id--comments">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "http://localhost/api/V1/discussions/13/comments" \
+    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost/api/V1/discussions/13/comments"
+);
+
+const headers = {
+    "Authorization": "Bearer {YOUR_AUTH_KEY}",
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETapi-V1-discussions--discussion_id--comments">
+            <blockquote>
+            <p>Example response (200, When you are NOT The instructor of the course, Or NOT an enrolled student.):</p>
+        </blockquote>
+                <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;errors&quot;: [
+        {
+            &quot;status&quot;: 401,
+            &quot;message&quot;: &quot;NOT Authorized&quot;
+        }
+    ]
+}</code>
+ </pre>
+            <blockquote>
+            <p>Example response (404):</p>
+        </blockquote>
+                <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;errors&quot;: [
+        {
+            &quot;status&quot;: 404,
+            &quot;message&quot;: &quot;The Resource Could Not Be Found :(&quot;
+        }
+    ]
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-GETapi-V1-discussions--discussion_id--comments" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETapi-V1-discussions--discussion_id--comments"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETapi-V1-discussions--discussion_id--comments"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-GETapi-V1-discussions--discussion_id--comments" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETapi-V1-discussions--discussion_id--comments">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-GETapi-V1-discussions--discussion_id--comments" data-method="GET"
+      data-path="api/V1/discussions/{discussion_id}/comments"
+      data-authed="1"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-V1-discussions--discussion_id--comments', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETapi-V1-discussions--discussion_id--comments"
+                    onclick="tryItOut('GETapi-V1-discussions--discussion_id--comments');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETapi-V1-discussions--discussion_id--comments"
+                    onclick="cancelTryOut('GETapi-V1-discussions--discussion_id--comments');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETapi-V1-discussions--discussion_id--comments"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>api/V1/discussions/{discussion_id}/comments</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="GETapi-V1-discussions--discussion_id--comments"
+               value="Bearer {YOUR_AUTH_KEY}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_AUTH_KEY}</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="GETapi-V1-discussions--discussion_id--comments"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="GETapi-V1-discussions--discussion_id--comments"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>discussion_id</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="discussion_id"                data-endpoint="GETapi-V1-discussions--discussion_id--comments"
+               value="13"
+               data-component="url">
+    <br>
+<p>The ID of the discussion. Example: <code>13</code></p>
+            </div>
+                    </form>
+
+                    <h2 id="manage-discussions-comments-POSTapi-V1-discussions--discussion_id--comments-register">Create a Comment.</h2>
+
+<p>
+<small class="badge badge-darkred">requires authentication</small>
+</p>
+
+<p>Create a Comment by a user.</p>
+
+<span id="example-requests-POSTapi-V1-discussions--discussion_id--comments-register">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request POST \
+    "http://localhost/api/V1/discussions/13/comments/register" \
+    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json" \
+    --data "{
+    \"data\": {
+        \"attributes\": {
+            \"content\": \"I think I enhanced the convergence of gradient descent\"
+        }
+    }
+}"
+</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost/api/V1/discussions/13/comments/register"
+);
+
+const headers = {
+    "Authorization": "Bearer {YOUR_AUTH_KEY}",
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+let body = {
+    "data": {
+        "attributes": {
+            "content": "I think I enhanced the convergence of gradient descent"
+        }
+    }
+};
+
+fetch(url, {
+    method: "POST",
+    headers,
+    body: JSON.stringify(body),
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-POSTapi-V1-discussions--discussion_id--comments-register">
+            <blockquote>
+            <p>Example response (200):</p>
+        </blockquote>
+                <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;type&quot;: &quot;comment&quot;,
+    &quot;id&quot;: 217,
+    &quot;data&quot;: {
+        &quot;content&quot;: &quot;Eius et animi quos velit et fugiat sunt.&quot;,
+        &quot;discussion_id&quot;: 43,
+        &quot;user_id&quot;: 4,
+        &quot;createdAt&quot;: &quot;2026-04-12T18:14:40.000000Z&quot;
+    },
+    &quot;included&quot;: [],
+    &quot;links&quot;: []
+}</code>
+ </pre>
+            <blockquote>
+            <p>Example response (200, When you are NOT The instructor of the course, Or NOT an enrolled student.):</p>
+        </blockquote>
+                <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;errors&quot;: [
+        {
+            &quot;status&quot;: 401,
+            &quot;message&quot;: &quot;NOT Authorized&quot;
+        }
+    ]
+}</code>
+ </pre>
+            <blockquote>
+            <p>Example response (200, When The content field exceeds 2500 characters):</p>
+        </blockquote>
+                <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;errors&quot;: [
+        {
+            &quot;status&quot;: 422,
+            &quot;message&quot;: &quot;The data.attributes.content field must not be greater than 2500 characters.&quot;,
+            &quot;source&quot;: &quot;data.attributes.content&quot;
+        }
+    ]
+}</code>
+ </pre>
+            <blockquote>
+            <p>Example response (404):</p>
+        </blockquote>
+                <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;errors&quot;: [
+        {
+            &quot;status&quot;: 404,
+            &quot;message&quot;: &quot;The Resource Could Not Be Found :(&quot;
+        }
+    ]
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-POSTapi-V1-discussions--discussion_id--comments-register" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-POSTapi-V1-discussions--discussion_id--comments-register"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-POSTapi-V1-discussions--discussion_id--comments-register"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-POSTapi-V1-discussions--discussion_id--comments-register" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-POSTapi-V1-discussions--discussion_id--comments-register">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-POSTapi-V1-discussions--discussion_id--comments-register" data-method="POST"
+      data-path="api/V1/discussions/{discussion_id}/comments/register"
+      data-authed="1"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('POSTapi-V1-discussions--discussion_id--comments-register', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-POSTapi-V1-discussions--discussion_id--comments-register"
+                    onclick="tryItOut('POSTapi-V1-discussions--discussion_id--comments-register');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-POSTapi-V1-discussions--discussion_id--comments-register"
+                    onclick="cancelTryOut('POSTapi-V1-discussions--discussion_id--comments-register');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-POSTapi-V1-discussions--discussion_id--comments-register"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-black">POST</small>
+            <b><code>api/V1/discussions/{discussion_id}/comments/register</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="POSTapi-V1-discussions--discussion_id--comments-register"
+               value="Bearer {YOUR_AUTH_KEY}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_AUTH_KEY}</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="POSTapi-V1-discussions--discussion_id--comments-register"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="POSTapi-V1-discussions--discussion_id--comments-register"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>discussion_id</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="discussion_id"                data-endpoint="POSTapi-V1-discussions--discussion_id--comments-register"
+               value="13"
+               data-component="url">
+    <br>
+<p>The ID of the discussion. Example: <code>13</code></p>
+            </div>
+                            <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
+        <div style=" padding-left: 28px;  clear: unset;">
+        <details>
+            <summary style="padding-bottom: 10px;">
+                <b style="line-height: 2;"><code>data</code></b>&nbsp;&nbsp;
+<small>object</small>&nbsp;
+ &nbsp;
+ &nbsp;
+<br>
+
+            </summary>
+                                                <div style=" margin-left: 14px; clear: unset;">
+        <details>
+            <summary style="padding-bottom: 10px;">
+                <b style="line-height: 2;"><code>attributes</code></b>&nbsp;&nbsp;
+<small>object</small>&nbsp;
+ &nbsp;
+ &nbsp;
+<br>
+
+            </summary>
+                                                <div style="margin-left: 28px; clear: unset;">
+                        <b style="line-height: 2;"><code>content</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="data.attributes.content"                data-endpoint="POSTapi-V1-discussions--discussion_id--comments-register"
+               value="I think I enhanced the convergence of gradient descent"
+               data-component="body">
+    <br>
+<p>The content of the comment. Must not be greater than 2500 characters. Example: <code>I think I enhanced the convergence of gradient descent</code></p>
+                    </div>
+                                    </details>
+        </div>
+                                        </details>
+        </div>
+        </form>
+
+                    <h2 id="manage-discussions-comments-GETapi-V1-comments--comment_id-">Show a specific Comment.</h2>
+
+<p>
+<small class="badge badge-darkred">requires authentication</small>
+</p>
+
+<p>Display an individual Comment for a particular Discussion.</p>
+<ul>
+<li>available relationships for this resource :<ul>
+<li>discussion : The discussion that the comment belongs to.</li>
+<li>user : The creator of that comment.</li>
+</ul>
+</li>
+</ul>
+
+<span id="example-requests-GETapi-V1-comments--comment_id-">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "http://localhost/api/V1/comments/37?include=include%3Dcourse" \
+    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost/api/V1/comments/37"
+);
+
+const params = {
+    "include": "include=course",
+};
+Object.keys(params)
+    .forEach(key =&gt; url.searchParams.append(key, params[key]));
+
+const headers = {
+    "Authorization": "Bearer {YOUR_AUTH_KEY}",
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETapi-V1-comments--comment_id-">
+            <blockquote>
+            <p>Example response (200):</p>
+        </blockquote>
+                <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;type&quot;: &quot;comment&quot;,
+    &quot;id&quot;: 217,
+    &quot;data&quot;: {
+        &quot;content&quot;: &quot;Adipisci quidem nostrum qui commodi incidunt iure odit et.&quot;,
+        &quot;discussion_id&quot;: 46,
+        &quot;user_id&quot;: 14,
+        &quot;createdAt&quot;: &quot;2026-04-12T18:14:40.000000Z&quot;
+    },
+    &quot;included&quot;: [],
+    &quot;links&quot;: []
+}</code>
+ </pre>
+            <blockquote>
+            <p>Example response (200, When you are NOT the instructor of the course, Or NOT even an enrolled student.):</p>
+        </blockquote>
+                <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;errors&quot;: [
+        {
+            &quot;status&quot;: 401,
+            &quot;message&quot;: &quot;NOT Authorized&quot;
+        }
+    ]
+}</code>
+ </pre>
+            <blockquote>
+            <p>Example response (404):</p>
+        </blockquote>
+                <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;errors&quot;: [
+        {
+            &quot;status&quot;: 404,
+            &quot;message&quot;: &quot;The Resource Could Not Be Found :(&quot;
+        }
+    ]
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-GETapi-V1-comments--comment_id-" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETapi-V1-comments--comment_id-"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETapi-V1-comments--comment_id-"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-GETapi-V1-comments--comment_id-" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETapi-V1-comments--comment_id-">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-GETapi-V1-comments--comment_id-" data-method="GET"
+      data-path="api/V1/comments/{comment_id}"
+      data-authed="1"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-V1-comments--comment_id-', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETapi-V1-comments--comment_id-"
+                    onclick="tryItOut('GETapi-V1-comments--comment_id-');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETapi-V1-comments--comment_id-"
+                    onclick="cancelTryOut('GETapi-V1-comments--comment_id-');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETapi-V1-comments--comment_id-"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>api/V1/comments/{comment_id}</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="GETapi-V1-comments--comment_id-"
+               value="Bearer {YOUR_AUTH_KEY}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_AUTH_KEY}</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="GETapi-V1-comments--comment_id-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="GETapi-V1-comments--comment_id-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>comment_id</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="comment_id"                data-endpoint="GETapi-V1-comments--comment_id-"
+               value="37"
+               data-component="url">
+    <br>
+<p>The ID of the comment. Example: <code>37</code></p>
+            </div>
+                        <h4 class="fancy-heading-panel"><b>Query Parameters</b></h4>
+                                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>include</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+<i>optional</i> &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="include"                data-endpoint="GETapi-V1-comments--comment_id-"
+               value="include=course"
+               data-component="query">
+    <br>
+<p>data field(s) to include any other relationships. Seprate multiple fields with commas. Example: <code>include=course</code></p>
+            </div>
+                </form>
+
+                    <h2 id="manage-discussions-comments-PATCHapi-V1-comments--comment_id-">Update a Comment.</h2>
+
+<p>
+<small class="badge badge-darkred">requires authentication</small>
+</p>
+
+<p>Update a specific Comment.</p>
+
+<span id="example-requests-PATCHapi-V1-comments--comment_id-">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request PATCH \
+    "http://localhost/api/V1/comments/37" \
+    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json" \
+    --data "{
+    \"data\": {
+        \"attributes\": {
+            \"content\": \"I think I enhanced the convergence of gradient descent\"
+        }
+    }
+}"
+</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost/api/V1/comments/37"
+);
+
+const headers = {
+    "Authorization": "Bearer {YOUR_AUTH_KEY}",
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+let body = {
+    "data": {
+        "attributes": {
+            "content": "I think I enhanced the convergence of gradient descent"
+        }
+    }
+};
+
+fetch(url, {
+    method: "PATCH",
+    headers,
+    body: JSON.stringify(body),
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-PATCHapi-V1-comments--comment_id-">
+            <blockquote>
+            <p>Example response (200):</p>
+        </blockquote>
+                <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;type&quot;: &quot;comment&quot;,
+    &quot;id&quot;: 217,
+    &quot;data&quot;: {
+        &quot;content&quot;: &quot;Eius et animi quos velit et fugiat sunt.&quot;,
+        &quot;discussion_id&quot;: 70,
+        &quot;user_id&quot;: 4,
+        &quot;createdAt&quot;: &quot;2026-04-12T18:14:40.000000Z&quot;
+    },
+    &quot;included&quot;: [],
+    &quot;links&quot;: []
+}</code>
+ </pre>
+            <blockquote>
+            <p>Example response (200, When you&#039;re not enrolled, or you&#039;re not the owner of the comment.):</p>
+        </blockquote>
+                <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;errors&quot;: [
+        {
+            &quot;status&quot;: 401,
+            &quot;message&quot;: &quot;NOT Authorized&quot;
+        }
+    ]
+}</code>
+ </pre>
+            <blockquote>
+            <p>Example response (200):</p>
+        </blockquote>
+                <pre>
+
+<code class="language-json" style="max-height: 300px;">cenario=&quot;When The content field exceeds 5000 characters&quot;
+{
+   &quot;errors&quot;: [
+       {
+           &quot;status&quot;: 422,
+           &quot;message&quot;: &quot;The data.attributes.content field must not be greater than 5000 characters.&quot;,
+           &quot;source&quot;: &quot;data.attributes.content&quot;
+      }
+   ]
+}</code>
+ </pre>
+            <blockquote>
+            <p>Example response (404):</p>
+        </blockquote>
+                <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;errors&quot;: [
+        {
+            &quot;status&quot;: 404,
+            &quot;message&quot;: &quot;The Resource Could Not Be Found :(&quot;
+        }
+    ]
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-PATCHapi-V1-comments--comment_id-" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-PATCHapi-V1-comments--comment_id-"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-PATCHapi-V1-comments--comment_id-"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-PATCHapi-V1-comments--comment_id-" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-PATCHapi-V1-comments--comment_id-">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-PATCHapi-V1-comments--comment_id-" data-method="PATCH"
+      data-path="api/V1/comments/{comment_id}"
+      data-authed="1"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('PATCHapi-V1-comments--comment_id-', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-PATCHapi-V1-comments--comment_id-"
+                    onclick="tryItOut('PATCHapi-V1-comments--comment_id-');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-PATCHapi-V1-comments--comment_id-"
+                    onclick="cancelTryOut('PATCHapi-V1-comments--comment_id-');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-PATCHapi-V1-comments--comment_id-"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-purple">PATCH</small>
+            <b><code>api/V1/comments/{comment_id}</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="PATCHapi-V1-comments--comment_id-"
+               value="Bearer {YOUR_AUTH_KEY}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_AUTH_KEY}</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="PATCHapi-V1-comments--comment_id-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="PATCHapi-V1-comments--comment_id-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>comment_id</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="comment_id"                data-endpoint="PATCHapi-V1-comments--comment_id-"
+               value="37"
+               data-component="url">
+    <br>
+<p>The ID of the comment. Example: <code>37</code></p>
+            </div>
+                            <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
+        <div style=" padding-left: 28px;  clear: unset;">
+        <details>
+            <summary style="padding-bottom: 10px;">
+                <b style="line-height: 2;"><code>data</code></b>&nbsp;&nbsp;
+<small>object</small>&nbsp;
+<i>optional</i> &nbsp;
+ &nbsp;
+<br>
+
+            </summary>
+                                                <div style=" margin-left: 14px; clear: unset;">
+        <details>
+            <summary style="padding-bottom: 10px;">
+                <b style="line-height: 2;"><code>attributes</code></b>&nbsp;&nbsp;
+<small>object</small>&nbsp;
+<i>optional</i> &nbsp;
+ &nbsp;
+<br>
+
+            </summary>
+                                                <div style="margin-left: 28px; clear: unset;">
+                        <b style="line-height: 2;"><code>content</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+<i>optional</i> &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="data.attributes.content"                data-endpoint="PATCHapi-V1-comments--comment_id-"
+               value="I think I enhanced the convergence of gradient descent"
+               data-component="body">
+    <br>
+<p>The content of the comment. Must not be greater than 2500 characters. Example: <code>I think I enhanced the convergence of gradient descent</code></p>
+                    </div>
+                                    </details>
+        </div>
+                                        </details>
+        </div>
+        </form>
+
+                    <h2 id="manage-discussions-comments-DELETEapi-V1-comments--comment_id-">Delete a Comment.</h2>
+
+<p>
+<small class="badge badge-darkred">requires authentication</small>
+</p>
+
+<p>Delete a specific Comment.</p>
+
+<span id="example-requests-DELETEapi-V1-comments--comment_id-">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request DELETE \
+    "http://localhost/api/V1/comments/37" \
+    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost/api/V1/comments/37"
+);
+
+const headers = {
+    "Authorization": "Bearer {YOUR_AUTH_KEY}",
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+
+fetch(url, {
+    method: "DELETE",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-DELETEapi-V1-comments--comment_id-">
+            <blockquote>
+            <p>Example response (200, When you&#039;re not enrolled, or you&#039;re not the owner of the comment.):</p>
+        </blockquote>
+                <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;errors&quot;: [
+        {
+            &quot;status&quot;: 401,
+            &quot;message&quot;: &quot;NOT Authorized&quot;
+        }
+    ]
+}</code>
+ </pre>
+            <blockquote>
+            <p>Example response (200, Successful deletion):</p>
+        </blockquote>
+                <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;data&quot;: [],
+    &quot;message&quot;: &quot;Comment deleted successfully&quot;,
+    &quot;code&quot;: 200
+}</code>
+ </pre>
+            <blockquote>
+            <p>Example response (404):</p>
+        </blockquote>
+                <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;errors&quot;: [
+        {
+            &quot;status&quot;: 404,
+            &quot;message&quot;: &quot;The Resource Could Not Be Found :(&quot;
+        }
+    ]
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-DELETEapi-V1-comments--comment_id-" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-DELETEapi-V1-comments--comment_id-"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-DELETEapi-V1-comments--comment_id-"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-DELETEapi-V1-comments--comment_id-" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-DELETEapi-V1-comments--comment_id-">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-DELETEapi-V1-comments--comment_id-" data-method="DELETE"
+      data-path="api/V1/comments/{comment_id}"
+      data-authed="1"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('DELETEapi-V1-comments--comment_id-', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-DELETEapi-V1-comments--comment_id-"
+                    onclick="tryItOut('DELETEapi-V1-comments--comment_id-');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-DELETEapi-V1-comments--comment_id-"
+                    onclick="cancelTryOut('DELETEapi-V1-comments--comment_id-');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-DELETEapi-V1-comments--comment_id-"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-red">DELETE</small>
+            <b><code>api/V1/comments/{comment_id}</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="DELETEapi-V1-comments--comment_id-"
+               value="Bearer {YOUR_AUTH_KEY}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_AUTH_KEY}</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="DELETEapi-V1-comments--comment_id-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="DELETEapi-V1-comments--comment_id-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>comment_id</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="comment_id"                data-endpoint="DELETEapi-V1-comments--comment_id-"
+               value="37"
+               data-component="url">
+    <br>
+<p>The ID of the comment. Example: <code>37</code></p>
+            </div>
+                    </form>
+
                 <h1 id="manage-enrollments">Manage Enrollments</h1>
 
     
@@ -9540,9 +8223,9 @@ fetch(url, {
     &quot;type&quot;: &quot;enrollment&quot;,
     &quot;id&quot;: null,
     &quot;data&quot;: {
-        &quot;enrollDate&quot;: &quot;2026-03-25T13:58:05.000000Z&quot;,
-        &quot;courseId&quot;: 3,
-        &quot;studentId&quot;: 23
+        &quot;enrollDate&quot;: &quot;2026-05-11T02:57:39.000000Z&quot;,
+        &quot;courseId&quot;: 6,
+        &quot;studentId&quot;: 6
     },
     &quot;included&quot;: [],
     &quot;links&quot;: []
@@ -9776,11 +8459,11 @@ fetch(url, {
 
 <code class="language-json" style="max-height: 300px;">{
     &quot;type&quot;: &quot;enrollment&quot;,
-    &quot;id&quot;: null,
+    &quot;id&quot;: 62,
     &quot;data&quot;: {
-        &quot;enrollDate&quot;: &quot;2026-03-27T23:55:38.000000Z&quot;,
-        &quot;courseId&quot;: 3,
-        &quot;studentId&quot;: 15
+        &quot;enrollDate&quot;: &quot;2026-04-10T18:47:24.000000Z&quot;,
+        &quot;courseId&quot;: 6,
+        &quot;studentId&quot;: 12
     },
     &quot;included&quot;: [],
     &quot;links&quot;: []
@@ -11217,6 +9900,2396 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <p>The ID of the examination. Example: <code>16</code></p>
             </div>
                     </form>
+
+                <h1 id="manage-student-statistics">Manage Student Statistics</h1>
+
+    
+
+                                <h2 id="manage-student-statistics-GETapi-V1-courses--course_id--stats">Show a specific Statistics.</h2>
+
+<p>
+<small class="badge badge-darkred">requires authentication</small>
+</p>
+
+<p>Display an individual Statistics for a particular student.</p>
+
+<span id="example-requests-GETapi-V1-courses--course_id--stats">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "http://localhost/api/V1/courses/2/stats" \
+    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost/api/V1/courses/2/stats"
+);
+
+const headers = {
+    "Authorization": "Bearer {YOUR_AUTH_KEY}",
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETapi-V1-courses--course_id--stats">
+            <blockquote>
+            <p>Example response (200):</p>
+        </blockquote>
+                <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;type&quot;: &quot;statistics&quot;,
+    &quot;data&quot;: {
+        &quot;average&quot;: null,
+        &quot;mid&quot;: null,
+        &quot;final&quot;: null
+    }
+}</code>
+ </pre>
+            <blockquote>
+            <p>Example response (200, When you are NOT enrolled in the course):</p>
+        </blockquote>
+                <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;errors&quot;: [
+        {
+            &quot;status&quot;: 401,
+            &quot;message&quot;: &quot;NOT Authorized&quot;
+        }
+    ]
+}</code>
+ </pre>
+            <blockquote>
+            <p>Example response (404):</p>
+        </blockquote>
+                <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;errors&quot;: [
+        {
+            &quot;status&quot;: 404,
+            &quot;message&quot;: &quot;The Resource Could Not Be Found :(&quot;
+        }
+    ]
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-GETapi-V1-courses--course_id--stats" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETapi-V1-courses--course_id--stats"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETapi-V1-courses--course_id--stats"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-GETapi-V1-courses--course_id--stats" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETapi-V1-courses--course_id--stats">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-GETapi-V1-courses--course_id--stats" data-method="GET"
+      data-path="api/V1/courses/{course_id}/stats"
+      data-authed="1"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-V1-courses--course_id--stats', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETapi-V1-courses--course_id--stats"
+                    onclick="tryItOut('GETapi-V1-courses--course_id--stats');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETapi-V1-courses--course_id--stats"
+                    onclick="cancelTryOut('GETapi-V1-courses--course_id--stats');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETapi-V1-courses--course_id--stats"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>api/V1/courses/{course_id}/stats</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="GETapi-V1-courses--course_id--stats"
+               value="Bearer {YOUR_AUTH_KEY}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_AUTH_KEY}</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="GETapi-V1-courses--course_id--stats"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="GETapi-V1-courses--course_id--stats"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>course_id</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="course_id"                data-endpoint="GETapi-V1-courses--course_id--stats"
+               value="2"
+               data-component="url">
+    <br>
+<p>The ID of the course. Example: <code>2</code></p>
+            </div>
+                    </form>
+
+                <h1 id="manage-student-submissions">Manage Student Submissions</h1>
+
+    
+
+                                <h2 id="manage-student-submissions-POSTapi-V1-assignments--assignment_id--studentSubmission-register">Create a Submission.</h2>
+
+<p>
+<small class="badge badge-darkred">requires authentication</small>
+</p>
+
+<p>Create a Submission by the student, and instantly delete the previous submission for the same assignment if there's one.</p>
+
+<span id="example-requests-POSTapi-V1-assignments--assignment_id--studentSubmission-register">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request POST \
+    "http://localhost/api/V1/assignments/16/studentSubmission/register" \
+    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost/api/V1/assignments/16/studentSubmission/register"
+);
+
+const headers = {
+    "Authorization": "Bearer {YOUR_AUTH_KEY}",
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+
+fetch(url, {
+    method: "POST",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-POSTapi-V1-assignments--assignment_id--studentSubmission-register">
+            <blockquote>
+            <p>Example response (200):</p>
+        </blockquote>
+                <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;type&quot;: &quot;submission&quot;,
+    &quot;id&quot;: null,
+    &quot;data&quot;: {
+        &quot;grade&quot;: null,
+        &quot;submittedAt&quot;: null,
+        &quot;assignmentId&quot;: null,
+        &quot;student_id&quot;: null
+    },
+    &quot;included&quot;: [],
+    &quot;links&quot;: []
+}</code>
+ </pre>
+            <blockquote>
+            <p>Example response (200, When the user is NOT enrolled in the course.):</p>
+        </blockquote>
+                <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;errors&quot;: [
+        {
+            &quot;status&quot;: 401,
+            &quot;message&quot;: &quot;NOT Authorized&quot;
+        }
+    ]
+}</code>
+ </pre>
+            <blockquote>
+            <p>Example response (200, When the deadline date is passed):</p>
+        </blockquote>
+                <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;errors&quot;: [
+        {
+            &quot;status&quot;: 401,
+            &quot;message&quot;: &quot;Sorry, due date has passed!&quot;
+        }
+    ]
+}</code>
+ </pre>
+            <blockquote>
+            <p>Example response (200, Successful submission):</p>
+        </blockquote>
+                <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;data&quot;: [],
+    &quot;message&quot;: &quot;The assignment submitted successfully.&quot;,
+    &quot;code&quot;: 200
+}</code>
+ </pre>
+            <blockquote>
+            <p>Example response (404):</p>
+        </blockquote>
+                <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;errors&quot;: [
+        {
+            &quot;status&quot;: 404,
+            &quot;message&quot;: &quot;The Resource Could Not Be Found :(&quot;
+        }
+    ]
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-POSTapi-V1-assignments--assignment_id--studentSubmission-register" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-POSTapi-V1-assignments--assignment_id--studentSubmission-register"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-POSTapi-V1-assignments--assignment_id--studentSubmission-register"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-POSTapi-V1-assignments--assignment_id--studentSubmission-register" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-POSTapi-V1-assignments--assignment_id--studentSubmission-register">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-POSTapi-V1-assignments--assignment_id--studentSubmission-register" data-method="POST"
+      data-path="api/V1/assignments/{assignment_id}/studentSubmission/register"
+      data-authed="1"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('POSTapi-V1-assignments--assignment_id--studentSubmission-register', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-POSTapi-V1-assignments--assignment_id--studentSubmission-register"
+                    onclick="tryItOut('POSTapi-V1-assignments--assignment_id--studentSubmission-register');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-POSTapi-V1-assignments--assignment_id--studentSubmission-register"
+                    onclick="cancelTryOut('POSTapi-V1-assignments--assignment_id--studentSubmission-register');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-POSTapi-V1-assignments--assignment_id--studentSubmission-register"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-black">POST</small>
+            <b><code>api/V1/assignments/{assignment_id}/studentSubmission/register</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="POSTapi-V1-assignments--assignment_id--studentSubmission-register"
+               value="Bearer {YOUR_AUTH_KEY}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_AUTH_KEY}</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="POSTapi-V1-assignments--assignment_id--studentSubmission-register"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="POSTapi-V1-assignments--assignment_id--studentSubmission-register"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>assignment_id</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="assignment_id"                data-endpoint="POSTapi-V1-assignments--assignment_id--studentSubmission-register"
+               value="16"
+               data-component="url">
+    <br>
+<p>The ID of the assignment. Example: <code>16</code></p>
+            </div>
+                    </form>
+
+                    <h2 id="manage-student-submissions-GETapi-V1-submissions--submission_id--studentSubmission">Show a Student Submission.</h2>
+
+<p>
+<small class="badge badge-darkred">requires authentication</small>
+</p>
+
+<p>Display an individual Submission.</p>
+<ul>
+<li>available relationships for this resource :<ul>
+<li>assignment : The assignment that the submission belongs to.</li>
+<li>student : The user who submitted the submission called (student).</li>
+<li>files : The files that the student attached with the submission.</li>
+</ul>
+</li>
+</ul>
+
+<span id="example-requests-GETapi-V1-submissions--submission_id--studentSubmission">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "http://localhost/api/V1/submissions/16/studentSubmission?include=include%3Dstudent" \
+    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost/api/V1/submissions/16/studentSubmission"
+);
+
+const params = {
+    "include": "include=student",
+};
+Object.keys(params)
+    .forEach(key =&gt; url.searchParams.append(key, params[key]));
+
+const headers = {
+    "Authorization": "Bearer {YOUR_AUTH_KEY}",
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETapi-V1-submissions--submission_id--studentSubmission">
+            <blockquote>
+            <p>Example response (200):</p>
+        </blockquote>
+                <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;type&quot;: &quot;submission&quot;,
+    &quot;id&quot;: null,
+    &quot;data&quot;: {
+        &quot;grade&quot;: null,
+        &quot;submittedAt&quot;: null,
+        &quot;assignmentId&quot;: null,
+        &quot;student_id&quot;: null
+    },
+    &quot;included&quot;: [],
+    &quot;links&quot;: []
+}</code>
+ </pre>
+            <blockquote>
+            <p>Example response (200, When you are NOT the owner(student) of this submission, Or NOT an enrolled student.):</p>
+        </blockquote>
+                <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;errors&quot;: [
+        {
+            &quot;status&quot;: 401,
+            &quot;message&quot;: &quot;NOT Authorized&quot;
+        }
+    ]
+}</code>
+ </pre>
+            <blockquote>
+            <p>Example response (404):</p>
+        </blockquote>
+                <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;errors&quot;: [
+        {
+            &quot;status&quot;: 404,
+            &quot;message&quot;: &quot;The Resource Could Not Be Found :(&quot;
+        }
+    ]
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-GETapi-V1-submissions--submission_id--studentSubmission" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETapi-V1-submissions--submission_id--studentSubmission"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETapi-V1-submissions--submission_id--studentSubmission"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-GETapi-V1-submissions--submission_id--studentSubmission" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETapi-V1-submissions--submission_id--studentSubmission">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-GETapi-V1-submissions--submission_id--studentSubmission" data-method="GET"
+      data-path="api/V1/submissions/{submission_id}/studentSubmission"
+      data-authed="1"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-V1-submissions--submission_id--studentSubmission', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETapi-V1-submissions--submission_id--studentSubmission"
+                    onclick="tryItOut('GETapi-V1-submissions--submission_id--studentSubmission');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETapi-V1-submissions--submission_id--studentSubmission"
+                    onclick="cancelTryOut('GETapi-V1-submissions--submission_id--studentSubmission');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETapi-V1-submissions--submission_id--studentSubmission"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>api/V1/submissions/{submission_id}/studentSubmission</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="GETapi-V1-submissions--submission_id--studentSubmission"
+               value="Bearer {YOUR_AUTH_KEY}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_AUTH_KEY}</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="GETapi-V1-submissions--submission_id--studentSubmission"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="GETapi-V1-submissions--submission_id--studentSubmission"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>submission_id</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="submission_id"                data-endpoint="GETapi-V1-submissions--submission_id--studentSubmission"
+               value="16"
+               data-component="url">
+    <br>
+<p>The ID of the submission. Example: <code>16</code></p>
+            </div>
+                        <h4 class="fancy-heading-panel"><b>Query Parameters</b></h4>
+                                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>include</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+<i>optional</i> &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="include"                data-endpoint="GETapi-V1-submissions--submission_id--studentSubmission"
+               value="include=student"
+               data-component="query">
+    <br>
+<p>data field(s) to include any other relationships. Seprate multiple fields with commas. Example: <code>include=student</code></p>
+            </div>
+                </form>
+
+                    <h2 id="manage-student-submissions-DELETEapi-V1-submissions--submission_id--studentSubmission">Delete a Submission.</h2>
+
+<p>
+<small class="badge badge-darkred">requires authentication</small>
+</p>
+
+<p>Delete a specific Submission with the attached files.</p>
+
+<span id="example-requests-DELETEapi-V1-submissions--submission_id--studentSubmission">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request DELETE \
+    "http://localhost/api/V1/submissions/16/studentSubmission" \
+    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost/api/V1/submissions/16/studentSubmission"
+);
+
+const headers = {
+    "Authorization": "Bearer {YOUR_AUTH_KEY}",
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+
+fetch(url, {
+    method: "DELETE",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-DELETEapi-V1-submissions--submission_id--studentSubmission">
+            <blockquote>
+            <p>Example response (200, When you are NOT the owner(student) of this submission, Or NOT an enrolled student.):</p>
+        </blockquote>
+                <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;errors&quot;: [
+        {
+            &quot;status&quot;: 401,
+            &quot;message&quot;: &quot;NOT Authorized&quot;
+        }
+    ]
+}</code>
+ </pre>
+            <blockquote>
+            <p>Example response (200, Successful deletion):</p>
+        </blockquote>
+                <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;data&quot;: [],
+    &quot;message&quot;: &quot;Submission deleted successfully&quot;,
+    &quot;code&quot;: 200
+}</code>
+ </pre>
+            <blockquote>
+            <p>Example response (404):</p>
+        </blockquote>
+                <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;errors&quot;: [
+        {
+            &quot;status&quot;: 404,
+            &quot;message&quot;: &quot;The Resource Could Not Be Found :(&quot;
+        }
+    ]
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-DELETEapi-V1-submissions--submission_id--studentSubmission" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-DELETEapi-V1-submissions--submission_id--studentSubmission"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-DELETEapi-V1-submissions--submission_id--studentSubmission"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-DELETEapi-V1-submissions--submission_id--studentSubmission" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-DELETEapi-V1-submissions--submission_id--studentSubmission">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-DELETEapi-V1-submissions--submission_id--studentSubmission" data-method="DELETE"
+      data-path="api/V1/submissions/{submission_id}/studentSubmission"
+      data-authed="1"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('DELETEapi-V1-submissions--submission_id--studentSubmission', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-DELETEapi-V1-submissions--submission_id--studentSubmission"
+                    onclick="tryItOut('DELETEapi-V1-submissions--submission_id--studentSubmission');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-DELETEapi-V1-submissions--submission_id--studentSubmission"
+                    onclick="cancelTryOut('DELETEapi-V1-submissions--submission_id--studentSubmission');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-DELETEapi-V1-submissions--submission_id--studentSubmission"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-red">DELETE</small>
+            <b><code>api/V1/submissions/{submission_id}/studentSubmission</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="DELETEapi-V1-submissions--submission_id--studentSubmission"
+               value="Bearer {YOUR_AUTH_KEY}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_AUTH_KEY}</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="DELETEapi-V1-submissions--submission_id--studentSubmission"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="DELETEapi-V1-submissions--submission_id--studentSubmission"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>submission_id</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="submission_id"                data-endpoint="DELETEapi-V1-submissions--submission_id--studentSubmission"
+               value="16"
+               data-component="url">
+    <br>
+<p>The ID of the submission. Example: <code>16</code></p>
+            </div>
+                    </form>
+
+                <h1 id="manage-submission-files">Manage Submission Files</h1>
+
+    
+
+                                <h2 id="manage-submission-files-GETapi-V1-submissions--submission_id--submissionFile">Get Files of a Submission</h2>
+
+<p>
+<small class="badge badge-darkred">requires authentication</small>
+</p>
+
+<p>Get all Files of a particular Submission.</p>
+
+<span id="example-requests-GETapi-V1-submissions--submission_id--submissionFile">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "http://localhost/api/V1/submissions/16/submissionFile" \
+    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost/api/V1/submissions/16/submissionFile"
+);
+
+const headers = {
+    "Authorization": "Bearer {YOUR_AUTH_KEY}",
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETapi-V1-submissions--submission_id--submissionFile">
+            <blockquote>
+            <p>Example response (200, When you are NOT The instructor of the course, Or NOT the owner(student) of the submission.):</p>
+        </blockquote>
+                <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;errors&quot;: [
+        {
+            &quot;status&quot;: 401,
+            &quot;message&quot;: &quot;NOT Authorized&quot;
+        }
+    ]
+}</code>
+ </pre>
+            <blockquote>
+            <p>Example response (404):</p>
+        </blockquote>
+                <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;errors&quot;: [
+        {
+            &quot;status&quot;: 404,
+            &quot;message&quot;: &quot;The Resource Could Not Be Found :(&quot;
+        }
+    ]
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-GETapi-V1-submissions--submission_id--submissionFile" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETapi-V1-submissions--submission_id--submissionFile"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETapi-V1-submissions--submission_id--submissionFile"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-GETapi-V1-submissions--submission_id--submissionFile" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETapi-V1-submissions--submission_id--submissionFile">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-GETapi-V1-submissions--submission_id--submissionFile" data-method="GET"
+      data-path="api/V1/submissions/{submission_id}/submissionFile"
+      data-authed="1"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-V1-submissions--submission_id--submissionFile', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETapi-V1-submissions--submission_id--submissionFile"
+                    onclick="tryItOut('GETapi-V1-submissions--submission_id--submissionFile');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETapi-V1-submissions--submission_id--submissionFile"
+                    onclick="cancelTryOut('GETapi-V1-submissions--submission_id--submissionFile');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETapi-V1-submissions--submission_id--submissionFile"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>api/V1/submissions/{submission_id}/submissionFile</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="GETapi-V1-submissions--submission_id--submissionFile"
+               value="Bearer {YOUR_AUTH_KEY}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_AUTH_KEY}</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="GETapi-V1-submissions--submission_id--submissionFile"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="GETapi-V1-submissions--submission_id--submissionFile"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>submission_id</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="submission_id"                data-endpoint="GETapi-V1-submissions--submission_id--submissionFile"
+               value="16"
+               data-component="url">
+    <br>
+<p>The ID of the submission. Example: <code>16</code></p>
+            </div>
+                    </form>
+
+                    <h2 id="manage-submission-files-POSTapi-V1-submissions--submission_id--submissionFile-register">Create a Submission File.</h2>
+
+<p>
+<small class="badge badge-darkred">requires authentication</small>
+</p>
+
+<p>Create a Submission File by a student.</p>
+
+<span id="example-requests-POSTapi-V1-submissions--submission_id--submissionFile-register">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request POST \
+    "http://localhost/api/V1/submissions/16/submissionFile/register" \
+    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
+    --header "Content-Type: multipart/form-data" \
+    --header "Accept: application/json" \
+    --form "submissionFiles[]=@/tmp/php13giosvnnhhd6EmlzXx" </code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost/api/V1/submissions/16/submissionFile/register"
+);
+
+const headers = {
+    "Authorization": "Bearer {YOUR_AUTH_KEY}",
+    "Content-Type": "multipart/form-data",
+    "Accept": "application/json",
+};
+
+const body = new FormData();
+body.append('submissionFiles[]', document.querySelector('input[name="submissionFiles[]"]').files[0]);
+
+fetch(url, {
+    method: "POST",
+    headers,
+    body,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-POSTapi-V1-submissions--submission_id--submissionFile-register">
+            <blockquote>
+            <p>Example response (200):</p>
+        </blockquote>
+                <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;data&quot;: [
+        {
+            &quot;type&quot;: &quot;submission file&quot;,
+            &quot;id&quot;: null,
+            &quot;data&quot;: {
+                &quot;path&quot;: null,
+                &quot;submissionId&quot;: null
+            },
+            &quot;included&quot;: [],
+            &quot;links&quot;: []
+        },
+        {
+            &quot;type&quot;: &quot;submission file&quot;,
+            &quot;id&quot;: null,
+            &quot;data&quot;: {
+                &quot;path&quot;: null,
+                &quot;submissionId&quot;: null
+            },
+            &quot;included&quot;: [],
+            &quot;links&quot;: []
+        }
+    ]
+}</code>
+ </pre>
+            <blockquote>
+            <p>Example response (200, When you are NOT The owner(student) of the submission):</p>
+        </blockquote>
+                <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;errors&quot;: [
+        {
+            &quot;status&quot;: 401,
+            &quot;message&quot;: &quot;NOT Authorized&quot;
+        }
+    ]
+}</code>
+ </pre>
+            <blockquote>
+            <p>Example response (404):</p>
+        </blockquote>
+                <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;errors&quot;: [
+        {
+            &quot;status&quot;: 404,
+            &quot;message&quot;: &quot;The Resource Could Not Be Found :(&quot;
+        }
+    ]
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-POSTapi-V1-submissions--submission_id--submissionFile-register" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-POSTapi-V1-submissions--submission_id--submissionFile-register"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-POSTapi-V1-submissions--submission_id--submissionFile-register"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-POSTapi-V1-submissions--submission_id--submissionFile-register" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-POSTapi-V1-submissions--submission_id--submissionFile-register">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-POSTapi-V1-submissions--submission_id--submissionFile-register" data-method="POST"
+      data-path="api/V1/submissions/{submission_id}/submissionFile/register"
+      data-authed="1"
+      data-hasfiles="1"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('POSTapi-V1-submissions--submission_id--submissionFile-register', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-POSTapi-V1-submissions--submission_id--submissionFile-register"
+                    onclick="tryItOut('POSTapi-V1-submissions--submission_id--submissionFile-register');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-POSTapi-V1-submissions--submission_id--submissionFile-register"
+                    onclick="cancelTryOut('POSTapi-V1-submissions--submission_id--submissionFile-register');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-POSTapi-V1-submissions--submission_id--submissionFile-register"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-black">POST</small>
+            <b><code>api/V1/submissions/{submission_id}/submissionFile/register</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="POSTapi-V1-submissions--submission_id--submissionFile-register"
+               value="Bearer {YOUR_AUTH_KEY}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_AUTH_KEY}</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="POSTapi-V1-submissions--submission_id--submissionFile-register"
+               value="multipart/form-data"
+               data-component="header">
+    <br>
+<p>Example: <code>multipart/form-data</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="POSTapi-V1-submissions--submission_id--submissionFile-register"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>submission_id</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="submission_id"                data-endpoint="POSTapi-V1-submissions--submission_id--submissionFile-register"
+               value="16"
+               data-component="url">
+    <br>
+<p>The ID of the submission. Example: <code>16</code></p>
+            </div>
+                            <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
+        <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>submissionFiles</code></b>&nbsp;&nbsp;
+<small>file[]</small>&nbsp;
+<i>optional</i> &nbsp;
+ &nbsp;
+                <input type="file" style="display: none"
+                              name="submissionFiles[0]"                data-endpoint="POSTapi-V1-submissions--submission_id--submissionFile-register"
+               data-component="body">
+        <input type="file" style="display: none"
+               name="submissionFiles[1]"                data-endpoint="POSTapi-V1-submissions--submission_id--submissionFile-register"
+               data-component="body">
+    <br>
+<p>Uploaded files for a submission. [pdf, jpg, jpeg, png, docx, zip, txt] 50MB. Must be a file. Must not be greater than 51200 kilobytes.</p>
+        </div>
+        </form>
+
+                    <h2 id="manage-submission-files-GETapi-V1-submissionFile--submissionFile_id-">Show a specific Submission File.</h2>
+
+<p>
+<small class="badge badge-darkred">requires authentication</small>
+</p>
+
+<p>Display an individual Submission File.</p>
+<ul>
+<li>available relationships for this resource :<ul>
+<li>submission : The submission that the file belongs to.</li>
+</ul>
+</li>
+</ul>
+
+<span id="example-requests-GETapi-V1-submissionFile--submissionFile_id-">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "http://localhost/api/V1/submissionFile/16?include=include%3Dcourse" \
+    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost/api/V1/submissionFile/16"
+);
+
+const params = {
+    "include": "include=course",
+};
+Object.keys(params)
+    .forEach(key =&gt; url.searchParams.append(key, params[key]));
+
+const headers = {
+    "Authorization": "Bearer {YOUR_AUTH_KEY}",
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETapi-V1-submissionFile--submissionFile_id-">
+            <blockquote>
+            <p>Example response (200):</p>
+        </blockquote>
+                <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;type&quot;: &quot;submission file&quot;,
+    &quot;id&quot;: null,
+    &quot;data&quot;: {
+        &quot;path&quot;: null,
+        &quot;submissionId&quot;: null
+    },
+    &quot;included&quot;: [],
+    &quot;links&quot;: []
+}</code>
+ </pre>
+            <blockquote>
+            <p>Example response (200, When you are NOT The instructor of the course, Or NOT the owner(student) of the submission.):</p>
+        </blockquote>
+                <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;errors&quot;: [
+        {
+            &quot;status&quot;: 401,
+            &quot;message&quot;: &quot;NOT Authorized&quot;
+        }
+    ]
+}</code>
+ </pre>
+            <blockquote>
+            <p>Example response (404):</p>
+        </blockquote>
+                <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;errors&quot;: [
+        {
+            &quot;status&quot;: 404,
+            &quot;message&quot;: &quot;The Resource Could Not Be Found :(&quot;
+        }
+    ]
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-GETapi-V1-submissionFile--submissionFile_id-" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETapi-V1-submissionFile--submissionFile_id-"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETapi-V1-submissionFile--submissionFile_id-"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-GETapi-V1-submissionFile--submissionFile_id-" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETapi-V1-submissionFile--submissionFile_id-">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-GETapi-V1-submissionFile--submissionFile_id-" data-method="GET"
+      data-path="api/V1/submissionFile/{submissionFile_id}"
+      data-authed="1"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-V1-submissionFile--submissionFile_id-', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETapi-V1-submissionFile--submissionFile_id-"
+                    onclick="tryItOut('GETapi-V1-submissionFile--submissionFile_id-');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETapi-V1-submissionFile--submissionFile_id-"
+                    onclick="cancelTryOut('GETapi-V1-submissionFile--submissionFile_id-');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETapi-V1-submissionFile--submissionFile_id-"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>api/V1/submissionFile/{submissionFile_id}</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="GETapi-V1-submissionFile--submissionFile_id-"
+               value="Bearer {YOUR_AUTH_KEY}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_AUTH_KEY}</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="GETapi-V1-submissionFile--submissionFile_id-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="GETapi-V1-submissionFile--submissionFile_id-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>submissionFile_id</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="submissionFile_id"                data-endpoint="GETapi-V1-submissionFile--submissionFile_id-"
+               value="16"
+               data-component="url">
+    <br>
+<p>The ID of the submissionFile. Example: <code>16</code></p>
+            </div>
+                        <h4 class="fancy-heading-panel"><b>Query Parameters</b></h4>
+                                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>include</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+<i>optional</i> &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="include"                data-endpoint="GETapi-V1-submissionFile--submissionFile_id-"
+               value="include=course"
+               data-component="query">
+    <br>
+<p>data field(s) to include any other relationships. Seprate multiple fields with commas. Example: <code>include=course</code></p>
+            </div>
+                </form>
+
+                    <h2 id="manage-submission-files-GETapi-V1-submissionFile-download--submissionFile_id-">Download a Submission File.</h2>
+
+<p>
+<small class="badge badge-darkred">requires authentication</small>
+</p>
+
+<p>Download a file attached to a specific submission.
+This endpoint returns the actual file (PDF, DOCX, ZIP, etc.), not a JSON resource.</p>
+
+<span id="example-requests-GETapi-V1-submissionFile-download--submissionFile_id-">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "http://localhost/api/V1/submissionFile/download/16" \
+    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost/api/V1/submissionFile/download/16"
+);
+
+const headers = {
+    "Authorization": "Bearer {YOUR_AUTH_KEY}",
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETapi-V1-submissionFile-download--submissionFile_id-">
+            <blockquote>
+            <p>Example response (200, Successful download (binary file response)):</p>
+        </blockquote>
+                <pre>
+
+<code class="language-json" style="max-height: 300px;"></code>
+ </pre>
+            <blockquote>
+            <p>Example response (403, When you are NOT the instructor of the course, Or NOT the owner(student) of the submission.):</p>
+        </blockquote>
+                <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;errors&quot;: [
+        {
+            &quot;status&quot;: 403,
+            &quot;message&quot;: &quot;NOT Authorized&quot;
+        }
+    ]
+}</code>
+ </pre>
+            <blockquote>
+            <p>Example response (404):</p>
+        </blockquote>
+                <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;errors&quot;: [
+        {
+            &quot;status&quot;: 404,
+            &quot;message&quot;: &quot;The Resource Could Not Be Found :(&quot;
+        }
+    ]
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-GETapi-V1-submissionFile-download--submissionFile_id-" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETapi-V1-submissionFile-download--submissionFile_id-"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETapi-V1-submissionFile-download--submissionFile_id-"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-GETapi-V1-submissionFile-download--submissionFile_id-" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETapi-V1-submissionFile-download--submissionFile_id-">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-GETapi-V1-submissionFile-download--submissionFile_id-" data-method="GET"
+      data-path="api/V1/submissionFile/download/{submissionFile_id}"
+      data-authed="1"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-V1-submissionFile-download--submissionFile_id-', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETapi-V1-submissionFile-download--submissionFile_id-"
+                    onclick="tryItOut('GETapi-V1-submissionFile-download--submissionFile_id-');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETapi-V1-submissionFile-download--submissionFile_id-"
+                    onclick="cancelTryOut('GETapi-V1-submissionFile-download--submissionFile_id-');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETapi-V1-submissionFile-download--submissionFile_id-"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>api/V1/submissionFile/download/{submissionFile_id}</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="GETapi-V1-submissionFile-download--submissionFile_id-"
+               value="Bearer {YOUR_AUTH_KEY}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_AUTH_KEY}</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="GETapi-V1-submissionFile-download--submissionFile_id-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="GETapi-V1-submissionFile-download--submissionFile_id-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>submissionFile_id</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="submissionFile_id"                data-endpoint="GETapi-V1-submissionFile-download--submissionFile_id-"
+               value="16"
+               data-component="url">
+    <br>
+<p>The ID of the submissionFile. Example: <code>16</code></p>
+            </div>
+                    </form>
+
+                    <h2 id="manage-submission-files-DELETEapi-V1-submissionFile--submissionFile_id-">Delete a Submission File.</h2>
+
+<p>
+<small class="badge badge-darkred">requires authentication</small>
+</p>
+
+<p>Delete a specific Submission File, also from the storage.</p>
+
+<span id="example-requests-DELETEapi-V1-submissionFile--submissionFile_id-">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request DELETE \
+    "http://localhost/api/V1/submissionFile/16" \
+    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost/api/V1/submissionFile/16"
+);
+
+const headers = {
+    "Authorization": "Bearer {YOUR_AUTH_KEY}",
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+
+fetch(url, {
+    method: "DELETE",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-DELETEapi-V1-submissionFile--submissionFile_id-">
+            <blockquote>
+            <p>Example response (200, When you&#039;re not the owner(student) of the Submission File.):</p>
+        </blockquote>
+                <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;errors&quot;: [
+        {
+            &quot;status&quot;: 401,
+            &quot;message&quot;: &quot;NOT Authorized&quot;
+        }
+    ]
+}</code>
+ </pre>
+            <blockquote>
+            <p>Example response (200, Successful deletion):</p>
+        </blockquote>
+                <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;data&quot;: [],
+    &quot;message&quot;: &quot;Submission file deleted successfully&quot;,
+    &quot;code&quot;: 200
+}</code>
+ </pre>
+            <blockquote>
+            <p>Example response (404):</p>
+        </blockquote>
+                <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;errors&quot;: [
+        {
+            &quot;status&quot;: 404,
+            &quot;message&quot;: &quot;The Resource Could Not Be Found :(&quot;
+        }
+    ]
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-DELETEapi-V1-submissionFile--submissionFile_id-" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-DELETEapi-V1-submissionFile--submissionFile_id-"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-DELETEapi-V1-submissionFile--submissionFile_id-"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-DELETEapi-V1-submissionFile--submissionFile_id-" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-DELETEapi-V1-submissionFile--submissionFile_id-">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-DELETEapi-V1-submissionFile--submissionFile_id-" data-method="DELETE"
+      data-path="api/V1/submissionFile/{submissionFile_id}"
+      data-authed="1"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('DELETEapi-V1-submissionFile--submissionFile_id-', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-DELETEapi-V1-submissionFile--submissionFile_id-"
+                    onclick="tryItOut('DELETEapi-V1-submissionFile--submissionFile_id-');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-DELETEapi-V1-submissionFile--submissionFile_id-"
+                    onclick="cancelTryOut('DELETEapi-V1-submissionFile--submissionFile_id-');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-DELETEapi-V1-submissionFile--submissionFile_id-"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-red">DELETE</small>
+            <b><code>api/V1/submissionFile/{submissionFile_id}</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="DELETEapi-V1-submissionFile--submissionFile_id-"
+               value="Bearer {YOUR_AUTH_KEY}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_AUTH_KEY}</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="DELETEapi-V1-submissionFile--submissionFile_id-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="DELETEapi-V1-submissionFile--submissionFile_id-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>submissionFile_id</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="submissionFile_id"                data-endpoint="DELETEapi-V1-submissionFile--submissionFile_id-"
+               value="16"
+               data-component="url">
+    <br>
+<p>The ID of the submissionFile. Example: <code>16</code></p>
+            </div>
+                    </form>
+
+                <h1 id="manage-submissions-for-instructor">Manage Submissions For Instructor</h1>
+
+    
+
+                                <h2 id="manage-submissions-for-instructor-GETapi-V1-assignments--assignment_id--submissions">Get Submissions</h2>
+
+<p>
+<small class="badge badge-darkred">requires authentication</small>
+</p>
+
+<p>Get all Submissions of a particular course.</p>
+
+<span id="example-requests-GETapi-V1-assignments--assignment_id--submissions">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "http://localhost/api/V1/assignments/16/submissions?sort=sort%3D-submitted_at&amp;filter%5BsubmittedAt%5D=2026-4-1%2C2026-4-7" \
+    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost/api/V1/assignments/16/submissions"
+);
+
+const params = {
+    "sort": "sort=-submitted_at",
+    "filter[submittedAt]": "2026-4-1,2026-4-7",
+};
+Object.keys(params)
+    .forEach(key =&gt; url.searchParams.append(key, params[key]));
+
+const headers = {
+    "Authorization": "Bearer {YOUR_AUTH_KEY}",
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETapi-V1-assignments--assignment_id--submissions">
+            <blockquote>
+            <p>Example response (200, When you are NOT The instructor of the course.):</p>
+        </blockquote>
+                <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;errors&quot;: [
+        {
+            &quot;status&quot;: 401,
+            &quot;message&quot;: &quot;NOT Authorized&quot;
+        }
+    ]
+}</code>
+ </pre>
+            <blockquote>
+            <p>Example response (404):</p>
+        </blockquote>
+                <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;errors&quot;: [
+        {
+            &quot;status&quot;: 404,
+            &quot;message&quot;: &quot;The Resource Could Not Be Found :(&quot;
+        }
+    ]
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-GETapi-V1-assignments--assignment_id--submissions" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETapi-V1-assignments--assignment_id--submissions"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETapi-V1-assignments--assignment_id--submissions"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-GETapi-V1-assignments--assignment_id--submissions" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETapi-V1-assignments--assignment_id--submissions">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-GETapi-V1-assignments--assignment_id--submissions" data-method="GET"
+      data-path="api/V1/assignments/{assignment_id}/submissions"
+      data-authed="1"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-V1-assignments--assignment_id--submissions', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETapi-V1-assignments--assignment_id--submissions"
+                    onclick="tryItOut('GETapi-V1-assignments--assignment_id--submissions');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETapi-V1-assignments--assignment_id--submissions"
+                    onclick="cancelTryOut('GETapi-V1-assignments--assignment_id--submissions');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETapi-V1-assignments--assignment_id--submissions"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>api/V1/assignments/{assignment_id}/submissions</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="GETapi-V1-assignments--assignment_id--submissions"
+               value="Bearer {YOUR_AUTH_KEY}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_AUTH_KEY}</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="GETapi-V1-assignments--assignment_id--submissions"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="GETapi-V1-assignments--assignment_id--submissions"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>assignment_id</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="assignment_id"                data-endpoint="GETapi-V1-assignments--assignment_id--submissions"
+               value="16"
+               data-component="url">
+    <br>
+<p>The ID of the assignment. Example: <code>16</code></p>
+            </div>
+                        <h4 class="fancy-heading-panel"><b>Query Parameters</b></h4>
+                                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>sort</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+<i>optional</i> &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="sort"                data-endpoint="GETapi-V1-assignments--assignment_id--submissions"
+               value="sort=-submitted_at"
+               data-component="query">
+    <br>
+<p>data field(s) to sort by. Seprate multiple fields with commas. Denote descending sort with a minus sign. Example: <code>sort=-submitted_at</code></p>
+            </div>
+                                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>filter[submittedAt]</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+<i>optional</i> &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="filter[submittedAt]"                data-endpoint="GETapi-V1-assignments--assignment_id--submissions"
+               value="2026-4-1,2026-4-7"
+               data-component="query">
+    <br>
+<p>Filter Submissions by submission date, you can also send a comma seprated values that represent (from,to). Example: <code>2026-4-1,2026-4-7</code></p>
+            </div>
+                </form>
+
+                    <h2 id="manage-submissions-for-instructor-GETapi-V1-submissions--submission_id-">Show a Student Submission.</h2>
+
+<p>
+<small class="badge badge-darkred">requires authentication</small>
+</p>
+
+<p>Display an individual Submission.</p>
+<ul>
+<li>available relationships for this resource :<ul>
+<li>assignment : The assignment that the submission belongs to.</li>
+<li>student : The user who submitted the submission called (student).</li>
+<li>files : The files that the student attached with the submission.</li>
+</ul>
+</li>
+</ul>
+
+<span id="example-requests-GETapi-V1-submissions--submission_id-">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "http://localhost/api/V1/submissions/16?include=include%3Dstudent" \
+    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost/api/V1/submissions/16"
+);
+
+const params = {
+    "include": "include=student",
+};
+Object.keys(params)
+    .forEach(key =&gt; url.searchParams.append(key, params[key]));
+
+const headers = {
+    "Authorization": "Bearer {YOUR_AUTH_KEY}",
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETapi-V1-submissions--submission_id-">
+            <blockquote>
+            <p>Example response (200):</p>
+        </blockquote>
+                <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;type&quot;: &quot;submission&quot;,
+    &quot;id&quot;: null,
+    &quot;data&quot;: {
+        &quot;grade&quot;: null,
+        &quot;submittedAt&quot;: null,
+        &quot;assignmentId&quot;: null,
+        &quot;student_id&quot;: null
+    },
+    &quot;included&quot;: [],
+    &quot;links&quot;: []
+}</code>
+ </pre>
+            <blockquote>
+            <p>Example response (200, When you are NOT The instructor of the course.):</p>
+        </blockquote>
+                <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;errors&quot;: [
+        {
+            &quot;status&quot;: 401,
+            &quot;message&quot;: &quot;NOT Authorized&quot;
+        }
+    ]
+}</code>
+ </pre>
+            <blockquote>
+            <p>Example response (404):</p>
+        </blockquote>
+                <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;errors&quot;: [
+        {
+            &quot;status&quot;: 404,
+            &quot;message&quot;: &quot;The Resource Could Not Be Found :(&quot;
+        }
+    ]
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-GETapi-V1-submissions--submission_id-" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETapi-V1-submissions--submission_id-"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETapi-V1-submissions--submission_id-"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-GETapi-V1-submissions--submission_id-" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETapi-V1-submissions--submission_id-">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-GETapi-V1-submissions--submission_id-" data-method="GET"
+      data-path="api/V1/submissions/{submission_id}"
+      data-authed="1"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-V1-submissions--submission_id-', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETapi-V1-submissions--submission_id-"
+                    onclick="tryItOut('GETapi-V1-submissions--submission_id-');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETapi-V1-submissions--submission_id-"
+                    onclick="cancelTryOut('GETapi-V1-submissions--submission_id-');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETapi-V1-submissions--submission_id-"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>api/V1/submissions/{submission_id}</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="GETapi-V1-submissions--submission_id-"
+               value="Bearer {YOUR_AUTH_KEY}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_AUTH_KEY}</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="GETapi-V1-submissions--submission_id-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="GETapi-V1-submissions--submission_id-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>submission_id</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="submission_id"                data-endpoint="GETapi-V1-submissions--submission_id-"
+               value="16"
+               data-component="url">
+    <br>
+<p>The ID of the submission. Example: <code>16</code></p>
+            </div>
+                        <h4 class="fancy-heading-panel"><b>Query Parameters</b></h4>
+                                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>include</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+<i>optional</i> &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="include"                data-endpoint="GETapi-V1-submissions--submission_id-"
+               value="include=student"
+               data-component="query">
+    <br>
+<p>data field(s) to include any other relationships. Seprate multiple fields with commas. Example: <code>include=student</code></p>
+            </div>
+                </form>
+
+                    <h2 id="manage-submissions-for-instructor-PATCHapi-V1-submissions-grade--submission_id-">Grade a Submission.</h2>
+
+<p>
+<small class="badge badge-darkred">requires authentication</small>
+</p>
+
+<p>Grade a specific Discussion and send an email to the student about the grade.</p>
+
+<span id="example-requests-PATCHapi-V1-submissions-grade--submission_id-">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request PATCH \
+    "http://localhost/api/V1/submissions/grade/16" \
+    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json" \
+    --data "{
+    \"data\": {
+        \"attributes\": {
+            \"grade\": 76
+        }
+    }
+}"
+</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost/api/V1/submissions/grade/16"
+);
+
+const headers = {
+    "Authorization": "Bearer {YOUR_AUTH_KEY}",
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+let body = {
+    "data": {
+        "attributes": {
+            "grade": 76
+        }
+    }
+};
+
+fetch(url, {
+    method: "PATCH",
+    headers,
+    body: JSON.stringify(body),
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-PATCHapi-V1-submissions-grade--submission_id-">
+            <blockquote>
+            <p>Example response (200):</p>
+        </blockquote>
+                <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;type&quot;: &quot;submission&quot;,
+    &quot;id&quot;: null,
+    &quot;data&quot;: {
+        &quot;grade&quot;: null,
+        &quot;submittedAt&quot;: null,
+        &quot;assignmentId&quot;: null,
+        &quot;student_id&quot;: null
+    },
+    &quot;included&quot;: [],
+    &quot;links&quot;: []
+}</code>
+ </pre>
+            <blockquote>
+            <p>Example response (200, When you are NOT The instructor of the course.):</p>
+        </blockquote>
+                <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;errors&quot;: [
+        {
+            &quot;status&quot;: 401,
+            &quot;message&quot;: &quot;NOT Authorized&quot;
+        }
+    ]
+}</code>
+ </pre>
+            <blockquote>
+            <p>Example response (404):</p>
+        </blockquote>
+                <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;errors&quot;: [
+        {
+            &quot;status&quot;: 404,
+            &quot;message&quot;: &quot;The Resource Could Not Be Found :(&quot;
+        }
+    ]
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-PATCHapi-V1-submissions-grade--submission_id-" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-PATCHapi-V1-submissions-grade--submission_id-"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-PATCHapi-V1-submissions-grade--submission_id-"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-PATCHapi-V1-submissions-grade--submission_id-" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-PATCHapi-V1-submissions-grade--submission_id-">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-PATCHapi-V1-submissions-grade--submission_id-" data-method="PATCH"
+      data-path="api/V1/submissions/grade/{submission_id}"
+      data-authed="1"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('PATCHapi-V1-submissions-grade--submission_id-', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-PATCHapi-V1-submissions-grade--submission_id-"
+                    onclick="tryItOut('PATCHapi-V1-submissions-grade--submission_id-');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-PATCHapi-V1-submissions-grade--submission_id-"
+                    onclick="cancelTryOut('PATCHapi-V1-submissions-grade--submission_id-');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-PATCHapi-V1-submissions-grade--submission_id-"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-purple">PATCH</small>
+            <b><code>api/V1/submissions/grade/{submission_id}</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="PATCHapi-V1-submissions-grade--submission_id-"
+               value="Bearer {YOUR_AUTH_KEY}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_AUTH_KEY}</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="PATCHapi-V1-submissions-grade--submission_id-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="PATCHapi-V1-submissions-grade--submission_id-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>submission_id</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="submission_id"                data-endpoint="PATCHapi-V1-submissions-grade--submission_id-"
+               value="16"
+               data-component="url">
+    <br>
+<p>The ID of the submission. Example: <code>16</code></p>
+            </div>
+                            <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
+        <div style=" padding-left: 28px;  clear: unset;">
+        <details>
+            <summary style="padding-bottom: 10px;">
+                <b style="line-height: 2;"><code>data</code></b>&nbsp;&nbsp;
+<small>object</small>&nbsp;
+ &nbsp;
+ &nbsp;
+<br>
+
+            </summary>
+                                                <div style=" margin-left: 14px; clear: unset;">
+        <details>
+            <summary style="padding-bottom: 10px;">
+                <b style="line-height: 2;"><code>attributes</code></b>&nbsp;&nbsp;
+<small>object</small>&nbsp;
+ &nbsp;
+ &nbsp;
+<br>
+
+            </summary>
+                                                <div style="margin-left: 28px; clear: unset;">
+                        <b style="line-height: 2;"><code>grade</code></b>&nbsp;&nbsp;
+<small>number</small>&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="data.attributes.grade"                data-endpoint="PATCHapi-V1-submissions-grade--submission_id-"
+               value="76"
+               data-component="body">
+    <br>
+<p>The grade of a submission, between 0 and 100. Must be between 0 and 100. Example: <code>76</code></p>
+                    </div>
+                                    </details>
+        </div>
+                                        </details>
+        </div>
+        </form>
 
                 <h1 id="student-examinations">Student Examinations</h1>
 

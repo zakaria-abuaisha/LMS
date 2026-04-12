@@ -22,7 +22,21 @@ class UpdateGradeSubmissionRequest extends FormRequest
     public function rules(): array
     {
         return [
+            "data" => ["required", "array"],
+            "data.attributes" => ["required", "array"],
             "data.attributes.grade" => ["required","numeric","between:0,100"],
+        ];
+    }
+
+    public function bodyParameters(): array
+    {
+        return [
+            'data.attributes.grade' => [
+                'type' => "numeric",
+                'description' => 'The grade of a submission, between 0 and 100.',
+                'required' => true, 
+                'example' => 76,
+            ]
         ];
     }
 }

@@ -3,7 +3,6 @@
 namespace App\Http\Requests\Api\V1\Comments;
 
 use App\Http\Requests\Api\V1\Lectures\BaseLectureRequest;
-use Illuminate\Foundation\Http\FormRequest;
 
 class StoreCommentRequest extends BaseLectureRequest
 {
@@ -23,7 +22,22 @@ class StoreCommentRequest extends BaseLectureRequest
     public function rules(): array
     {
         return [
-            "content" => ["required", "string","max:2500"], // 20 MB
+            "data" => ["required", "array"],
+            "data.attributes" => ["required", "array"],
+            "data.attributes.content" => ["required", "string","max:2500"], // 20 MB
         ];
     }
+
+    public function bodyParameters(): array
+    {
+        return [
+            'data.attributes.content' => [
+                'type' => "string",
+                'description' => 'The content of the comment',
+                'required' => true, 
+                'example' => 'I think I enhanced the convergence of gradient descent',
+            ]
+        ];
+    }
+    
 }

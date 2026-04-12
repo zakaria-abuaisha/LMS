@@ -143,7 +143,6 @@ class LecturesController extends ApiController
      * This endpoint returns the actual file (PDF, DOCX, ZIP, etc.), not a JSON resource.
      * 
      * @group Manage Course Lectures
-     * @urlParam lecture int required The ID of the Lecture. Example: 12
      * @responseHeader 200 Content-Type application/octet-stream
      * @responseHeader 200 Content-Disposition attachment; filename="lecture-file.ext"
      * @response 200 scenario="Successful download (binary file response)"

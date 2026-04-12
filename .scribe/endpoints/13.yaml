@@ -1,139 +1,19 @@
-name: 'Manage Enrollments'
+name: 'Manage Student Submissions'
 description: ''
 endpoints:
   -
     custom: []
     httpMethods:
       - POST
-    uri: api/V1/enrollments/register
+    uri: 'api/V1/assignments/{assignment_id}/studentSubmission/register'
     metadata:
       custom: []
-      groupName: 'Manage Enrollments'
+      groupName: 'Manage Student Submissions'
       groupDescription: ''
       subgroup: ''
       subgroupDescription: ''
-      title: 'Enroll a student(User)'
-      description: 'Enroll a student into a course via course code.'
-      authenticated: true
-      deprecated: false
-    headers:
-      Authorization: 'Bearer {YOUR_AUTH_KEY}'
-      Content-Type: application/json
-      Accept: application/json
-    urlParameters: []
-    cleanUrlParameters: []
-    queryParameters: []
-    cleanQueryParameters: []
-    bodyParameters:
-      data:
-        custom: []
-        name: data
-        description: ''
-        required: true
-        example: []
-        type: object
-        enumValues: []
-        exampleWasSpecified: false
-        nullable: false
-        deprecated: false
-      data.attributes:
-        custom: []
-        name: data.attributes
-        description: ''
-        required: true
-        example: []
-        type: object
-        enumValues: []
-        exampleWasSpecified: false
-        nullable: false
-        deprecated: false
-      data.attributes.courseCode:
-        custom: []
-        name: data.attributes.courseCode
-        description: 'The unique code of the course. Must exist in the courses table. The <code>course_code</code> of an existing record in the courses table.'
-        required: true
-        example: cxb8Q4hze
-        type: string
-        enumValues: []
-        exampleWasSpecified: false
-        nullable: false
-        deprecated: false
-    cleanBodyParameters:
-      data:
-        attributes:
-          courseCode: cxb8Q4hze
-    fileParameters: []
-    responses:
-      -
-        custom: []
-        status: 200
-        content: '{"type":"enrollment","id":null,"data":{"enrollDate":"2026-05-11T02:57:39.000000Z","courseId":6,"studentId":6},"included":[],"links":[]}'
-        headers: []
-        description: ''
-      -
-        custom: []
-        status: 200
-        content: |-
-          {
-               "errors": [{
-                   "status": 422,
-                   "message": "The selected data.attributes.course code is invalid.",
-                   "source": "data.attributes.courseCode"
-               }]
-          }
-        headers: []
-        description: "When There's NO course with the submitted course code."
-      -
-        custom: []
-        status: 200
-        content: |-
-          {
-               "errors": [{
-                   "status": 422,
-                   "message": "You're Already Enrolled!",
-                   "source": "data.attributes.courseCode"
-               }]
-          }
-        headers: []
-        description: 'When a User attempts to enroll again'
-      -
-        custom: []
-        status: 200
-        content: |-
-          {
-               "errors": [{
-                   "status": 422,
-                   "message": "You are the Instructor, you can not be a student for this course!",
-                   "source": "data.attributes.courseCode"
-               }]
-          }
-        headers: []
-        description: 'When The Instructor attempts to enroll into his/her own course.'
-    responseFields: []
-    auth:
-      - headers
-      - Authorization
-      - 'Bearer 1|HJQ9iufdC89b9RkDgczVZ8fQ1w5k9n8eOCarhqfk321c28af'
-    controller: null
-    method: null
-    route: null
-  -
-    custom: []
-    httpMethods:
-      - GET
-    uri: 'api/V1/enrollments/{enrollment_id}'
-    metadata:
-      custom: []
-      groupName: 'Manage Enrollments'
-      groupDescription: ''
-      subgroup: ''
-      subgroupDescription: ''
-      title: 'Show a specific enrollment.'
-      description: |-
-        Display an individual enrollment for the student.
-        * available relationships for this resourc :
-             * course : The course that the Enrollment belongs to.
-             * student : The student that the Enrollment belongs to.
+      title: 'Create a Submission.'
+      description: "Create a Submission by the student, and instantly delete the previous submission for the same assignment if there's one."
       authenticated: true
       deprecated: false
     headers:
@@ -141,33 +21,21 @@ endpoints:
       Content-Type: application/json
       Accept: application/json
     urlParameters:
-      enrollment_id:
+      assignment_id:
         custom: []
-        name: enrollment_id
-        description: 'The ID of the enrollment.'
+        name: assignment_id
+        description: 'The ID of the assignment.'
         required: true
-        example: 11
+        example: 16
         type: integer
         enumValues: []
         exampleWasSpecified: false
         nullable: false
         deprecated: false
     cleanUrlParameters:
-      enrollment_id: 11
-    queryParameters:
-      include:
-        custom: []
-        name: include
-        description: 'data field(s) to include any other relationships. Seprate multiple fields with commas.'
-        required: false
-        example: 'include=course,student'
-        type: string
-        enumValues: []
-        exampleWasSpecified: true
-        nullable: false
-        deprecated: false
-    cleanQueryParameters:
-      include: 'include=course,student'
+      assignment_id: 16
+    queryParameters: []
+    cleanQueryParameters: []
     bodyParameters: []
     cleanBodyParameters: []
     fileParameters: []
@@ -175,7 +43,7 @@ endpoints:
       -
         custom: []
         status: 200
-        content: '{"type":"enrollment","id":62,"data":{"enrollDate":"2026-04-10T18:47:24.000000Z","courseId":6,"studentId":12},"included":[],"links":[]}'
+        content: '{"type":"submission","id":null,"data":{"grade":null,"submittedAt":null,"assignmentId":null,"student_id":null},"included":[],"links":[]}'
         headers: []
         description: ''
       -
@@ -189,7 +57,124 @@ endpoints:
                }]
           }
         headers: []
-        description: 'When you are NOT the student who belongs to the Enrollment.'
+        description: 'When the user is NOT enrolled in the course.'
+      -
+        custom: []
+        status: 200
+        content: |-
+          {
+               "errors": [{
+                   "status": 401,
+                   "message": "Sorry, due date has passed!"
+               }]
+          }
+        headers: []
+        description: 'When the deadline date is passed'
+      -
+        custom: []
+        status: 200
+        content: |-
+          {
+               "data": [],
+               "message": "The assignment submitted successfully.",
+               "code": 200
+          }
+        headers: []
+        description: 'Successful submission'
+      -
+        custom: []
+        status: 404
+        content: |-
+          {
+               "errors": [{
+                   "status": 404,
+                   "message": "The Resource Could Not Be Found :("
+               }]
+          }
+        headers: []
+        description: ''
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 1|HJQ9iufdC89b9RkDgczVZ8fQ1w5k9n8eOCarhqfk321c28af'
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - GET
+    uri: 'api/V1/submissions/{submission_id}/studentSubmission'
+    metadata:
+      custom: []
+      groupName: 'Manage Student Submissions'
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Show a Student Submission.'
+      description: |-
+        Display an individual Submission.
+        * available relationships for this resource :
+             * assignment : The assignment that the submission belongs to.
+             * student : The user who submitted the submission called (student).
+             * files : The files that the student attached with the submission.
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      submission_id:
+        custom: []
+        name: submission_id
+        description: 'The ID of the submission.'
+        required: true
+        example: 16
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+    cleanUrlParameters:
+      submission_id: 16
+    queryParameters:
+      include:
+        custom: []
+        name: include
+        description: 'data field(s) to include any other relationships. Seprate multiple fields with commas.'
+        required: false
+        example: include=student
+        type: string
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        deprecated: false
+    cleanQueryParameters:
+      include: include=student
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 200
+        content: '{"type":"submission","id":null,"data":{"grade":null,"submittedAt":null,"assignmentId":null,"student_id":null},"included":[],"links":[]}'
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 200
+        content: |-
+          {
+               "errors": [{
+                   "status": 401,
+                   "message": "NOT Authorized"
+               }]
+          }
+        headers: []
+        description: 'When you are NOT the owner(student) of this submission, Or NOT an enrolled student.'
       -
         custom: []
         status: 404
@@ -214,15 +199,15 @@ endpoints:
     custom: []
     httpMethods:
       - DELETE
-    uri: 'api/V1/enrollments/{enrollment_id}'
+    uri: 'api/V1/submissions/{submission_id}/studentSubmission'
     metadata:
       custom: []
-      groupName: 'Manage Enrollments'
+      groupName: 'Manage Student Submissions'
       groupDescription: ''
       subgroup: ''
       subgroupDescription: ''
-      title: 'Delete a specific enrollment.'
-      description: 'Delete an individual enrollment for the student.'
+      title: 'Delete a Submission.'
+      description: 'Delete a specific Submission with the attached files.'
       authenticated: true
       deprecated: false
     headers:
@@ -230,19 +215,19 @@ endpoints:
       Content-Type: application/json
       Accept: application/json
     urlParameters:
-      enrollment_id:
+      submission_id:
         custom: []
-        name: enrollment_id
-        description: 'The ID of the enrollment.'
+        name: submission_id
+        description: 'The ID of the submission.'
         required: true
-        example: 11
+        example: 16
         type: integer
         enumValues: []
         exampleWasSpecified: false
         nullable: false
         deprecated: false
     cleanUrlParameters:
-      enrollment_id: 11
+      submission_id: 16
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -260,14 +245,14 @@ endpoints:
                }]
           }
         headers: []
-        description: 'When you are NOT the student who belongs to the Enrollment.'
+        description: 'When you are NOT the owner(student) of this submission, Or NOT an enrolled student.'
       -
         custom: []
         status: 200
         content: |-
           {
                "data": [],
-               "message": "Enrollment deleted successfully",
+               "message": "Submission deleted successfully",
                "code": 200
           }
         headers: []
